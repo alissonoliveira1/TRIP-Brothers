@@ -4,7 +4,6 @@ html {
   }
   body{
     font-family: 'Oswald', sans-serif;
-
     color: rgb(65, 64, 66);
     background-color: rgb(248, 246, 247);
   }
@@ -32,7 +31,9 @@ html {
     overflow: hidden;
 }
 .nav-li:hover{
+ 
   transform: scale(1.1);
+  
 }
 .container video{
  width: 100vw;
@@ -124,12 +125,7 @@ nav-2{
     padding: 2rem 0px 1.4rem 1.4rem;
     box-shadow: rgba(37, 37, 39, 0.25) 0.5rem 0.5rem 2rem 0px
 }
-.li-promo{
-  border-radius: unset;
-  padding: 0px;
-  background-color: transparent;
-  border: none;
-}
+
 .espaco{
 
     margin: 0px 2rem;
