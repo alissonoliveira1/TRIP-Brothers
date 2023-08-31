@@ -10,7 +10,7 @@ html {
 body{
     font-family: 'Nunito Sans', sans-serif;
     color: rgb(65, 64, 66);
-    background-color: #A5A692;
+    background-color: white;
 }
 .span-img{
 
@@ -116,14 +116,14 @@ body{
 .nav-1{
     margin-left:50vh ;
     margin-left: auto;
-
     display: flex;
     gap: 4rem;
     row-gap: 4rem;
     column-gap: 4rem;
+    transition: 0.3s;
 }
 .logo-a{
-  
+
     height: 40px;
     position: relative;
     width: 132px;
@@ -131,11 +131,12 @@ body{
 .container-base{
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
+  flex: 1;
+  margin-right: 2rem;
 }
 
 .container{
-
   display: flex;
   z-index: 3;
   position: fixed;
@@ -198,7 +199,7 @@ body{
   padding-inline-start: 40px;
 }
 .nav-list-2{
-  margin: 0px 2rem;
+  margin: 0px 1rem;
   display: flex;
   white-space: nowrap;
   left: 0px;
@@ -212,7 +213,7 @@ body{
   font-size: 1.5vw;
 }
 .nav-li{
-  text-align: -webkit-match-parent;
+ 
   list-style: none;
 }
 .nav-2{
@@ -221,6 +222,8 @@ body{
   justify-content: center;
   top: 0px;
   left: 0px;
+  margin: 0px;
+  
   overflow: auto hidden;
   white-space: nowrap;
   z-index: 1;
@@ -248,3 +251,49 @@ body{
     text-align: center;
     display: block;
 }
+.menu-img{
+ align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.nav-img{
+ display: flex;
+ justify-content: space-between;
+ 
+}
+.img-a{
+  display: flex;
+ 
+  justify-content: space-between;
+  border-radius: 1rem;
+
+  align-items: center;
+  width: 100%;
+  height: 1px;
+  position: relative;
+  box-shadow: rgba(166, 171, 189, 0.25) 0px 0px 2.4333rem 0px;
+  text-decoration: none;
+}
+.div-img{
+  display: flex;
+  top: 10rem;
+  justify-content: space-between;
+  border-radius: 1rem;
+  align-items: center;
+  width: 100%;
+  height: 1px;
+  position: relative;
+  text-decoration: none;
+}
+.destaque{box-shadow: rgba(166, 171, 189, 0.25) 0px 0px 2.4333rem 0px;
+  transition: 0.3s;
+  overflow: hidden;
+  margin: 2rem;
+  display: flex;
+  width: 20vw;
+  border-radius: 10px;
+}
+.destaque:hover{
+  transform: scale(1.1);
+}
+
