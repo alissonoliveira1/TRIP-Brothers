@@ -298,7 +298,14 @@ body{
 .div-img:hover{
   transform: scale(1.1);
 }
-
+.nav-li :hover{
+  transition: 0.2s;
+  color: #f2a71b;
+}
+.nav-1 :hover{
+  transition: 0.2s;
+  color: #f2a71b;
+}
 #textsp { 
   color: rgb(255, 255, 255);
   font-size: 2rem;
@@ -381,4 +388,9 @@ body{
 }
 .div-preco-maragogi  #textsp :hover{
   transform: scale(1.1);
+}
+.text-desconto{
+  display: block;
+  margin-left: 3rem;
+  margin-top: 2rem;
 }
