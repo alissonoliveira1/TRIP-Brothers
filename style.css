@@ -285,15 +285,100 @@ body{
   position: relative;
   text-decoration: none;
 }
-.destaque{box-shadow: rgba(166, 171, 189, 0.25) 0px 0px 2.4333rem 0px;
+.destaque{
   transition: 0.3s;
   overflow: hidden;
   margin: 2rem;
   display: flex;
   width: 20vw;
   border-radius: 10px;
+  box-shadow: rgba(37, 37, 39, 0.25) 0.5rem 0.5rem 2rem 0px;
+
 }
-.destaque:hover{
+.img-a:hover{
   transform: scale(1.1);
 }
 
+#textsp { 
+  color: rgb(255, 255, 255);
+  font-size: 2rem;
+  font-family: Nunito Sans, sans-serif;
+  font-style: bold;
+  position: absolute;
+  top: -5rem;
+  left: 6rem;
+
+}
+
+.precosp {
+  color: rgb(255, 255, 255);
+  font-size: 2.5rem;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+  position: absolute;
+  top: -2.3rem;
+  left: 4rem;
+
+}
+
+#textrj {
+  color: rgb(255, 255, 255);
+  font-size: 2rem;
+  font-family: Nunito Sans, sans-serif;
+  font-style: bold;
+  position: absolute;
+  top: -5rem;
+  left: 4.5rem;
+}
+
+#textsal {
+  color: rgb(255, 255, 255);
+  font-size: 2rem;
+  font-family: Nunito Sans, sans-serif;
+  font-style: bold;
+  position: absolute;
+  top: -5rem;
+  left: 6.5rem;
+}
+.div-preco-maragogi{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 200px;
+  max-width: 200px;
+  padding: 0.7rem 1rem 0px 0px;
+  left: 4.5rem;
+}
+.span-preco1{
+    color: rgb(255, 255, 255);
+    font-size: 0.8rem;
+    
+}
+.span-preco2{
+    text-decoration: line-through;
+    
+    color: inherit;
+    font-size: 1.5rem;
+    
+    
+}
+.span-preco3{
+    color: rgb(255, 255, 255);
+    font-family: Montserrat, sans-serif;
+    font-size: 1.5rem;
+
+    font-weight: bold;
+    
+  
+}
+.span-preco4{
+  color: inherit;
+  font-family: Montserrat, sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+
+}
+.div-preco-maragogi  #textsp :hover{
+  transform: scale(1.1);
+}
