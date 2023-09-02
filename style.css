@@ -290,12 +290,17 @@ body{
   box-shadow: rgba(37, 37, 39, 0.25) 0.5rem 0.5rem 2rem 0px;
 
 }
-.div-img:hover{
+.div-img:hover  .espaco-bnt {
+  background-color:#025E73 ;
+  
+}
+.div-img:hover  {
   transform: scale(1.1);
+ 
 }
 .nav-li :hover{
   transition: 0.2s;
-  color: #f2a71b;
+  color: #025E73;
 }
 .nav-1 :hover{
   transition: 0.2s;
@@ -369,7 +374,6 @@ body{
     color: rgb(255, 255, 255);
     font-family: Montserrat, sans-serif;
     font-size: 1.5rem;
-
     font-weight: bold;
     
   
@@ -381,11 +385,47 @@ body{
   font-weight: bold;
 
 }
-.div-preco-maragogi  #textsp :hover{
-  transform: scale(1.1);
-}
+
 .text-desconto{
   display: block;
   margin-left: 3rem;
   margin-top: 2rem;
+}
+.bnt-sp{
+  position: absolute;
+  height: 40px;
+  border-radius: 2.7rem;
+  color: rgb(255, 255, 255);
+  border: 0.1rem solid rgb(255, 255, 255);
+  background-color: transparent;
+  cursor: pointer;
+  text-align: center;
+  width: 50%;
+  top: 3rem;
+  left: 5rem;
+  z-index: 10;
+}
+
+.bnt-span2{
+  width: 100%;
+  display: inherit;
+  align-items: inherit;
+  justify-content: inherit;
+}
+.bnt-span{
+  color: inherit;
+  font-size: 1.2rem;
+  line-height: 2.3rem;
+  font-weight: 400;
+}
+.espaco-bnt{
+   top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    overflow: hidden;
+    position: absolute;
+    border-radius: inherit;
+    pointer-events: none;
 }
