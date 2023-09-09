@@ -536,3 +536,8 @@ body {
   background-position: center center;
   }
 }
+@media (max-width:780px) {
+  .div-preco-maragogi{
+    display: none;
+  }
+}
