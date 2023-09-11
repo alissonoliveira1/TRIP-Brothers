@@ -503,6 +503,17 @@ body {
   font-weight: 400;
   
 }
+@media (max-width:490px) {
+  .bnt-span {
+    font-size: 1rem;
+  }
+  .bnt-sp{
+    width: 50% ;
+    margin-right: 1rem;
+    
+  }
+
+}
 .espaco-bnt {
   top: 0;
   left: 0;
@@ -512,7 +523,7 @@ body {
   overflow: hidden;
   position: absolute;
   border-radius: inherit;
-  pointer-events: none;
+ 
   
 }
 @media (min-width: 780px) {
@@ -565,6 +576,18 @@ body {
   background-position: center center;
   }
 }
+@media (max-width:600px) {
+  .titulos{
+    font-size: 0.7rem;
+  }
+}
+@media (max-width:490px) {
+  .titulos{
+    padding-left: 1.5rem;
+    font-size: 0.8rem;
+  }
+}
+
 @media (max-width:780px) {
   .div-preco-maragogi{
     display: none;
