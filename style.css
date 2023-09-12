@@ -156,7 +156,7 @@ body {
   .video-familia{
     z-index: 5;
     overflow: hidden;
-  height: 30vh;
+  height: 50vh;
   }
 }
 @media (max-width:490px) {
@@ -562,6 +562,7 @@ body {
   }
 }
 .text_inter{
+  
   padding: 2rem;
 }
 .titulos{
@@ -739,6 +740,13 @@ transform: rotate(-45deg) scaleX(0.9) ;
     transition: all ease .2s;
     border-radius: 10px;
   }
+  .text_inter{
+    text-align: center;
+    padding: 0.9rem;
+    font-size: 10px;
+    font-weight: bold;
+    
+  }
 }
 .menu .check:checked ~ ul{
 margin-left: 0;
@@ -838,7 +846,7 @@ background-color: #f2a71b;
   .video-familia {
     z-index: 5;
     overflow: hidden;
-    height: 20vh;
+    height: 60vh;
     
   }
   .img-a{
@@ -847,5 +855,11 @@ background-color: #f2a71b;
     padding: 0px 0.9rem;
     
   }
+
+}
+@media(min-width:491px) and (max-width:680px) {
+.video-familia{
+  height: 38vh;
+}
 
 }
