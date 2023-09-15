@@ -863,3 +863,105 @@ background-color: #f2a71b;
 }
 
 }
+
+.banner img {
+  margin-top: 5%; 
+  width: 98.5vw;
+  overflow-y: hidden;
+  height: 30%;
+}
+
+@media (max-width:900px) {
+  .banner {
+
+  }
+}
+
+.paiinfo {
+  margin-left: 7%;
+  margin-top: 7%;
+  width: 90vw%;
+  display: grid;  
+} 
+
+
+.infofilho {
+  display: flex;
+  width: 90vw;
+  gap: 32px;
+  grid-template-columns: auto auto auto auto;
+  vertical-align: baseline;
+} 
+
+.info {
+  width: 45%;
+  justify-content: right;
+  font-family: "Source Sans Pro";
+  color: #f2a71b;
+  font-size: 1.4rem;
+
+}
+
+.traco{
+  width: 20vw;
+  padding-top: 2%;
+  
+
+}
+
+.info2 {
+  width: 30%;
+  color: #025e73;
+  padding-top: 2%;
+  font-size: 1.5rem;
+
+}
+
+
+
+
+
+
+
+.infoimg2{
+  width: 290px;
+  max-width: 100px;
+  height: 290px;
+    /* padding: 0px 3.5rem; */
+}
+
+
+.paiimg {
+ display: flex;
+  height: auto;
+ 
+
+
+}
+.imginfo1{
+  padding:  0 5%;
+}
+.imginfo2{
+  padding: 6% 0;
+}
+.imginfo1 img{
+  width: 20vw;
+}
+.imginfo2 img{
+  width: 21vw;
+}
+.img1 img{
+  display: flex;
+}
+.img2{
+  padding: 3vw 0;
+  display: flex;
+}
+
+.img3{
+  display: flex;
+}
+.img4{
+  padding: 5vw 0;
+  display: flex;
+}
