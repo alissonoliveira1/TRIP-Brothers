@@ -78,10 +78,27 @@
   li:hover{
  background-color: rgb(247, 243, 243);
 }
+.ch{
+ display: flex;
+  justify-content: center;
+ 
+}
+.chh{
+  width: 120px;
+  height: 120px;
+}
+.bntbbb{
+display: flex;
+justify-content: center;
+}
+.bntbb{
+  width: 10vw;
+  height: 10vh;
+}
     </style>
 
    <nav class="menu">
-    <input type="checkbox" class="check">
+    <input type="checkbox" class="check" o>
     <div class="menu-lines">
     <span></span>
     <span></span>
@@ -96,7 +113,18 @@
     </ul>
    </nav>
 
+ <div class="ch"><input type="checkbox" name="" class="chh"></div>
+ 
+<script>
+var bnt = document.querySelector('.chh')
+document.querySelector('.chh').onclick = function (){
+  if (bnt.checked) {
+        document.body.style.backgroundColor = 'black'
+    } else {
+      document.body.style.backgroundColor = 'white'
+    }
+}
 
-
+</script>
 </body>
 </html>

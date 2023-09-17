@@ -965,3 +965,21 @@ background-color: #f2a71b;
   padding: 5vw 0;
   display: flex;
 }
+.chh{
+
+  width: 35px;
+  height: 35px;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 2;
+}
+.icon-night{
+  top: 0;
+   position: absolute;
+   right: 8%;
+   z-index: 1;
+}
+.icon-night{
+  font-size: 35px;
+  
+}
