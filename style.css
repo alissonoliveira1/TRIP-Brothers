@@ -918,11 +918,6 @@ background-color: #f2a71b;
 }
 
 
-
-
-
-
-
 .infoimg2{
   width: 290px;
   max-width: 100px;
@@ -982,4 +977,5 @@ background-color: #f2a71b;
    top: 0;
    right: 7.5%;
    font-size: 35px;
+   color: rgb(102, 102, 102);
 }

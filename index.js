@@ -23,6 +23,6 @@ document.querySelector('.chh').onclick = function (){
         document.querySelector('#a4').style.color = 'black'
         document.querySelector('#a5').style.color = 'black'
         document.querySelector('#a6').style.color = 'black'
-        document.querySelector('.icon-night').style.color = 'black'
+        document.querySelector('.icon-night').style.color = 'rgb(102, 102, 102)'
     }
 }
