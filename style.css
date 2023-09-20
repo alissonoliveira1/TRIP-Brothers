@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 * {
   margin: 0;
   padding: 0;
@@ -903,10 +905,8 @@ background-color: #f2a71b;
 }
 
 .traco{
-  width: 20vw;
-  padding-top: 2%;
-  
-
+  width: 38vw;
+  padding: 4% 0%;
 }
 
 .info2 {
@@ -979,9 +979,7 @@ background-color: #f2a71b;
    font-size: 35px;
    color: rgb(102, 102, 102);
 }
-.contain{
-  
-}
+
 .comiss{
   
   height: 100%;

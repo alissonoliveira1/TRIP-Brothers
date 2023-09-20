@@ -10,8 +10,6 @@ document.querySelector('.chh').onclick = function (){
         document.querySelector('#a4').style.color = 'rgb(221, 221, 221)'
         document.querySelector('#a5').style.color = 'rgb(221, 221, 221)'
         document.querySelector('#a6').style.color = 'rgb(221, 221, 221)'
-        
-        
         document.body.style.backgroundColor = '#000A1F'
     } else {
       document.body.style.backgroundColor = 'white'
@@ -25,4 +23,13 @@ document.querySelector('.chh').onclick = function (){
         document.querySelector('#a6').style.color = 'black'
         document.querySelector('.icon-night').style.color = 'rgb(102, 102, 102)'
     }
+}
+var inp = document.querySelector('#kkk');
+document.querySelector('#kkk').onclick = function (){
+  if (inp.checked) {
+    document.querySelector('.divv').style.backgroundColor = 'black'
+  }else {
+    document.querySelector('.divv').style.backgroundColor = 'white'
+  }
+  
 }
