@@ -24,12 +24,20 @@ document.querySelector('.chh').onclick = function (){
         document.querySelector('.icon-night').style.color = 'rgb(102, 102, 102)'
     }
 }
-var inp = document.querySelector('#kkk');
-document.querySelector('#kkk').onclick = function (){
-  if (inp.checked) {
-    document.querySelector('.divv').style.backgroundColor = 'black'
-  }else {
-    document.querySelector('.divv').style.backgroundColor = 'white'
+document.querySelector('#kari').onclick = function (){
+ document.querySelector('#kari').style.backgroundColor = 'grey'
+ document.querySelector('#kar').style.backgroundColor = 'white'
+}
+document.querySelector('#kar').onclick = function (){
+  document.querySelector('#kar').style.backgroundColor = 'black'
+  document.querySelector('#kari').style.backgroundColor = 'white'
+ }
+ var kirin = document.querySelector('#korra')
+ document.querySelector('.tipos').onclick = function (){
+  if (kirin.checked){
+    document.querySelector('.paii').style.display = 'none'
+  }else{
+    document.querySelector('.paii').style.display = 'block'
   }
   
-}
+ }

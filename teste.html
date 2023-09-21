@@ -95,6 +95,82 @@ justify-content: center;
   width: 10vw;
   height: 10vh;
 }
+.tex{
+  cursor: pointer;
+  background-color: rgb(243, 139, 2);
+  width: 10vw;
+  height: 10.6vh;
+}
+form input{
+  width: 20vw;
+  height: 10vh;
+}
+.pai{
+  display: flex;
+  justify-content:center ;
+
+}
+.pai input{
+  padding: 0 10px;
+  width: 20vw;
+  height: 10vh;
+}
+#vaga{
+position: absolute;
+left: 0;
+color: aqua;
+padding: 0 20%;
+background-color: aqua;
+  opacity: 1;
+}
+fieldset{
+  
+  width: 20%;
+}
+legend{
+  text-align: center;
+}
+input[type='radio'] {
+  display: none;
+}
+
+.radio-container label {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+
+
+.custom-radio {
+  border: 1px solid #fff;
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-content: center;
+  border-radius: 50%;
+}
+
+.custom-radio,
+span {
+  transition: 0.5s ease;
+  color: #d32222;
+}
+
+.custom-radio span {
+  content: '';
+  width: 23px;
+  height: 23px;
+  background: #978686;
+  border-radius: 50%;
+}
+
+input[type='radio']:checked + .custom-radio {
+  border-color: #000000;
+}
+
+input[type='radio']:checked + .custom-radio span {
+  background: #0af350;
+}
     </style>
 
    <nav class="menu">
@@ -112,19 +188,67 @@ justify-content: center;
         <li><a href="">Quem Somos</a></li>
     </ul>
    </nav>
-
- <div class="ch"><input type="checkbox" name="" class="chh"></div>
  
+<fieldset>
+  <legend>Voo</legend>
+  <div>
+    <input type="radio">
+    <label for="">ida</label>
+    </div>
+
+    <div>
+    <input type="radio">
+    <label for="">ida e volta</label>
+    </div>
+
+    <div>
+    <input type="radio">
+    <label for="">outras paradas</label>
+    </div>
+    
+  
+</fieldset>
+<div class="radio-container">
+  <label for="radio">
+    <input type="radio" id="radio" name="radio" />
+    <div class="custom-radio">
+      <span></span>
+    </div>
+    <span>One</span>
+  </label>
+</div>
+
+<div class="radio-container">
+  <label for="radio1">
+    <input type="radio" id="radio1" name="radio" />
+    <div class="custom-radio">
+      <span></span>
+    </div>
+    <span>Two</span>
+  </label>
+</div>
+<div class="radioo">
+  <label for="">
+    <input type="radio" id="radio2">
+    <div class="cust-radio">
+      <span></span>
+    </div>
+    <span>two</span>
+  </label>
+</div>
 <script>
-var bnt = document.querySelector('.chh')
-document.querySelector('.chh').onclick = function (){
-  if (bnt.checked) {
+
+
+var dini = document.querySelector('.text')
+document.querySelector('#vaga').onclick = function (){
+  if (vaga.checked) {
         document.body.style.backgroundColor = 'black'
+        document.querySelector('.text').style.display = 'none'
     } else {
       document.body.style.backgroundColor = 'white'
+      document.querySelector('.text').style.display = 'block'
     }
-}
-
+  }
 </script>
 </body>
 </html>

@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
   }
 
 html {
@@ -374,18 +375,84 @@ html {
     border: 1px solid rgb(105, 105, 105);
   }
   .forms-inp{
-    background-color: #0000003b;
+    padding: 4%;
+    background-color: #fdfdfd21;
     border-radius: 20px;
-    padding: 5% 10%;
     position: absolute;
-    left: 15%;
+    left: 20%;
     top: 30vh;
   }
-  .divv{
-    background-color: aqua;
-    width: 10vw;
-    padding: 20%;
+
+  .radio-container label {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    padding: 10px;
+  }
+  #radio{
+    display: none;
+  }
+  #radio1{
+    display: none;
   }
   
- 
-    
+  .custom-radio {
+    border: 3px solid #000000;
+    width: 24px;
+    height: 24px;
+    display: grid;
+    cursor: pointer;
+    place-content: center;
+    border-radius: 50%;
+  }
+  
+  .custom-radio,
+  span {
+    transition: 0.5s ease;
+    color: #d32222;
+  }
+  
+  .custom-radio span {
+    content: '';
+    width: 14px;
+    height: 14px;
+    background: #000000;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  input[type='radio']:checked + .custom-radio {
+    border-color: #e29e0c;
+  }
+  
+  input[type='radio']:checked + .custom-radio span {
+    background: #e7c60a;
+  }
+  .tipos{
+    margin-left: 1px;
+    cursor: pointer;
+    background-color: #ffffff;
+    text-align: center;
+    margin-top: 5px;
+    width: 15vw;
+    height: 10vh;
+  }
+  .tipos span{
+    color: #000000;
+  }
+  .paii{
+   position: absolute;
+    width: 15vw;
+    top: 62%;
+    left:24.1%;
+    background-color: #f7f3f3;
+  }
+  #korra{
+    cursor: pointer;
+    position: absolute;
+    left: 7%;
+    width: 15vw;
+    height: 10vh;
+    padding: 3%;
+    opacity: 0;
+  }
