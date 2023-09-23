@@ -327,9 +327,10 @@ html {
     .menu ul li:hover a{
       color: white;
     }
-    .img-pesq img{
+    .pai img{
       display: flex;
-      width: 100vw;
+      width: 100%;
+     
       overflow: hidden;
       height: 80vh;
       filter: brightness(0.8);
@@ -345,12 +346,13 @@ html {
     }
     
     .inputs{
-
+      outline: none;
+      color: #0a5f74;
       padding: 25px;
       font-family: 'Montserrat', sans-serif;
-      font-size: 0.9rem;
+      font-size: 1rem;
       font-weight: bold;
-      width: 25vw;
+      width: 26vw;
       height: 10vh;
       border: 1px solid rgb(105, 105, 105);
       cursor: pointer;
@@ -362,25 +364,22 @@ html {
       
     }
     .inputs::-webkit-input-placeholder{
-      
-   
+
       color:rgb(105, 105, 105);
       font-style: italic;
       font-size: 0.8rem;
       text-transform: uppercase;
       font-style: bold;
   }
-  .inputs::-moz-placeholder{
   
-    border: 1px solid rgb(105, 105, 105);
-  }
   .forms-inp{
     padding: 4%;
     background-color: #fdfdfd21;
     border-radius: 20px;
     position: absolute;
     left: 20%;
-    top: 30vh;
+    top: 20vh;
+    
   }
 
   .radio-container label {
@@ -407,9 +406,10 @@ html {
   }
   
   .custom-radio,
-  span {
+  .th .cust{
     transition: 0.5s ease;
-    color: #d32222;
+    font-weight: bold;
+    color: #ffffff;
   }
   
   .custom-radio span {
@@ -437,15 +437,51 @@ html {
     width: 15vw;
     height: 10vh;
   }
+  .pass{
+    margin-left: 5px;
+    cursor: pointer;
+    background-color: #ffffff;
+    text-align: center;
+    margin-top: 5px;
+    width: 16.1vw;
+    height: 10vh;
+  }
+
+  input[type=date]{
+    margin-left: 5px;
+    cursor: pointer;
+    margin-top: 5px;
+    font-family: 'Roboto Mono', monospace;
+    padding-left: 5px;
+    width: 10vw;
+    height: 10vh;
+    z-index: 100;
+    font-size: 15px;
+    outline: none;
+    font-weight: bold;
+  }
+  ::-webkit-calendar-picker-indicator{
+    font-size: 24px;
+    
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+  }
+  #zeus{
+    z-index: 1;
+  }
   .tipos span{
     color: #000000;
   }
+  .pass span{
+    color: #000000;
+  }
   .paii{
+    display: none;
    position: absolute;
     width: 15vw;
-    top: 62%;
+    top: 60%;
     left:24.1%;
-    background-color: #f7f3f3;
+    background-color:#bab490 ;
   }
   #korra{
     cursor: pointer;
@@ -455,4 +491,229 @@ html {
     height: 10vh;
     padding: 3%;
     opacity: 0;
+  }
+  .koripai{
+display: flex;
+
+  }
+  #check-pass{
+    cursor: pointer;
+    position: absolute;
+    left: 33.4%;
+    width: 15vw;
+    height: 10vh;
+    padding: 3%;
+    opacity: 0;
+  }
+  .allputs[type="number"]{
+    outline:none;
+    border: 0px;
+    width: 13px;
+    
+    
+    }
+    .labs, .allputs, #allbnt {
+        font-size: inherit;
+        -moz-box-sizing: content-box;
+        -webkit-box-sizing: content-box;
+        box-sizing: content-box;
+    }
+
+
+    #allbnt{
+        border: 1px solid #000000;
+        width: 25px;
+        height: 25px;
+        
+        cursor: pointer;
+        border-radius: 50%;
+    }
+    .bnt{
+      
+      margin-top: 5px;
+      padding-left:40px ;
+    }
+    .bnt span{
+      color: #0a5f74;
+      font-weight: 1000;
+    }
+    .cris{
+      margin-top: 27px;
+      padding-left: 40px;
+     }
+     .cris span{
+      
+      font-weight: bold;
+      color: #0a5f74;
+     }
+     .display-flex{
+      display: flex;
+     }
+     .nomes1{
+    margin-top: 15px;
+      
+     }
+     #total1{
+      background-color: transparent;
+      padding-left : 7px;
+     }
+     #total{
+      background-color: transparent;
+      padding-left : 7px;
+     }
+ 
+    .b{
+      background-color: transparent;
+      font-weight: bold;
+      margin-left: 10px;
+    }
+    .a{
+      background-color: transparent;
+      font-weight: bold;
+    }
+   .lula{
+    margin-left: 10px;
+   }
+   .odin{
+    display: none;
+    position: absolute;
+    left: 39.7%;
+    top: 60%;
+    width: 16vw;
+    background-color: #bab490;
+   }
+   input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    
+}
+   input[type=number]{
+    -moz-appearance: textfield;
+    appearance: textfield;
+   }
+   
+   .P{
+    margin-left: 5px;
+   }
+   .custom-radio span{
+    
+   }
+   .cust{
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+
+   }
+   .nomes{
+    padding-left: 10px;
+   }
+   .nomes1{
+    padding-left: 10px;
+   }
+   .textoprincipal h1{
+    color: #ffffff;
+    font-size: 2.5rem;
+    padding-top: 1%;
+  text-align: center;
+   }
+   form{
+    padding-top: 5%;
+   }
+   .nav-texto {
+    font-family: 'Montserrat', sans-serif;
+    overflow: auto;
+    overflow-x: auto;
+    overflow-y: auto;
+    position: relative;
+    padding-bottom: 0.3rem;
+    font-weight: bold;
+  }
+  .nav-texto {
+    overflow: auto;
+    font-size: 1.4rem;
+  }
+  .nav_2 a {
+    text-decoration: none;
+    color: #000;
+  }
+  
+  .icon-nav {
+    margin-left: 20px;
+  }
+  .link {
+    text-decoration: none;
+    display: block;
+    height: 100%;
+    width: 100%;
+    padding: 0.8rem 1.7rem;
+  }
+  
+  .nav-li {
+    display: list-item;
+  }
+  .nav-list-2 {
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+  }
+  .nav-list-2 {
+    margin: 0px 1rem;
+    display: flex;
+    white-space: nowrap;
+    left: 0px;
+    padding: 0px;
+    justify-content: space-between;
+    min-width: min(100vw - 4rem, 1286px);
+  }
+  .nav_2 i {
+    font-size: 1.5vw;
+  }
+  @media (max-width:780px) {
+    .nav_2 i {
+      font-size: 3vw;
+    }
+    .text-desconto{
+      font-size: 2.4vw;
+      text-align: center;
+    }
+  }
+  @media (max-width:490px) {
+    .nav_2 i {
+      font-size: 4vw;
+    }
+  }
+  .nav-li {
+    list-style: none;
+  }
+  .nav-2 {
+    display: flex;
+    justify-content: center;
+    top: 0px;
+    left: 0px;
+    margin: 0px;
+    overflow: auto hidden;
+    white-space: nowrap;
+    z-index: 1;
+    margin-top: 0px;
+    background-color: transparent;
+  }
+  
+  .espaco {
+    margin: 0px 1.2rem;
+    display: flex;
+    white-space: nowrap;
+    left: 0px;
+    padding: 0px;
+    justify-content: space-between;
+    min-width: min(100vw - 4rem, 1286px);
+  }
+  .menu-2 {
+    background-color: rgb(238, 237, 237);
+  }
+  .nav-list-2 li i {
+    padding-bottom: 0.5rem;
+    white-space: normal;
+    text-align: center;
+    display: block;
   }

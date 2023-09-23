@@ -130,47 +130,52 @@ fieldset{
 legend{
   text-align: center;
 }
-input[type='radio'] {
-  display: none;
+
+.allputs[type="number"]{
+outline:none;
+border: 0px;
+width: 50px;
+height: 10vh;
+
+}
+.labs, .allputs, #allbnt {
+    font-size: inherit;
+    padding: 0.2em;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+}
+#allbnt{
+
+padding:1%;
+border-top: 1px solid black;
+border-bottom: 1px solid black;
+background-color: white;
+
+padding-left:1%;
+padding-right:1%;
+outline:none;
+cursor: pointer;
+
+}
+#allbnt.a{
+  border: 1px solid #000000;
+    width: 10px;
+    height: 10px;
+  
+    cursor: pointer;
+    place-content: center;
+    border-radius: 50%;
+}
+#allbnt.b{
+  border: 1px solid #000000;
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+    place-content: center;
+    border-radius: 50%;
 }
 
-.radio-container label {
-  display: flex;
-  align-items: center;
-  column-gap: 20px;
-}
-
-
-.custom-radio {
-  border: 1px solid #fff;
-  width: 40px;
-  height: 40px;
-  display: grid;
-  place-content: center;
-  border-radius: 50%;
-}
-
-.custom-radio,
-span {
-  transition: 0.5s ease;
-  color: #d32222;
-}
-
-.custom-radio span {
-  content: '';
-  width: 23px;
-  height: 23px;
-  background: #978686;
-  border-radius: 50%;
-}
-
-input[type='radio']:checked + .custom-radio {
-  border-color: #000000;
-}
-
-input[type='radio']:checked + .custom-radio span {
-  background: #0af350;
-}
     </style>
 
    <nav class="menu">
@@ -220,7 +225,7 @@ input[type='radio']:checked + .custom-radio span {
 
 <div class="radio-container">
   <label for="radio1">
-    <input type="radio" id="radio1" name="radio" />
+    <input type="radio" id="radio1" name="radio" class="allputs">
     <div class="custom-radio">
       <span></span>
     </div>
@@ -229,19 +234,42 @@ input[type='radio']:checked + .custom-radio span {
 </div>
 <div class="radioo">
   <label for="">
-    <input type="radio" id="radio2">
+    <input type="radio" id="radio2" class="allputs">
     <div class="cust-radio">
       <span></span>
     </div>
     <span>two</span>
   </label>
 </div>
+<center>
+  <div>
+    <label class="labs" for="quantity">Adulto:</label>
+    <input placeholder="Quantos quartos?" min=0 id="total" type="number" class="allputs"><button id="allbnt" onclick="menos()" class="a">-</button><button id="allbnt" onclick="mais()" class="b">+</button>
+  
+  </div>
+  </center>
+  <center>
+    <div>
+      <label class="labs" for="quantity">Criança:</label>
+      <input placeholder="Quantos quartos?" min=0 id="total1" type="number" class="allputs"><button id="allbnt" onclick="menos1()" class="a">-</button><button id="allbnt" onclick="mais1()" class="b">+</button>
+    
+    </div>
+    </center>
+    <center>
+      <div>
+        <label class="labs" for="quantity">Bebê:</label>
+        <input placeholder="Quantos quartos?" min=0 id="total2" type="number" class="allputs"><button id="allbnt" onclick="menos2()" class="a">-</button><button id="allbnt" onclick="mais2()" class="b">+</button>
+      
+      </div>
+      </center>
+
 <script>
 
 
 var dini = document.querySelector('.text')
 document.querySelector('#vaga').onclick = function (){
   if (vaga.checked) {
+        
         document.body.style.backgroundColor = 'black'
         document.querySelector('.text').style.display = 'none'
     } else {
@@ -249,6 +277,45 @@ document.querySelector('#vaga').onclick = function (){
       document.querySelector('.text').style.display = 'block'
     }
   }
+  function mais(){
+  var atual = document.querySelector('.cal').value;
+  var novo = atual - (-1); //Evitando Concatenacoes
+  document.querySelector('.cal').value = novo;
+}
+
+function menos(){
+  var atual = document.getElementById("total").value;
+  if(atual > 0) { //evita números negativos
+    var novo = atual - 1;
+    document.getElementById("total").value = novo;
+  }
+}
+function mais1(){
+  var atual = document.getElementById("total1").value;
+  var novo = atual - (-1); //Evitando Concatenacoes
+  document.getElementById("total1").value = novo;
+}
+
+function menos1(){
+  var atual = document.getElementById("total1").value;
+  if(atual > 0) { //evita números negativos
+    var novo = atual - 1;
+    document.getElementById("total1").value = novo;
+  }
+}
+function mais2(){
+  var atual = document.getElementById("total2").value;
+  var novo = atual - (-1); //Evitando Concatenacoes
+  document.getElementById("total2").value = novo;
+}
+
+function menos2(){
+  var atual = document.getElementById("total2").value;
+  if(atual > 0) { //evita números negativos
+    var novo = atual - 1;
+    document.getElementById("total2").value = novo;
+  }
+}
 </script>
 </body>
 </html>

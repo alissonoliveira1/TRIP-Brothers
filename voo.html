@@ -21,10 +21,14 @@
       rel="stylesheet"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Nunito+Sans:opsz@6..12&family=Oswald:wght@700&family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@1,900&display=swap" rel="stylesheet">
 </head>
 <body>
+  <div id="zeus">
     <div class="container">
         <a href="" class="logo-a"
           ><span class="span-img"
@@ -71,19 +75,24 @@
         </div>
       </div>
 
-      <div class="pai">
+     
         
-        <div class="img-pesq"><img src="imagens/img-voo/praia.jpg" alt=""></div>
-        <div>
-            
-        </div>
+       <div class="pai" ><img src="imagens/img-voo/praia.jpg" id="oi" alt=""></div>
+       
         <div class="forms-inp">
+          <div class="textoprincipal"><h1>Encontre os melhores voos</h1></div>
         <form>
             
             <input class="inputs" id="kari" itype="text" placeholder="Saindo de">
             <input class="inputs" id="kar" type="text" placeholder="Indo para">
-            <div class="tipos"><span>tipos de voo</span><input type="checkbox" name="" id="korra"></div>
-          </form></div>
+            <div class="koripai">
+            <div class="tipos"><span><strong>Tipos de Voo</strong></span><input type="checkbox" name="" id="korra"></div>
+            <div class="pass"><span><strong>Passageiros</strong></span><input type="checkbox" id="check-pass"></div>
+            
+            <input  type="date" name="" id="data1">
+            <input type="date" name="" id="data">
+          </div>
+        </form></div>
         
         
            
@@ -96,7 +105,7 @@
       <div class="custom-radio">
         <span></span>
       </div>
-      <span>Ida</span>
+      <span>So Ida ou Volta</span>
     </label>
   </div>
   
@@ -104,13 +113,119 @@
     <label for="radio1">
       <input type="radio" id="radio1" name="radio" />
       <div class="custom-radio">
-        <span></span>
+        <span class="th"></span>
       </div>
-      <span>Ida e Volta</span>
+      <span class="cust">Ida e Volta</span>
     </label>
   </div>
 </div>
 </div>
+      <div class="odin">
+     <div class="display-flex">
+        <div class="alinhamentoo">
+     <div class="nomes">
+      <span id="adultos">0</span>
+      <span>adulto(s)</span><br><span class="lula">+ 12 Anos</span>
+      </div>
+      <div class="nomes1">
+      <span id="criancas">0</span>
+      <span class="p">criança(s)</span><br><span class="lula">2 - 11 Anos</span>
+    </div>
+</div>
+    
+      <div class="alinhamento">
+      <div class="bnt">
+        <button id="allbnt" onclick="menos()" class="a"><span>-</span></button><button id="allbnt" onclick="mais()" class="b"><span>+</span></button>
+        </div><div class="cris">
+        <button id="allbnt" onclick="menos1()" class="a"><span>-</span></button><button id="allbnt" onclick="mais1()" class="b"><span>+</span></button>
+      </div>
+          </div>
+    </div>
+</div>
+
+<div class="menu_2">
+  <nav class="nav_2">
+    <div class="animacao">
+    <ul class="nav-list-2">
+      <li class="nav-li">
+        <a href="a" id="a0" class="link"
+          ><span class="icon-nav"
+            ><i class="fa-solid fa-coins"></i>
+            <div class="espaço">
+              <div class="nav-texto">Top Day</div>
+            </div></span
+          ></a
+        >
+      </li>
+
+      <li class="nav-li">
+        <a href="b" id="a1" class="link"
+          ><span class="icon-nav"
+            ><i class="fa-solid fa-calendar-days"></i>
+            <div class="espaço">
+              <div class="nav-texto">PromoTrip</div>
+            </div></span
+          ></a
+        >
+      </li>
+
+      <li class="nav-li">
+        <a href="c" id="a2" class="link"
+          ><span class="icon-nav"
+            ><i class="fa-solid fa-hotel"></i>
+            <div class="espaço">
+              <div class="nav-texto">Resorts</div>
+            </div></span
+          ></a
+        >
+      </li>
+
+      <li class="nav-li">
+        <a href="d" id="a3" class="link"
+          ><span class="icon-nav"
+            ><i class="fa-solid fa-bell-concierge"></i>
+            <div class="espaço">
+              <div class="nav-texto">Check-in</div>
+            </div></span
+          ></a
+        >
+      </li>
+
+      <li class="nav-li">
+        <a href="e" id="a4" class="link"
+          ><span class="icon-nav"
+            ><i class="fa-solid fa-bus"></i>
+            <div class="espaço">
+              <div class="nav-texto">Onibus</div>
+            </div></span
+          ></a
+        >
+      </li>
+
+      <li class="nav-li">
+        <a href="voo.html" id="a5" class="link"
+          ><span class="icon-nav"
+            ><i class="fa-solid fa-plane-departure"></i>
+            <div class="espaço"><div class="nav-texto">Voo</div></div></span
+          ></a
+        >
+      </li>
+
+      <li class="nav-li">
+        <a href="g" id="a6" class="link"
+          ><span class="icon-nav"
+            ><i class="fa-solid fa-suitcase-rolling"></i>
+            <div class="espaço">
+              <div class="nav-texto">Pacotes</div>
+            </div></span
+          ></a
+        >
+      </li>
+    </ul>
+  </div>
+  </nav>
+</div>
+</div><!--Zeus-->
  <script src="index.js"></script>
     </body>
 </html>
