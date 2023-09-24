@@ -8,15 +8,14 @@
     margin: 0;
     padding: 0;
     overflow-y: scroll;
-    height: 170vh;
+    height: 600vh;
   }
   body {
     font-family: "Nunito Sans", sans-serif;
     color: rgb(65, 64, 66);
     background-color: white;
   }
-
-.span-img {
+  .span-img {
     box-sizing: border-box;
     display: block;
     overflow: hidden;
@@ -146,25 +145,6 @@
     align-items: center;
     background-color: rgb(255, 255, 255);
     box-shadow: rgba(37, 37, 39, 0.25) 0.5rem 0.5rem 2rem 0px;
-  }
-  .menu-night .chh{
-    position: absolute;
-    width: 35px;
-    height: 35px;
-    opacity: 0;
-    cursor: pointer;
-    z-index: 200;
-  }
-  .menu-night{
-    z-index: 0; 
-  }
-  .menu-night .icon-night{
-    z-index: 0;
-     position: block;
-     top: 0;
-     right: 7.5%;
-     font-size: 35px;
-     color: rgb(102, 102, 102);
   }
   .menu .menu-lines{
     position: absolute;
@@ -304,155 +284,72 @@
       border-radius: 10px;
     }
 }
-.menu3{
-    border: 1px solid #cacaca;
-    border-left: none;
-    border-right: none;
-    text-align: center;
+.img-salvador img{
     display: flex;
-    justify-content: space-around;
-    margin-top: 5rem;
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
 }
-.menua{
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   width: 50vh;
-   height: 12vh;
-   color: #767676;
-}
-.enter-text{
-    margin-top: 10vh;
-    display: flex;
-    justify-content: center;
-}
-.inp{
-    border: 1px solid black;
-    outline: none;
-    width: 28vw;
-    height: 13vh;
-    padding-left: 20px;
-    font-size: 17px;
-}
-.letras{
-    margin-top: 10vh;
-    line-height: 20px;
- text-align: center;
-}
-.letras h3{
-    color: #767676;
-}
-.inp::-webkit-input-placeholder{
-  font-size: 16px;
-  padding-left: 30px;
-  color: #767676;
-}
-.borda{
-  display: block;
+.pai-pacote{
     position: absolute;
-    background-color: #ff5e00;
-    width: calc((90% - 3.428571428571428rem) / 3);
-    height: 0.285714285714286rem;
-    border-radius: 1.428571428571429rem;
-    bottom: 0;
-    top: 25%;
-    left: 35%;
-    transition: all ease-in-out .2s;
+    background-color: white;
+    width: 95%;
+    height: 35%;
+    
+    top: 25vh;
+    left: 2.5%;
+    border-radius: 8px;
 }
-.pai-bnt{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-top: 5vh;
-  
+.pacote{
+    
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    font-weight:bold;
+    padding: 3%;
 }
-.bnt-text{
-  
-  font-size: 13px;
+.pai-input{
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-around;
 }
-.bnt-text a{
-  color: rgb(59, 152, 155);
-  
-}
-.bnt-buscar{
-  padding-left: 25px;
+.inputtext input{
+   
+    font-family: 'Montserrat', sans-serif;
+    padding: 15px;
+    font-size: 15px;
+    outline: none;
+    width: 13vw;
+    height: 8vh;
+    border: 1px solid black;
+    border-radius: 8px;
 }
 .bnt-buscar button{
-  font-size: 17px;
-  width: 9vw;
-  height: 8vh;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    width: 15vw;
+    height: 9vh;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight:bold;
 }
-.oufora{
-  
-  border-top: solid 0.071428571428571rem;
-  border-color: #ddd;
-  float: left;
-  width: 100%;
-  margin-top: 3rem;
-  position: relative;
-  
+input[type=date]{
+    font-family: 'Montserrat', sans-serif;
+    width: 13vw;
+    padding: 15px;
+    font-size: 15px;
+    height: 8vh;
+    border: 1px solid black;
+    border-radius: 8px;
 }
-.ou{
-  text-align: center;
-    width: 3.571428571428572rem;
-    height: 1.428571428571429rem;
-    background-color: #fff;
+.lista{
+ 
+}
+label{
+    display: flex;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    color: #767676;
-}
-.pai-caixas{
-  padding-top: 3%;
-  display: flex;
-  width: 100%;
-  justify-content: space-around;
-}
-.span-img img{
-  border-radius: 10% 10% 0 0;
-  width: 18.5vw;
- align-items: center;
-}
-.text{
-  padding-left: 25px;
- font-size: 20px;
- font-weight: bold;
-  display: flex;
-  padding-top: 20px;
-}
-.text2{
-  padding-left: 25px;
-  display: block;
-  
-  font-size: 18px;
-}
-.filho-caixas{
-  
-  
-  display:grid ;
-  width: 18.5%;
-}
-.linha{
-  border: 1px solid #aaaaaa;
-  border-top: none;
-  border-radius: 0 0 8px 8px;
-  margin-top: -10px;
-}
-.bnt-saiba{
-  display: flex;
-padding: 30px 0px 10px 0px;
-justify-content: center;
-}
-.bnt-saiba button{
-  background-color: #0a5f74;
-  color: #ffff;
-  font-size: 17px;
-  cursor: pointer;
-  border: 1px solid white;
-  border-radius: 5px;
-  width: 15vw;
-  height: 8vh;
-  
+    top: 45%;
+    padding-left: 3px;
+    font-size: 14px;
 }
