@@ -24,27 +24,37 @@ document.querySelector('.chh').onclick = function (){
         document.querySelector('.icon-night').style.color = 'rgb(102, 102, 102)'
     }
 }
+const input = document.getElementById('ida');
 
-
-
-
-
-
-
-document.querySelector('#kari').onclick = function (){
- document.querySelector('#kari').style.backgroundColor = '#bab490'
- document.querySelector('#kar').style.backgroundColor = 'white'
+// Adiciona um evento de clique ao documento
+document.addEventListener('click', function (event) {
+  // Verifica se o alvo do clique não é o input
+  if (event.target !== input) {
+    // Muda a cor de fundo do input
+    input.style.backgroundColor = 'white'; // Você pode escolher qualquer cor desejada
+  }
+});
+ 
+document.getElementById('ida').onclick = function(){
+    input.style.backgroundColor = '#bab490';
 }
-document.querySelector('#kar').onclick = function (){
-  document.querySelector('#kar').style.backgroundColor = '#bab490'
-  document.querySelector('#kari').style.backgroundColor = 'white'
- }
+
+const novoinput = document.getElementById('volta');
+document.addEventListener('click', function (event){
+    if(event.target !== novoinput){
+        novoinput.style.backgroundColor = 'white';
+    }
+});
+document.getElementById('volta').onclick = function(){
+    novoinput.style.backgroundColor = '#bab490';
+}
+
+
+
 
 
  var kirin = document.querySelector('#korra')
-
  document.querySelector('.tipos').onclick = function (){
- 
   if (kirin.checked){
     document.querySelector('.tipos').style.backgroundColor = '#bab490'
     document.querySelector('.paii').style.display = 'block'
@@ -60,7 +70,6 @@ document.querySelector('#kar').onclick = function (){
 
 var kiri = document.querySelector('#check-pass')
 document.querySelector('.pass').onclick = function (){
-
  if (kiri.checked){
    document.querySelector('.pass').style.backgroundColor = '#bab490'
    document.querySelector('.odin').style.display = 'block'
@@ -154,6 +163,7 @@ kiri.addEventListener("change", function() {
    document.querySelector('.paii').style.display = 'none'
   }
 });
+
 
 
 

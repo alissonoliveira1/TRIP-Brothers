@@ -7,7 +7,7 @@
     margin: 0;
     padding: 0;
     overflow-y: scroll;
-    
+    height: 170vh;
   }
   body {
     font-family: "Nunito Sans", sans-serif;
@@ -329,8 +329,10 @@
 .inp{
     border: 1px solid black;
     outline: none;
-    width: 25vw;
+    width: 28vw;
     height: 13vh;
+    padding-left: 20px;
+    font-size: 17px;
 }
 .letras{
     margin-top: 10vh;
@@ -339,4 +341,117 @@
 }
 .letras h3{
     color: #767676;
+}
+.inp::-webkit-input-placeholder{
+  font-size: 16px;
+  padding-left: 30px;
+  color: #767676;
+}
+.borda{
+  display: block;
+    position: absolute;
+    background-color: #ff5e00;
+    width: calc((90% - 3.428571428571428rem) / 3);
+    height: 0.285714285714286rem;
+    border-radius: 1.428571428571429rem;
+    bottom: 0;
+    top: 25%;
+    left: 35%;
+    transition: all ease-in-out .2s;
+}
+.pai-bnt{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5vh;
+  
+}
+.bnt-text{
+  
+  font-size: 13px;
+}
+.bnt-text a{
+  color: rgb(59, 152, 155);
+  
+}
+.bnt-buscar{
+  padding-left: 25px;
+}
+.bnt-buscar button{
+  font-size: 17px;
+  width: 9vw;
+  height: 8vh;
+}
+.oufora{
+  
+  border-top: solid 0.071428571428571rem;
+  border-color: #ddd;
+  float: left;
+  width: 100%;
+  margin-top: 3rem;
+  position: relative;
+  
+}
+.ou{
+  text-align: center;
+    width: 3.571428571428572rem;
+    height: 1.428571428571429rem;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #767676;
+}
+.pai-caixas{
+  padding-top: 3%;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+.span-img img{
+  border-radius: 10% 10% 0 0;
+  width: 18.5vw;
+ align-items: center;
+}
+.text{
+  padding-left: 25px;
+ font-size: 20px;
+ font-weight: bold;
+  display: flex;
+  padding-top: 20px;
+}
+.text2{
+  padding-left: 25px;
+  display: block;
+  
+  font-size: 18px;
+}
+.filho-caixas{
+  
+  
+  display:grid ;
+  width: 18.5%;
+}
+.linha{
+  border: 1px solid #aaaaaa;
+  border-top: none;
+  border-radius: 0 0 8px 8px;
+  margin-top: -10px;
+}
+.bnt-saiba{
+  display: flex;
+padding: 30px 0px 10px 0px;
+justify-content: center;
+}
+.bnt-saiba button{
+  background-color: #0a5f74;
+  color: #ffff;
+  font-size: 17px;
+  cursor: pointer;
+  border: 1px solid white;
+  border-radius: 5px;
+  width: 15vw;
+  height: 8vh;
+  
 }

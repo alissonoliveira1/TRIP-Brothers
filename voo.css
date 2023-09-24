@@ -455,7 +455,7 @@ html {
     padding-left: 5px;
     width: 10vw;
     height: 10vh;
-    z-index: 100;
+   
     font-size: 15px;
     outline: none;
     font-weight: bold;
@@ -467,7 +467,7 @@ html {
     background-color: rgb(255, 255, 255);
   }
   #zeus{
-    z-index: 1;
+   
   }
   .tipos span{
     color: #000000;
@@ -479,7 +479,7 @@ html {
     display: none;
    position: absolute;
     width: 15vw;
-    top: 60%;
+    top: 64%;
     left:24.1%;
     background-color:#bab490 ;
   }
@@ -578,7 +578,7 @@ display: flex;
     display: none;
     position: absolute;
     left: 39.7%;
-    top: 60%;
+    top: 64%;
     width: 16vw;
     background-color: #bab490;
    }
