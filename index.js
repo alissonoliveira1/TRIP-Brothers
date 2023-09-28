@@ -1,15 +1,46 @@
-var bntt = document.querySelector('.chh')
+const bntt = document.querySelector('.chh')
+
+const useTheme = () => {
+  const temas = {
+    dark:"dark",
+    ligth:"ligth"
+  }
+
+  const data = localStorage.getItem("tema") || null
+
+  const trocarTema = () => {
+    localStorage.setItem("tema", themeOrNull === temas.ligth  ? temas.dark : temas.ligth)
+  }
+
+  return {
+    themeOrNull,
+    trocarTema,
+  }
+
+}
+const links = [
+  '#a0',
+  '#a1',
+  '#a2',
+  '#a3',
+  '#a4',
+  '#a5',
+  '#a6'
+]
+
 document.querySelector('.chh').onclick = function (){
+
+  const {trocarTema} = useTheme()
+
+  trocarTema()
+
   if (bntt.checked) {
+      links.forEach(id => {
+        document.querySelector(id).style.color =  "rgb(221, 221, 221)"
+      })
+
         document.querySelector('.icon-night').style.color = 'yellow'
         document.querySelector('.container').style.backgroundColor = 'black'
-        document.querySelector('#a0').style.color = 'rgb(221, 221, 221)'
-        document.querySelector('#a1').style.color = 'rgb(221, 221, 221)'
-        document.querySelector('#a2').style.color = 'rgb(221, 221, 221)'
-        document.querySelector('#a3').style.color = 'rgb(221, 221, 221)'
-        document.querySelector('#a4').style.color = 'rgb(221, 221, 221)'
-        document.querySelector('#a5').style.color = 'rgb(221, 221, 221)'
-        document.querySelector('#a6').style.color = 'rgb(221, 221, 221)'
         document.body.style.backgroundColor = '#000A1F'
     } else {
       document.body.style.backgroundColor = 'white'
