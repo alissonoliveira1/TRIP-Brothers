@@ -9,15 +9,16 @@ const useTheme = () => {
   const data = localStorage.getItem("tema") || null
 
   const trocarTema = () => {
-    localStorage.setItem("tema", themeOrNull === temas.ligth  ? temas.dark : temas.ligth)
+    localStorage.setItem("tema", data === temas.ligth  ? temas.dark : temas.ligth)
   }
 
   return {
-    themeOrNull,
+    data,
     trocarTema,
   }
 
 }
+
 const links = [
   '#a0',
   '#a1',
@@ -27,23 +28,26 @@ const links = [
   '#a5',
   '#a6'
 ]
-
-document.querySelector('.chh').onclick = function (){
+const fundo = document.querySelector('.chh')
+     fundo.onclick = function (){
 
   const {trocarTema} = useTheme()
 
   trocarTema()
-
+  
   if (bntt.checked) {
       links.forEach(id => {
         document.querySelector(id).style.color =  "rgb(221, 221, 221)"
       })
-
+      document.querySelector('.menu ul').style.backgroundColor = 'black'
+      document.querySelector('.menu ul').style.border = '2px solid white'
         document.querySelector('.icon-night').style.color = 'yellow'
         document.querySelector('.container').style.backgroundColor = 'black'
         document.body.style.backgroundColor = '#000A1F'
     } else {
       document.body.style.backgroundColor = 'white'
+      document.querySelector('.menu ul').style.backgroundColor = 'white'
+      document.querySelector('.menu ul').style.border = '2px solid black'
       document.querySelector('.container').style.backgroundColor = 'white'
       document.querySelector('.link').style.color = 'black'
       document.querySelector('#a1').style.color = 'black'
@@ -55,6 +59,7 @@ document.querySelector('.chh').onclick = function (){
         document.querySelector('.icon-night').style.color = 'rgb(102, 102, 102)'
     }
 }
+
 const input = document.getElementById('ida');
 
 // Adiciona um evento de clique ao documento
@@ -66,7 +71,7 @@ document.addEventListener('click', function (event) {
   }
 });
  
-document.getElementById('ida').onclick = function(){
+input.onclick = function(){
     input.style.backgroundColor = '#bab490';
 }
 

@@ -284,6 +284,55 @@
       border-radius: 10px;
     }
 }
+.text_inter{
+  text-align: center;
+  padding: 0.9rem;
+  font-size: 10px;
+  font-weight: bold;
+  
+}
+
+.menu .check:checked ~ ul{
+margin-left: 0;
+}
+
+.menu ul{
+border: 2px solid black;
+}
+.menu li{
+border-bottom: 1px solid rgb(237, 237, 237);
+}
+.menu ul li{
+
+list-style: none;
+padding: 20px 30px;
+}
+.menu ul li a{
+text-decoration: none;
+color: rgb(102, 102, 102);
+font-size: 18px;
+font-family: sans-serif;
+}
+@media (max-width:490px) {
+.menu ul li a{
+  text-decoration: none;
+  color: rgb(102, 102, 102);
+  font-size: 15px;
+  font-family: sans-serif;
+}
+.menu ul li{
+  list-style: none;
+  padding: 16px 15px;
+}
+}
+.menu li:hover{
+border-radius: 10px;
+background-color: #f2a71b;
+}
+.menu ul li:hover a{
+color: white;
+}
+
 .img-salvador img{
     display: flex;
     width: 100%;

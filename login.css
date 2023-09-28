@@ -479,3 +479,22 @@ background-color: #f2a71b;
 .menu ul li:hover a{
   color: white;
 }
+.menu-night .chh{
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 200;
+}
+.menu-night{
+  z-index: 0; 
+}
+.menu-night .icon-night{
+  z-index: 0;
+   position: block;
+   top: 0;
+   right: 7.5%;
+   font-size: 35px;
+   color: rgb(102, 102, 102);
+}
