@@ -161,13 +161,7 @@ body {
   height: 50vh;
   }
 }
-@media (max-width:490px) {
-  .video-familia{
-    
-    
-  height: initial;
-  }
-}
+
 .video-familia video {
   z-index: 5;
   display: flex;
@@ -232,11 +226,6 @@ body {
   .text-desconto{
     font-size: 2.4vw;
     text-align: center;
-  }
-}
-@media (max-width:490px) {
-  .nav_2 i {
-    font-size: 4vw;
   }
 }
 .nav-li {
@@ -330,7 +319,7 @@ body {
 }
 @media (min-width:780px) {
    .img-a{
- 
+  
     display: flex;
     flex-direction: column;
     -webkit-box-pack: center;
@@ -359,6 +348,7 @@ body {
   
   
 }
+
 .destaque {
   position: absolute;
   inset: 0px;
@@ -375,7 +365,7 @@ body {
   max-height: 100%;
   object-fit: cover;
   border-radius: 1rem;
- filter: brightness(0.8);
+ filter: brightness(0.7);
   
 }
 @media(min-width:781px) and (max-width:899px) {
@@ -397,10 +387,12 @@ body {
   background-color: #ffffff;
   color: black;
 }
+
 .img-a:hover {
   transition: 0.3;
   transform: scale(1.1);
-  filter: none;
+  
+  filter: brightness(1.1);
 }
 @media (max-width:780px) {
   .img-a:hover {
@@ -514,17 +506,7 @@ body {
   font-weight: 400;
   
 }
-@media (max-width:490px) {
-  .bnt-span {
-    font-size: 1rem;
-  }
-  .bnt-sp{
-    width: 50% ;
-    margin-right: 1rem;
-    
-  }
 
-}
 .espaco-bnt {
   top: 0;
   left: 0;
@@ -593,12 +575,7 @@ body {
     font-size: 0.7rem;
   }
 }
-@media (max-width:490px) {
-  .titulos{
-    padding-left: 1.5rem;
-    font-size: 0.8rem;
-  }
-}
+
 
 @media (max-width:780px) {
   .div-preco-maragogi{
@@ -771,18 +748,7 @@ margin-left: 0;
   font-size: 18px;
   font-family: sans-serif;
 }
-@media (max-width:490px) {
-  .menu ul li a{
-    text-decoration: none;
-    color: rgb(102, 102, 102);
-    font-size: 15px;
-    font-family: sans-serif;
-  }
-  .menu ul li{
-    list-style: none;
-    padding: 16px 15px;
-  }
-}
+
 .menu li:hover{
   border-radius: 10px;
 background-color: #f2a71b;
@@ -872,12 +838,7 @@ background-color: #f2a71b;
   overflow-y: hidden;
   height: 30%;
 }
-
-@media (max-width:900px) {
-  .banner {
-
-  }
-}
+ 
 
 .paiinfo {
   margin-left: 7%;
@@ -1095,3 +1056,142 @@ p {
   margin-top: 27px;
   
 }
+
+@media (max-width:480px) {
+
+  .nav_2 i {
+    font-size: 4vw;
+  }
+
+  .video-familia{
+    
+    
+    height: initial;
+    }
+
+    .bnt-span {
+      font-size: 1rem;
+    }
+    .bnt-sp{
+      width: 50% ;
+      margin-right: 1rem;
+      
+    }
+
+    .menu ul li a{
+      text-decoration: none;
+      color: rgb(102, 102, 102);
+      font-size: 15px;
+      font-family: sans-serif;
+    }
+    .menu ul li{
+      list-style: none;
+      padding: 16px 15px;
+    }
+    .titulos{
+      padding-left: 1.5rem;
+      font-size: 0.8rem;
+    }
+
+    .info {
+      width: 100%;
+      justify-content: right;
+      font-family: "Source Sans Pro";
+      color: #f2a71b;
+    }
+    .info h1 {
+      font-size: 120%;
+   
+    }
+
+    .info2 {
+      color: #025e73;
+      padding-top: 2%;
+      font-size: 75%;
+    }
+
+    .info2 h3 {
+     padding-right: 7%;
+    }
+  
+    .infofilho {
+      display: block;
+    }
+
+    .paiimg {
+      display: flex;
+      padding-top:5vh ;
+    }
+
+    .traco {
+      width: 90%;
+    }
+
+    .imginfo1{
+      padding:  0 5%;
+    }
+    .imginfo2{
+      padding: 0;
+    }
+    .imginfo1 img{
+      width: 20vw;
+    }
+    .imginfo2 img{
+      width: 21vw;
+    }
+  
+    .img1 img{
+      display: flex;
+      width: 160px;
+    }
+    .img2{
+      padding: 3vw 0;
+      display: flex;
+    }
+    .img2 img{
+      display: flex;
+      width: 180px;
+    }
+    
+    .img3{
+      display: flex;
+      
+    }
+
+    .img3 img{
+      display: flex;
+      width: 180px;
+    }
+    .img4{
+      padding: 5vw 0;
+      display: flex;
+    }
+    .img4 img{
+      display: flex;
+      width: 180px;
+    }
+
+    .contain  {
+      display: none;
+
+    }
+
+    .fimtexto {
+      display: block;
+      padding: 0px auto;
+      gap: 4rem 4rem;
+      margin-left: 45px;
+    }
+    .fimtexto1 {
+      width: 85%
+    }
+    .fimspan {
+      font-size: 1.3rem;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 200;
+      color:#f2a71b;
+    }
+    
+}
+
+
