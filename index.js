@@ -78,7 +78,7 @@ function initToggle(e){
   );
 
   e.target.innerHTML =
-  e.target.dataset.state === "more" ? "Mostrar Mais" : "Mostrar Menos"
+  e.target.dataset.state === "more" ?  "Mostrar Mais" : "Mostrar Menos"
   
   overflow.setAttribute (
     "data-state",
