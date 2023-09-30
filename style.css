@@ -1092,8 +1092,15 @@ p {
       padding-left: 1.5rem;
       font-size: 0.8rem;
     }
+    .paiinfo {
+      margin-left: 4%;
+      margin-top: 7%;
+      width: 90vw;
+      display: grid;  
+    } 
 
     .info {
+     
       width: 100%;
       justify-content: right;
       font-family: "Source Sans Pro";
@@ -1119,7 +1126,7 @@ p {
     }
 
     .paiimg {
-      display: flex;
+      display: none;
       padding-top:5vh ;
     }
 
@@ -1172,7 +1179,7 @@ p {
     }
 
     .contain  {
-      display: none;
+   display: none;
 
     }
 
@@ -1191,7 +1198,12 @@ p {
       font-weight: 200;
       color:#f2a71b;
     }
-    
+    .fimtexto{
+      display: none;
+    }
+    .rodapefin{
+      display: none;
+    }
 }
 
 
