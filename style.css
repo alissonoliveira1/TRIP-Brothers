@@ -1126,7 +1126,7 @@ p {
     }
 
     .paiimg {
-      display: none;
+      display: flex;
       padding-top:5vh ;
     }
 
@@ -1178,10 +1178,52 @@ p {
       width: 180px;
     }
 
-    .contain  {
-   display: none;
-
+    .comiss{
+     
+      height: 100%;
     }
+    
+    .contain li{
+      text-align: center;
+      position: relative;
+      padding-right: 0px;
+      padding-left: 0px;
+    }
+    .contain ul{
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      padding-inline-start: 0;
+      list-style: none;
+    }
+    
+    .img-comiss img{
+      display: flex;
+      width: 100vw;
+    }
+    .img-comiss{
+      margin-bottom: 1rem;
+      padding-left: 0px;
+    }
+    .contain span{
+      font-size: 0.875rem;
+      font-weight: 400;
+      line-height: 1.57142em;
+    }
+    .contain p{
+      text-align: center;
+      display: block;
+      width: 80vw;
+    
+    }
+    .text-comiss{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+    }
+    
 
     .fimtexto {
       display: block;
