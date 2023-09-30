@@ -484,7 +484,7 @@ justify-content: center;
     height: 0.285714285714286rem;
     border-radius: 1.428571428571429rem;
     bottom: 0;
-    top: 22%;
+    top: 25%;
     left: 35%;
     transition: all ease-in-out .2s;
 }
@@ -638,7 +638,7 @@ justify-content: center;
     height: 0.285714285714286rem;
     border-radius: 1.428571428571429rem;
     bottom: 0;
-    top: 22%;
+    top: 25%;
     left: 35%;
     transition: all ease-in-out .2s;
 }
@@ -788,18 +788,7 @@ justify-content: center;
     height: 9vh;
     color: #767676;
 }
-.borda{
-    display: block;
-    position: absolute;
-    background-color: #ff5e00;
-    width: calc((90% - 3.428571428571428rem) / 3);
-    height: 0.285714285714286rem;
-    border-radius: 1.428571428571429rem;
-    bottom: 0;
-    top: 19vh;
-    left: 36%;
-    transition: all ease-in-out .2s;
-}
+
 .letras{
   margin-top: 5vh;
   line-height: 20px;
@@ -953,7 +942,10 @@ justify-content: center;
   list-style: none;
   padding: 16px 15px;
 }
-
+#check {
+  font-weight: bold;
+  color: #ff5e00;
+}
 
 
 }
@@ -983,18 +975,7 @@ justify-content: center;
     height: 9vh;
     color: #767676;
 }
-.borda{
-    display: block;
-    position: absolute;
-    background-color: #ff5e00;
-    width: calc((90% - 3.428571428571428rem) / 3);
-    height: 0.285714285714286rem;
-    border-radius: 1.428571428571429rem;
-    bottom: 0;
-    top: 19vh;
-    left: 37%;
-    transition: all ease-in-out .2s;
-}
+
 .letras{
   margin-top: 5vh;
   line-height: 20px;
@@ -1142,6 +1123,10 @@ justify-content: center;
 .home_nav{
   display: none;
 }
+#check {
+  font-weight: bold;
+  color: #ff5e00;
+}
 }
 
 
@@ -1172,18 +1157,7 @@ justify-content: center;
     height: 9vh;
     color: #767676;
 }
-.borda{
-    display: block;
-    position: absolute;
-    background-color: #ff5e00;
-    width: calc((90% - 3.428571428571428rem) / 3);
-    height: 0.285714285714286rem;
-    border-radius: 1.428571428571429rem;
-    bottom: 0;
-    top: 19%;
-    left: 38%;
-    transition: all ease-in-out .2s;
-}
+
 .letras{
   margin-top: 5vh;
   line-height: 20px;
@@ -1346,5 +1320,9 @@ color: white;
 }
 .home_nav{
   display: none;
+}
+#check {
+  font-weight: bold;
+  color: #ff5e00;
 }
 }
