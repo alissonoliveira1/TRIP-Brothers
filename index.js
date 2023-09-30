@@ -59,6 +59,33 @@ const fundo = document.querySelector('.chh')
         document.querySelector('.icon-night').style.color = 'rgb(102, 102, 102)'
     }
 }
+const txt = document.querySelector('.textin')
+const nomedificil = txt.clientHeight
+const overflow = document.querySelector('.overflow')
+const button = document.querySelector('.toggle')
+
+button.addEventListener('click', initToggle)
+
+function initToggle(e){
+  txt.style.maxHeight = 
+  e.target.dataset.state === "more"
+  ? `${txt.scrollHeight}px`
+  : `${nomedificil}px`;
+
+  e.target.setAttribute(
+    "data-state",
+    e.target.dataset.state === "more" ? "less" : "more"
+  );
+
+  e.target.innerHTML =
+  e.target.dataset.state === "more" ? "Mostrar Mais" : "Mostrar Menos"
+  
+  overflow.setAttribute (
+    "data-state",
+    e.target.dataset.state === "more" ? "visible" : "hidden"
+  );
+}
+
 
 const input = document.getElementById('ida');
 
@@ -67,7 +94,7 @@ document.addEventListener('click', function (event) {
   // Verifica se o alvo do clique não é o input
   if (event.target !== input) {
     // Muda a cor de fundo do input
-    input.style.backgroundColor = 'white'; // Você pode escolher qualquer cor desejada
+    input.style.backgroundColor = 'white';
   }
 });
  
@@ -201,6 +228,15 @@ kiri.addEventListener("change", function() {
 });
 
 
+function click(){
+var pontos = document.getElementById("pontos")
+var mais = document.getElementById("mais")
+var button = document.getElementById('leiamais')
+
+if(mais.style.display === none ){
+  mais.style.display = 'block'
+ 
+}}
 
 
  

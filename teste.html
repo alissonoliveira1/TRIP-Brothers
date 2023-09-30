@@ -175,7 +175,29 @@ cursor: pointer;
     place-content: center;
     border-radius: 50%;
 }
-
+#mais{
+  display: none;
+}
+.bbb::after{
+  display: block;
+}
+p{
+  max-height: 50px;
+  overflow: hidden;
+  position: relative;
+  transition: max height 0.4s ease;
+}
+.overflow{
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 30px;
+}
+.overflow [data-state='visible']{
+  display: block;
+}
     </style>
 
    <nav class="menu">
@@ -262,8 +284,72 @@ cursor: pointer;
       
       </div>
       </center>
-
+     <p class="text"> "O pôr do sol pintava o céu com tons de laranja e rosa,
+   criando uma cena deslumbrante. As árvores balançavam suavemente
+    ao vento, enquanto o mundo se acalmava para mais uma noite de
+     tranquilidade."
+     "O pôr do sol pintava o céu com tons de laranja e rosa,
+   criando uma cena deslumbrante. As árvores balançavam suavemente
+    ao vento, enquanto o mundo se acalmava para mais uma noite de
+     tranquilidade."
+     "O pôr do sol pintava o céu com tons de laranja e rosa,
+   criando uma cena deslumbrante. As árvores balançavam suavemente
+    ao vento, enquanto o mundo se acalmava para mais uma noite de
+     tranquilidade."
+     "O pôr do sol pintava o céu com tons de laranja e rosa,
+   criando uma cena deslumbrante. As árvores balançavam suavemente
+    ao vento, enquanto o mundo se acalmava para mais uma noite de
+     tranquilidade."
+     "O pôr do sol pintava o céu com tons de laranja e rosa,
+   criando uma cena deslumbrante. As árvores balançavam suavemente
+    ao vento, enquanto o mundo se acalmava para mais uma noite de
+     tranquilidade."
+     "O pôr do sol pintava o céu com tons de laranja e rosa,
+   criando uma cena deslumbrante. As árvores balançavam suavemente
+    ao vento, enquanto o mundo se acalmava para mais uma noite de
+     tranquilidade."
+     "O pôr do sol pintava o céu com tons de laranja e rosa,
+   criando uma cena deslumbrante. As árvores balançavam suavemente
+    ao vento, enquanto o mundo se acalmava para mais uma noite de
+     tranquilidade."
+     "O pôr do sol pintava o céu com tons de laranja e rosa,
+   criando uma cena deslumbrante. As árvores balançavam suavemente
+    ao vento, enquanto o mundo se acalmava para mais uma noite de
+     tranquilidade."
+     "O pôr do sol pintava o céu com tons de laranja e rosa,
+   criando uma cena deslumbrante. As árvores balançavam suavemente
+    ao vento, enquanto o mundo se acalmava para mais uma noite de
+     tranquilidade."
+     <span class="overflow" data-state="visible" aria-hidden="true"></span>
+    </p>
+    <button class="toggle" data-state="more">Leia mais</button>
 <script>
+const txt = document.querySelector('.text')
+const nomedificil = txt.clientHeight
+const overflow = document.querySelector('.overflow')
+const button = document.querySelector('.toggle')
+
+button.addEventListener('click', initToggle)
+
+function initToggle(e){
+  txt.style.maxHeight = 
+  e.target.dataset.state === "more"
+  ? `${txt.scrollHeight}px`
+  : `${nomedificil}px`;
+
+  e.target.setAttribute(
+    "data-state",
+    e.target.dataset.state === "more" ? "less" : "more"
+  );
+
+  e.target.innerHTML =
+  e.target.dataset.state === "more" ? "show more" : "show lesss"
+  
+  overflow.setAttribute (
+    "data-state",
+    e.target.dataset.state === "more" ? "visible" : "hidden"
+  );
+}
 
 
 var dini = document.querySelector('.text')
