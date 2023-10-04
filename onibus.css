@@ -458,7 +458,7 @@ html {
   .inp{
     border: 0.2rem solid rgb(236, 237, 241);
     width: 15vw;
-    padding-left: 25px;
+    padding-left: 30px;
     height: 7vh;
     font-size: 15px;
     overflow: none;
@@ -478,7 +478,10 @@ html {
   .label1{
     display: flex;
     font-size: 12px;
+    padding-left: 10px;
+   
   }
+ 
   .pailabel{
     display: flex;
     flex-direction: column;
@@ -493,6 +496,7 @@ html {
     border: 0.2rem solid rgb(236, 237, 241);
     overflow: ellipsis;
     padding-left: 10px;
+    height: 7vh;
     font-size: 15px;
     border-radius: 8px;
   }
@@ -503,14 +507,14 @@ html {
    .icon{
     font-size: 18px;
     position: absolute;
-    top: 16.5vh;
+    top: 17.5vh;
     left: 10vw;
     color: rgb(164, 163, 165);
    }
    .icon2{
     font-size: 18px;
     position: absolute;
-    top: 16.5vh;
+    top: 17.5vh;
     left: 28vw;
     color: rgb(164, 163, 165);
    }
