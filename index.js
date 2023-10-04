@@ -85,6 +85,34 @@ function initToggle(e){
     e.target.dataset.state === "more" ? "visible" : "hidden"
   );
 }
+const inputi = document.getElementById('meuinput');
+
+// Adiciona um evento de clique ao documento
+document.addEventListener('click', function (event) {
+  // Verifica se o alvo do clique não é o input
+  if (event.target !== inputi) {
+    // Muda a cor de fundo do input
+    inputi.style.backgroundColor = 'white'; // Você pode escolher qualquer cor desejada
+  }
+});
+ 
+document.getElementById('meuinput').onclick = function(){
+    inputi.style.backgroundColor = '#bab490';
+}
+
+const novoinpute = document.getElementById('meuinpu');
+document.addEventListener('click', function (event){
+    if(event.target !== novoinpute){
+        novoinpute.style.backgroundColor = 'white';
+    }
+});
+document.getElementById('meuinpu').onclick = function(){
+    novoinpute.style.backgroundColor = '#bab490';
+}
+
+
+
+
 
 
 const input = document.getElementById('ida');

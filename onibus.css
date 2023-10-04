@@ -452,9 +452,68 @@ html {
   }
   .imgbus img{
   width: 100%;
-  height: 65vh;
   overflow: hidden;
+  height: 80vh;
   }
+  .inp{
+    border: 0.2rem solid rgb(236, 237, 241);
+    width: 15vw;
+    padding-left: 25px;
+    height: 7vh;
+    font-size: 15px;
+    overflow: none;
+    border-radius: 8px;
+  }
+  .bntbuscar{
+    color: white;
+    border: 1px solid rgb(236, 237, 241);
+    border-radius: 8px;
+    background-color: #025e73;
+    width: 10vw;
+    font-size: 20px;
+    cursor: pointer;
+    
+    
+  }
+  .label1{
+    display: flex;
+    font-size: 12px;
+  }
+  .pailabel{
+    display: flex;
+    flex-direction: column;
+  }
+  .bntbuscar:hover{
+    filter: brightness(1.1);
+  }
+  .inp::-webkit-input-placeholder{
+  font-style: italic;
+  }
+  input[type=date]{
+    border: 0.2rem solid rgb(236, 237, 241);
+    overflow: ellipsis;
+    padding-left: 10px;
+    font-size: 15px;
+    border-radius: 8px;
+  }
+  ::-webkit-calendar-picker-indicator{
+    padding-right:10px ;
+    font-size: 20px;
+  }
+   .icon{
+    font-size: 18px;
+    position: absolute;
+    top: 16.5vh;
+    left: 10vw;
+    color: rgb(164, 163, 165);
+   }
+   .icon2{
+    font-size: 18px;
+    position: absolute;
+    top: 16.5vh;
+    left: 28vw;
+    color: rgb(164, 163, 165);
+   }
   .container-bus{
     position: absolute;
     top: 22vh;
@@ -467,6 +526,7 @@ html {
     justify-content: center;
     width: 80vw;
     height: 30vh;
+    box-shadow: rgba(166, 171, 189, 0.25) 0px 0px 2.4333rem 0px;
   }
   .container-filho{
     display: grid;
