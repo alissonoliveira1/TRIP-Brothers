@@ -537,9 +537,11 @@ html {
     grid-template-columns: auto auto auto auto;
     gap: 40px;
   }
-  
+
 .titulobus{
-    position: relative;
+    padding: 90px;
+    display: block;
+    text-align: left;
 }
 @media(max-width:480px) {
     html{
