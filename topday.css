@@ -531,3 +531,78 @@ z-index: 1;
 .letras{
     padding-top: 10vh;
 }
+h2, h1{
+    font-size: 900;
+    color: black;
+}
+main{
+    display: block;
+    background-color: aliceblue;
+}
+.principal{
+    width: 100%;
+    margin: 0 auto;
+  }
+    
+.container2{
+    width: 100%;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 90px 20px;
+}
+section.modulo p{
+    margin-bottom: 40px;
+}
+section.modulo:last-child{
+    margin-bottom: 0;
+}
+section.modulo h2{
+    margin-bottom: 40px;
+    font-size: 30px;
+}
+section.modulo.content{
+    padding: 40px 0;
+    background: #ece7d5; 
+}
+section.modulo.estilo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-position: 50% 50%;
+    background: no-repeat;
+    background-attachment: fixed;
+    background-size:cover ;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+section.module.estilo:after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 9;
+    background: -moz-linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 40%, #000 100% );
+    background: -webkit-linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 40%, #000 100% );
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 40%, #000 100% );
+}
+section.modulo.estilo h1{
+    color: #FFF;
+    text-align: center;
+    font-size: 78px;
+    z-index: 50;
+    text-transform: uppercase;
+  }
+section.modulo.estilo1{
+    background-image: url("imagens/imgpromo/black-friday-.jpg");
+  }
+  section.modulo.estilo2{
+    background-image: url("imagens/imgpromo/plane.jpg");
+  }
+  section.modulo.estilo3{
+    background-image: url("imagens/imgpromo/nepal.jpg");
+  }
