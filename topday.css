@@ -573,7 +573,7 @@ section.modulo.estilo{
     position: relative;
     overflow: hidden;
     background-position: 50% 50%;
-    background: no-repeat;
+    background-repeat: no-repeat;
     background-attachment: fixed;
     background-size:cover ;
     -webkit-background-size: cover;
@@ -585,7 +585,7 @@ section.module.estilo:after{
     height: 100%;
     width: 100%;
     position: absolute;
-    z-index: 9;
+    z-index: 8;
     background: -moz-linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 40%, #000 100% );
     background: -webkit-linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 40%, #000 100% );
     background: linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 40%, #000 100% );
@@ -604,5 +604,25 @@ section.modulo.estilo1{
     background-image: url("imagens/imgpromo/plane.jpg");
   }
   section.modulo.estilo3{
-    background-image: url("imagens/imgpromo/nepal.jpg");
+    background-image: url("imagens/info/airport-3511342_640.jpg");
+  }
+  .minutos, .segundos, .horas, .pontos{
+    
+    font-size: 10rem;
+    color: #FFF;
+  }
+  label{
+
+  }
+  .nomenumbers{
+    font-size: 20px;
+    color: #FFF;
+   
+    
+  }
+  .tempo{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }

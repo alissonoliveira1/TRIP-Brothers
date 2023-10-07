@@ -509,7 +509,73 @@ transform: rotate(-45deg) scaleX(0.9) ;
   margin-left: 1400vw;
   transition: all ease .3s;
   border-radius: 10px;
+}main{
+  display: block;
+  background-color: aliceblue;
 }
+.principal{
+  padding-top: 50px;
+  width: 100%;
+  margin: 0 auto;
+}
+  
+.container2{
+  width: 100%;
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+section.modulo p{
+  margin-bottom: 40px;
+}
+section.modulo:last-child{
+  margin-bottom: 0;
+}
+section.modulo h2{
+  margin-bottom: 40px;
+  font-size: 30px;
+}
+section.modulo.content{
+  padding: 40px 0;
+  background: #ece7d5; 
+}
+section.modulo.estilo{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size:cover ;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+section.module.estilo:after{
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 8;
+  background: -moz-linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 40%, #000 100% );
+  background: -webkit-linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 40%, #000 100% );
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 40%, #000 100% );
+}
+section.modulo.estilo h1{
+  color: #FFF;
+  text-align: center;
+  font-size: 78px;
+  z-index: 50;
+  text-transform: uppercase;
+}
+section.modulo.estilo1{
+  background-image: url("imagens/info/plane-6511877_640.jpg");
+}
+
 @media (max-width:900px) {
   .menu ul{
     position: absolute;
@@ -2288,7 +2354,7 @@ align-items: center;
   .video-familia {
     z-index: 5;
     overflow: hidden;
-    height: 50vh;
+    height: 80vh;
     
   }
 
@@ -2312,6 +2378,7 @@ align-items: center;
     transition: all ease .2s;
     border-radius: 10px;
   }
+ 
   .menu ul li{
     list-style: none;
     padding: 16px 15px;
@@ -2347,6 +2414,7 @@ align-items: center;
   font-weight: bolder;
   font-size: 1.1rem;
 }
+
 }
 
 

@@ -158,7 +158,13 @@
 
     <section class="module parallax parallax-3">
       
-      <h1>Terceiro titulo aqui</h1>
+      <div class="tempo">
+        <div class="horas"></div>
+        <div class="pontos">:</div>
+        <div class="minutos"></div>
+        <div class="pontos">:</div>
+        <div class="segundos"></div>
+      </div>
     </section>
 
     <section class="module content">
@@ -177,17 +183,12 @@
 </div>
 <h1>contagem regressiva</h1>
 
-      <div class="tempo">
-        <div class="horas"></div>
-        <div class="pontos">:</div>
-        <div class="minutos"></div>
-        <div class="pontos">:</div>
-        <div class="segundos"></div>
-      </div>
+      
   <script>
     let hora = 24
    let segundos = 10
-   let minutos = 1
+   let minutos = 5
+   
    function horas(tempo){
     segundos = segundos
    
@@ -202,12 +203,19 @@
         minutos = 59
         hora = hora - 1
       }
+   
+      if(segundos < 10){
+ segundos = '0' + segundos;
+ 
+}  
 
-      document.querySelector('.segundos').innerHTML = segundos
-    document.querySelector('.minutos').innerHTML = minutos
+    let minutosfm = minutos.toString().padStart(2, '0');
+    document.querySelector('.segundos').innerHTML = segundos
+    document.querySelector('.minutos').innerHTML = minutosfm
     document.querySelector('.horas').innerHTML = hora
     }
    }
+
    setInterval(horas,1000,1);
    
   </script>
