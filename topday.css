@@ -593,7 +593,7 @@ section.module.estilo:after{
 section.modulo.estilo h1{
     color: #FFF;
     text-align: center;
-    font-size: 78px;
+    font-size: 500%;
     z-index: 50;
     text-transform: uppercase;
   }
@@ -608,15 +608,23 @@ section.modulo.estilo1{
   }
   .minutos, .segundos, .horas, .pontos{
     
-    font-size: 10rem;
+    font-size: 540%;
     color: #FFF;
   }
-  label{
-
+  .circulo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 250px;
+    background-color: #ffffff4f;    
+    border-radius: 50%;
   }
   .nomenumbers{
     font-size: 20px;
     color: #FFF;
+    font-weight: bold;
    
     
   }
@@ -624,5 +632,6 @@ section.modulo.estilo1{
     text-align: center;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
+    gap: 10px;
   }

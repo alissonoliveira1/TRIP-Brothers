@@ -514,7 +514,8 @@ transform: rotate(-45deg) scaleX(0.9) ;
   background-color: aliceblue;
 }
 .principal{
-  padding-top: 50px;
+  
+  padding: 50px 10px;
   width: 100%;
   margin: 0 auto;
 }
@@ -527,13 +528,14 @@ transform: rotate(-45deg) scaleX(0.9) ;
 }
 section.modulo p{
   margin-bottom: 40px;
+  font-size: 25px;
 }
 section.modulo:last-child{
   margin-bottom: 0;
 }
 section.modulo h2{
   margin-bottom: 40px;
-  font-size: 30px;
+  font-size:40px;
 }
 section.modulo.content{
   padding: 40px 0;
@@ -568,12 +570,13 @@ section.module.estilo:after{
 section.modulo.estilo h1{
   color: #FFF;
   text-align: center;
-  font-size: 78px;
+  font-size: 300%;
   z-index: 50;
   text-transform: uppercase;
+  font-family: "Source Sans Pro";
 }
 section.modulo.estilo1{
-  background-image: url("imagens/info/plane-6511877_640.jpg");
+  background-image: url("imagens/info/airport-1890943_1280.jpg");
 }
 
 @media (max-width:900px) {
