@@ -539,7 +539,7 @@ section.modulo h2{
 }
 section.modulo.content{
   padding: 40px 0;
-  background: #ece7d5; 
+  background: #ffffff; 
 }
 section.modulo.estilo{
   display: flex;
@@ -2243,16 +2243,18 @@ align-items: center;
 }
 .fimtexto {
   padding-top: 60px;
-  display: grid;
+  display: flex;
   grid-template-columns: auto 450px;
- margin: 0;
+  margin: 0;
   gap: 2rem;
-  justify-content: center;
+ 
+  justify-content: space-around;
 
 }
 
 .fimtexto1 {
-  width: 100%;
+  
+  width: 80%;
 }
 .textin{
   font-size: 15px;
@@ -2401,14 +2403,17 @@ align-items: center;
  }
   
  .numlist {
-  
-  display: grid;
-  grid-template-columns: 40% 170px;
+ display: grid;
+  gap: 1rem;
+
+  padding: 0 0 40px;
+  grid-template-columns: 40% 340px;
 }
 
 .numlist li{
   width: 100%;
   list-style: none;
+padding: 0;
  
 }
 
@@ -2416,6 +2421,15 @@ align-items: center;
   color: blue ;
   font-weight: bolder;
   font-size: 1.1rem;
+}
+.fimspan {
+  text-align: start;
+  padding-left: 2rem;
+  display: block;
+  font-size: 1.3rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 200;
+  color:#f2a71b;
 }
 
 }
