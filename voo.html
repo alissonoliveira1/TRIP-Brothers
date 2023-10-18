@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Voos</title>
     <link rel="stylesheet" href="voo.css">
+    <link rel="shortcut icon" href="imagens/favicon/favicon-32x32.png" type="image/x-icon">
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -28,7 +29,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div id="zeus">
+ 
     <div class="container">
         <a href="index.html" class="logo-a"
           ><span class="span-img"
@@ -77,22 +78,28 @@
 
      
         
-       <div class="pai" ><img src="imagens/img-voo/praia.jpg" id="oi" alt=""></div>
-       
+   
+       <div class="textoprincipal"><h1>Seja bem-vindo a BROTHERS. Sua viagem começa aqui.</h1></div>
         <div class="forms-inp">
-          <div class="textoprincipal"><h1>Encontre os melhores voos</h1></div>
-        <form>
-            
-            <input class="inputs" id="ida" itype="text" placeholder="Saindo de">
-            <input class="inputs" id="volta" type="text" placeholder="Indo para">
+       <div> 
+        <label class="subtitulo">Encontre os Melhores voos </label>
+        <form >
+
+            <input onclick="b4()" class="inputs" id="ida" type="text" placeholder="Saindo de">
+ <input class="inputs"  id="volta" type="text" placeholder="Indo para">
             <div class="koripai">
-            <div class="tipos"><span><strong>Tipos de Voo</strong></span><input type="checkbox" name="" id="korra"></div>
-            <div class="pass"><span><strong>Passageiros</strong></span><input type="checkbox" id="check-pass"></div>
+            <div class="tipos"><span class="tipostxt"><h3>TRECHO</h3></span><div id="t1"></div><input type="checkbox" name="" id="korra"></div>
+            <div class="pass"><span class="tipostxt"><h3>CLIENTES</h3></span><div class="textoc1"><div id="a1">1 Adulto(s)</div><div id="e1">e</div><div id="c1"></div></div><input type="checkbox" id="check-pass"></div>
             
             <input  type="date" name="" id="data1">
             <input type="date" name="" id="data">
+          
           </div>
-        </form></div>
+          
+        </div>
+        <div class="bntvoo"><button>Procurar Voo</button></div>
+        </form>
+      </div>
         
         
            
@@ -105,7 +112,7 @@
       <div class="custom-radio">
         <span></span>
       </div>
-      <span>So Ida ou Volta</span>
+      <span class="cust">So Ida ou Volta</span>
     </label>
   </div>
   
@@ -124,7 +131,7 @@
      <div class="display-flex">
         <div class="alinhamentoo">
      <div class="nomes">
-      <span id="adultos">0</span>
+      <span id="adultos">1</span>
       <span>adulto(s)</span><br><span class="lula">+ 12 Anos</span>
       </div>
       <div class="nomes1">
@@ -225,7 +232,14 @@
   </div>
   </nav>
 </div>
-</div><!--Zeus-->
+
+
+<input   type="text" name="" id="sos">
+<div id="pop" class="carlos">
+  <div onclick="b1()" class="mike">Bahia</div>
+  <div onclick="b2()" class="mike">Rio de Janeiro</div>
+  <div onclick="b3()" class="mike">São Paulo</div>
+</div>
  <script src="index.js"></script>
     </body>
 </html>

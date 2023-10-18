@@ -576,7 +576,7 @@ section.modulo.estilo h1{
   font-family: "Source Sans Pro";
 }
 section.modulo.estilo1{
-  background-image: url("imagens/info/airport-1890943_1280.jpg");
+  background-image: url("imagens/Banner/colllages.png");
 }
 
 @media (max-width:900px) {
@@ -2039,7 +2039,7 @@ align-items: center;
     min-width: 100%;
     max-width: 100%;
     mix-blend-mode: lighten;
-    z-index: 20;
+
    
   }
   .span-preco1 {
@@ -2316,7 +2316,7 @@ align-items: center;
     min-width: 100%;
     max-width: 100%;
     mix-blend-mode: lighten;
-    z-index: 20;
+  
    
   }
   .span-preco1 {

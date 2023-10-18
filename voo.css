@@ -373,10 +373,13 @@ html {
   }
   
   .forms-inp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     padding: 4%;
     background-color: #fdfdfd21;
     border-radius: 20px;
-    position: absolute;
     left: 20%;
     top: 20vh;
     
@@ -422,13 +425,14 @@ html {
   }
   
   input[type='radio']:checked + .custom-radio {
-    border-color: #e29e0c;
+    border-color: #5194a5;
   }
   
   input[type='radio']:checked + .custom-radio span {
-    background: #e7c60a;
+    background: #0a5f74;
   }
   .tipos{
+    border: 1px solid rgb(105, 105, 105) ;
     margin-left: 1px;
     cursor: pointer;
     background-color: #ffffff;
@@ -438,6 +442,7 @@ html {
     height: 10vh;
   }
   .pass{
+    border: 1px solid rgb(105, 105, 105) ;
     margin-left: 5px;
     cursor: pointer;
     background-color: #ffffff;
@@ -449,26 +454,26 @@ html {
 
   input[type=date]{
     margin-left: 5px;
+    text-transform: uppercase;
+    color: #767676;
     cursor: pointer;
     margin-top: 5px;
     font-family: 'Roboto Mono', monospace;
     padding-left: 5px;
     width: 10vw;
     height: 10vh;
-   
     font-size: 15px;
     outline: none;
     font-weight: bold;
   }
   ::-webkit-calendar-picker-indicator{
-    font-size: 24px;
     
+    font-size: 24px;
+    color: #767676;
     cursor: pointer;
     background-color: rgb(255, 255, 255);
   }
-  #zeus{
-   
-  }
+  
   .tipos span{
     color: #000000;
   }
@@ -479,14 +484,15 @@ html {
     display: none;
    position: absolute;
     width: 15vw;
-    top: 64%;
-    left:24.1%;
+    top: 59%;
+    left:23.6%;
     background-color:#bab490 ;
   }
   #korra{
     cursor: pointer;
     position: absolute;
-    left: 7%;
+    left: 23.5%;
+    top: 46.5vh;
     width: 15vw;
     height: 10vh;
     padding: 3%;
@@ -499,7 +505,8 @@ display: flex;
   #check-pass{
     cursor: pointer;
     position: absolute;
-    left: 33.4%;
+    left: 40%;
+    top: 46.5vh;
     width: 15vw;
     height: 10vh;
     padding: 3%;
@@ -577,8 +584,8 @@ display: flex;
    .odin{
     display: none;
     position: absolute;
-    left: 39.7%;
-    top: 64%;
+    left: 39.2%;
+    top: 59%;
     width: 16vw;
     background-color: #bab490;
    }
@@ -594,12 +601,10 @@ display: flex;
    .P{
     margin-left: 5px;
    }
-   .custom-radio span{
-    
-   }
+   
    .cust{
-    color: rgb(255, 255, 255);
-    font-weight: 700;
+    
+    font-weight: 510;
 
    }
    .nomes{
@@ -609,10 +614,18 @@ display: flex;
     padding-left: 10px;
    }
    .textoprincipal h1{
-    color: #ffffff;
-    font-size: 2.5rem;
-    padding-top: 1%;
+   
+    color: #000000;
+    font-size: 1.5rem;
+    padding-top: 6%;
   text-align: center;
+  font-family: "Nunito Sans", sans-serif;
+   }
+   .subtitulo{
+    font-size: 22px;
+   font-weight: 300;
+    font-family: "Nunito Sans", sans-serif;
+    color: #000;
    }
    form{
     padding-top: 5%;
@@ -625,6 +638,23 @@ display: flex;
     position: relative;
     padding-bottom: 0.3rem;
     font-weight: bold;
+  }
+  .bntvoo{
+    padding-top: 10px;
+  }
+  .bntvoo button{
+    border: none;
+    background-color: #f2a71b;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    width: 20vw;
+    height: 9vh;
+  }
+  .bntvoo button:hover{
+    transition: 0.2s ease-in;
+    background-color: #767676;
+    color: #ffffff;
   }
   .nav-texto {
     overflow: auto;
@@ -717,4 +747,59 @@ display: flex;
     text-align: center;
     display: block;
   }
+  .tipostxt h3{
+    padding: 10px 10px;
+    text-align: left;
+    font-size: 11px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: #767676;
+  }
+  .textoc1{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-left: 10px;
+  }
+  #e1{
+    display: none;
+  }
+  #select{
+    width: 20vw;
+    height: 10vh;
+  }
+  #coisa{
+    width: 20vw;
+    height: 10vh;
+    padding:10vw ;
+  }
+  .ii{
+    padding:10vw ;
+    height: 26vh;
+ 
+  }
+  .o{
+    width: 20vw;
+    height: 10vh;
+    background-color: #000;
+    padding: 20px;
+  }
+  .carlos{
   
+    display: none;
+    gap: 10px;
+    flex-direction: column;
+    background-color: #bab490;
+    width: 20%;
+  }
+  .mike{
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #0a5f74;
+  }
+  .mike:hover{ 
+     transition: 0.4s ease;
+    background-color: #5194a5;
+  }
