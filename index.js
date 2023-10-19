@@ -340,3 +340,4 @@ document.addEventListener('click', function (event){
 document.getElementById('meuinpu').onclick = function(){
     novoinpute.style.backgroundColor = '#bab490';
 }
+
