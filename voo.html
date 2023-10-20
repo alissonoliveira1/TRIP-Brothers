@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Voos</title>
     <link rel="stylesheet" href="voo.css">
+    <link rel="stylesheet" href="style.css"/>
     <link rel="shortcut icon" href="imagens/favicon/favicon-32x32.png" type="image/x-icon">
     <link
     rel="stylesheet"
@@ -13,7 +14,7 @@
     crossorigin="anonymous"
     referrerpolicy="no-referrer"
   />
-  <link rel="stylesheet" href="style.css" />
+  
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -83,14 +84,20 @@
         <div class="forms-inp">
        <div> 
         <label class="subtitulo">Encontre os Melhores voos </label>
-        <form >
-
-            <input onclick="b4()" class="inputs" id="ida" type="text" placeholder="Saindo de">
- <input class="inputs"  id="volta" type="text" placeholder="Indo para">
+    <div class="flex">
+          <div id="ida1" class="saindo">
+            
+                  <span class="subtexto">SAINDO DE</span>
+            <input onclick="b4()" value="Salvador - SSA" class="inputs" id="ida" type="text" placeholder="">
+          </div>
+          <div class="saindo">
+            <span class="subtexto">INDO PARA</span>
+ <input class="inputs"  id="volta" type="text" placeholder="">
+          </div></div>
             <div class="koripai">
+
             <div class="tipos"><span class="tipostxt"><h3>TRECHO</h3></span><div id="t1"></div><input type="checkbox" name="" id="korra"></div>
             <div class="pass"><span class="tipostxt"><h3>CLIENTES</h3></span><div class="textoc1"><div id="a1">1 Adulto(s)</div><div id="e1">e</div><div id="c1"></div></div><input type="checkbox" id="check-pass"></div>
-            
             <input  type="date" name="" id="data1">
             <input type="date" name="" id="data">
           
@@ -98,7 +105,6 @@
           
         </div>
         <div class="bntvoo"><button>Procurar Voo</button></div>
-        </form>
       </div>
         
         
@@ -234,11 +240,11 @@
 </div>
 
 
-<input   type="text" name="" id="sos">
+
 <div id="pop" class="carlos">
-  <div onclick="b1()" class="mike">Bahia</div>
-  <div onclick="b2()" class="mike">Rio de Janeiro</div>
-  <div onclick="b3()" class="mike">São Paulo</div>
+  <div onclick="b1()" class="mike">Salvador - SSA</div>
+  <div onclick="b2()" class="mike">Rio de Janeiro - Santos Dumont - SDU</div>
+  <div onclick="b3()" class="mike">São Paulo - Campinas - VCP</div>
 </div>
 
 <div class="fimtexto">

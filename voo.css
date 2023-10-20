@@ -11,7 +11,6 @@ html {
     margin: 0;
     padding: 0;
     overflow-y: scroll;
-    height: 600vh;
   }
 
   body {
@@ -19,322 +18,7 @@ html {
     color: rgb(65, 64, 66);
     background-color: white;
   }
-  .span-img {
-    box-sizing: border-box;
-    display: block;
-    overflow: hidden;
-    width: initial;
-    height: initial;
-    background: none;
-    background-image: none;
-    opacity: 1;
-    border: 0;
-    margin: 0;
-  }
-  .logo-img {
-    overflow-clip-margin: content-box;
-    overflow: clip;
-  }
-  .logo-img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    box-sizing: border-box;
-    padding: 0;
-    border: none;
-    margin: auto;
-    display: block;
-    width: 0;
-    height: 0;
-    min-width: 100%;
-    max-width: 100%;
-    min-height: 100%;
-    max-height: 100%;
-    object-fit: contain;
-    object-position: center left;
-  }
-  .home_nav {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    row-gap: 1rem;
-    column-gap: 0.5rem;
-    text-decoration: none;
-  }
-  .nav-text-home {
-    color: rgb(102, 102, 102);
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1rem;
-    line-height: 1.6rem;
-  }
-  .home_nav i {
-    color: rgb(102, 102, 102);
-    font-size: 1rem;
-    min-width: 1rem;
-    text-decoration: none;
-  }
-  .user-nav {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    row-gap: 1rem;
-    column-gap: 0.5rem;
-    text-decoration: none;
-  }
-  .user-nav i {
-    color: rgb(102, 102, 102);
-    font-size: 1rem;
-    min-width: 1rem;
-    text-decoration: none;
-  }
-  .nav-text-user {
-    color: rgb(102, 102, 102);
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1rem;
-    line-height: 1.6rem;
-  }
-  .ajuda-nav {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    row-gap: 1rem;
-    column-gap: 0.5rem;
-    text-decoration: none;
-  }
-  .ajuda-nav i {
-    color: rgb(102, 102, 102);
-    font-size: 1rem;
-    min-width: 1rem;
-    text-decoration: none;
-  }
-  .nav-text-ajuda {
-    color: rgb(102, 102, 102);
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1rem;
-    line-height: 1.6rem;
-  }
   
-  .nav_1 {
-    margin-left: 50vh;
-    margin-left: auto;
-    display: flex;
-    gap: 4rem;
-    row-gap: 4rem;
-    column-gap: 4rem;
-    transition: 0.3s;
-  }
-  .logo-a {
-    height: 40px;
-    position: relative;
-    width: 132px;
-  }
-  .container-base {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    flex: 1;
-    margin-right: 2rem;
-  }
-  
-  .container {
-    display: flex;
-    z-index: 3;
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 50px;
-    align-items: center;
-    background-color: rgb(255, 255, 255);
-    box-shadow: rgba(37, 37, 39, 0.25) 0.5rem 0.5rem 2rem 0px;
-  }.menu .menu-lines{
-    position: absolute;
-    z-index: 999;
-    width: 35px;
-    height: 35px ;
-    right: 20px;
-    top: 10px;
-  }
-  .menu .check{
-    position: absolute;
-    z-index: 1000;
-    width: 35px;
-    height: 35px;
-    opacity: 0;
-    cursor: pointer;
-    right: 20px;
-    top: 10px;
-  }
-  .menu .menu-lines span{
-    display: block;
-    width: 35px;
-    height: 5px;
-    margin-bottom: 5px;
-    background-color: rgb(102, 102, 102);
-    border-radius: 3px;
-    transition: all ease .2s;
-  }
-  .menu .check:checked ~ .menu-lines span{
-   
-  background-color: rgb(192, 0, 0);
-  
-  }
-  .menu .check:checked ~ .menu-lines span:nth-child(1){
-  transform-origin: 0% 0%;
-  transform: rotate(45deg) scaleX(0.9);
-  }
-  .menu .check:checked ~ .menu-lines span:nth-child(2){
-    opacity: 0;
-  }
-  .menu .check:checked ~ .menu-lines span:nth-child(3){
-    transform-origin: 0% 100%;
-  transform: rotate(-45deg) scaleX(0.9) ;
-  }
-  .menu ul{
-    position: absolute;
-    z-index: 998;
-    left: 70vw;
-    top: 50px;
-    width: 350px;
-    height: initial;
-    background-color: rgb(255, 255, 255);
-    
-    margin-left: 1400vw;
-    transition: all ease .3s;
-    border-radius: 10px;
-  }
-  @media (max-width:900px) {
-    .menu ul{
-      position: absolute;
-      z-index: 998;
-      left: 70vw;
-      top: 50px;
-      width: 300px;
-      height: initial;
-      background-color: rgb(255, 255, 255);
-      
-      margin-left: 1500px;
-      transition: all ease .2s;
-      border-radius: 10px;
-    }
-    .home_nav{
-      display: none;
-    }
-    .menu ul li{
-      list-style: none;
-      padding: 16px 15px;
-    }
-  }
-  @media (max-width:790px) {
-    .menu ul{
-      position: absolute;
-      z-index: 998;
-      left: 65vw;
-      top: 50px;
-      width: 300px;
-      height: initial;
-      background-color: rgb(255, 255, 255);
-      margin-left: 1500px;
-      transition: all ease .2s;
-      border-radius: 10px;
-    }
-    .menu ul li{
-      list-style: none;
-      padding: 16px 15px;
-    }
-  }
-  @media (max-width:680px) {
-    .menu ul{
-      position: absolute;
-      z-index: 998;
-      left: 57vw;
-      top: 50px;
-      width: 300px;
-      height: initial;
-      background-color: rgb(255, 255, 255);
-      margin-left: 1500px;
-      transition: all ease .2s;
-      border-radius: 10px;
-    }
-  }
-  @media (max-width:580px) {
-    .menu ul{
-      position: absolute;
-      z-index: 998;
-      left: 49vw;
-      top: 50px;
-      width: 300px;
-      height: initial;
-      background-color: rgb(255, 255, 255);
-      margin-left: 1500px;
-      transition: all ease .2s;
-      border-radius: 10px;
-    }
-  }
-  @media (max-width:390px) {
-    .menu ul{
-      position: absolute;
-      z-index: 998;
-      left: 40vw;
-      top: 50px;
-      width: 300px;
-      height: initial;
-      background-color: rgb(255, 255, 255);
-      margin-left: 1500px;
-      transition: all ease .2s;
-      border-radius: 10px;
-    }
-  }
-  .menu .check:checked ~ ul{
-    margin-left: 0;
-    }
-    
-    .menu ul{
-      border: 2px solid black;
-    }
-    .menu li{
-      border-bottom: 1px solid rgb(237, 237, 237);
-    }
-    .menu ul li{
-      
-      list-style: none;
-      padding: 20px 30px;
-    }
-    .menu ul li a{
-      text-decoration: none;
-      color: rgb(102, 102, 102);
-      font-size: 18px;
-      font-family: sans-serif;
-    }
-    @media (max-width:490px) {
-      .menu ul li a{
-        text-decoration: none;
-        color: rgb(102, 102, 102);
-        font-size: 15px;
-        font-family: sans-serif;
-      }
-      .menu ul li{
-        list-style: none;
-        padding: 16px 15px;
-      }
-    }
-    .menu li:hover{
-      border-radius: 10px;
-    background-color: #f2a71b;
-    }
-    .menu ul li:hover a{
-      color: white;
-    }
-    .pai img{
-      display: flex;
-      width: 100%;
-     
-      overflow: hidden;
-      height: 80vh;
-      filter: brightness(0.8);
-    }
     .input-pesq{
       background-color: #0000003b;
       border-radius: 20px;
@@ -346,15 +30,17 @@ html {
     }
     
     .inputs{
+      width: 25vw;
+  
+    padding-left: 7px;
       outline: none;
       color: #0a5f74;
-      padding: 25px;
+ 
       font-family: 'Montserrat', sans-serif;
       font-size: 1rem;
       font-weight: bold;
-      width: 26vw;
-      height: 10vh;
-      border: 1px solid rgb(105, 105, 105);
+     
+      border: none;
       cursor: pointer;
     }
     .pesq-filho{
@@ -384,7 +70,10 @@ html {
     top: 20vh;
     
   }
-
+.flex{
+  display: flex;
+  gap: 5px;
+}
   .radio-container label {
     display: flex;
     align-items: center;
@@ -630,15 +319,7 @@ display: flex;
    form{
     padding-top: 5%;
    }
-   .nav-texto {
-    font-family: 'Montserrat', sans-serif;
-    overflow: auto;
-    overflow-x: auto;
-    overflow-y: auto;
-    position: relative;
-    padding-bottom: 0.3rem;
-    font-weight: bold;
-  }
+
   .bntvoo{
     padding-top: 10px;
   }
@@ -656,88 +337,7 @@ display: flex;
     background-color: #767676;
     color: #ffffff;
   }
-  .nav-texto {
-    overflow: auto;
-    font-size: 1.4rem;
-  }
-  .nav_2 a {
-    text-decoration: none;
-    color: #000;
-  }
-  
-  .icon-nav {
-    margin-left: 20px;
-  }
-  .link {
-    text-decoration: none;
-    display: block;
-    height: 100%;
-    width: 100%;
-    padding: 0.8rem 1.7rem;
-  }
-  
-  .nav-li {
-    display: list-item;
-  }
-  .nav-list-2 {
-    list-style-type: disc;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 40px;
-  }
-  .nav-list-2 {
-    margin: 0px 1rem;
-    display: flex;
-    white-space: nowrap;
-    left: 0px;
-    padding: 0px;
-    justify-content: space-between;
-    min-width: min(100vw - 4rem, 1286px);
-  }
-  .nav_2 i {
-    font-size: 1.5vw;
-  }
-  @media (max-width:780px) {
-    .nav_2 i {
-      font-size: 3vw;
-    }
-    .text-desconto{
-      font-size: 2.4vw;
-      text-align: center;
-    }
-  }
-  @media (max-width:490px) {
-    .nav_2 i {
-      font-size: 4vw;
-    }
-  }
-  .nav-li {
-    list-style: none;
-  }
-  .nav-2 {
-    display: flex;
-    justify-content: center;
-    top: 0px;
-    left: 0px;
-    margin: 0px;
-    overflow: auto hidden;
-    white-space: nowrap;
-    z-index: 1;
-    margin-top: 0px;
-    background-color: transparent;
-  }
-  
-  .espaco {
-    margin: 0px 1.2rem;
-    display: flex;
-    white-space: nowrap;
-    left: 0px;
-    padding: 0px;
-    justify-content: space-between;
-    min-width: min(100vw - 4rem, 1286px);
-  }
+
   .menu-2 {
     background-color: rgb(238, 237, 237);
   }
@@ -778,28 +378,43 @@ display: flex;
     height: 26vh;
  
   }
-  .o{
-    width: 20vw;
-    height: 10vh;
-    background-color: #000;
-    padding: 20px;
-  }
+
   .carlos{
-  
-    display: none;
-    gap: 10px;
+    border: 1px solid black;
+    top: 50vh;
+    left: 49.5vw;
+     position: absolute;
+    display: flex;
+
     flex-direction: column;
     background-color: #bab490;
-    width: 20%;
+    width: 26.5%;
   }
   .mike{
     cursor: pointer;
-    border: 1px solid black;
-    border-radius: 8px;
-    padding: 20px;
-    background-color: #0a5f74;
+    padding: 10px;
+   font-weight: 510;
   }
   .mike:hover{ 
      transition: 0.4s ease;
     background-color: #5194a5;
+  }
+  .subtexto{
+  
+    left: 322px;
+    padding: 10px 10px;
+    text-align: left;
+    font-size: 11px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: #767676;
+ 
+  }
+  .saindo{
+ 
+    border: 1px solid black;
+    width: 26vw;
+display: flex;
+flex-direction: column;
+height: 10vh;
   }

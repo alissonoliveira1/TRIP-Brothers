@@ -9,7 +9,7 @@ html {
   margin: 0;
   padding: 0;
   overflow-y: scroll;
-  height: 600vh;
+  
 }
 body {
   font-family: "Nunito Sans", sans-serif;
@@ -1115,14 +1115,17 @@ html{
       left: 0;
       width: 100%;
       height: 30px;
+     
     }
     .bntleia  {
+
       padding: 10px;
       display: flex;
       align-items: center;
       justify-content: center;
     }
     .bntleia button{
+      cursor: pointer;
       font-size: 15px;
       width: 30vw;
       height: 4vh;
@@ -2280,6 +2283,7 @@ align-items: center;
   justify-content: center;
 }
 .bntleia button{
+  cursor: pointer;
   font-size: 15px;
   width: 30vw;
   height: 4vh;
