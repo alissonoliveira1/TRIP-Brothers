@@ -1,15 +1,31 @@
 function b1(){
-  document.getElementById('volta').value = "Bahia"
+  document.getElementById('volta').value = "Salvador - SSA"
   document.getElementById('pop').style.display = 'none'
 }
 function b2(){
-  document.getElementById('volta').value = "Rio de Janeiro"
+  document.getElementById('volta').value = "Rio de Janeiro - Santos Dumont - SDU"
   document.getElementById('pop').style.display = 'none'
 }
 function b3(){
-  document.getElementById('volta').value = "São Paulo"
+  document.getElementById('volta').value = "São Paulo - Campinas - VCP"
   document.getElementById('pop').style.display = 'none'
 }
+function b4(){
+  document.getElementById('pop').style.display = 'flex'
+}
+function b5(){
+  document.getElementById('volta').value = "Recife - REC"
+  document.getElementById('pop').style.display = 'none'
+}
+function b6(){
+  document.getElementById('volta').value = "Rio Grande - RIG"
+  document.getElementById('pop').style.display = 'none'
+}
+function b7(){
+  document.getElementById('volta').value = "Porto Alegre - POA"
+  document.getElementById('pop').style.display = 'none'
+}
+
 
 
 let hora = 24
@@ -178,7 +194,7 @@ document.addEventListener('click', function (event){
 });
 document.getElementById('volta').onclick = function(){
     novoinput.style.backgroundColor = '#bab490'; 
-    document.getElementById('pop').style.display = 'flex'
+    
 }
 
 
@@ -252,14 +268,17 @@ function menos() {
 
 
 var crianca = document.getElementById('criancas')
+
 function mais1() {
   document.getElementById('criancas').innerHTML = ++c1;
-  document.getElementById('c1').innerHTML =  c1 + " Criança(s)";
+  document.getElementById('c1').innerHTML = c1 + " Criança(s)";
   
  if(c1 >= 10){
+  
+  document.getElementById('c1').innerHTML = " ";
   document.getElementById('criancas').innerHTML = 0;
   c1 = 0
-  
+  document.getElementById('e1').style.display = 'none'
   alert("O número máximo de passageiros deve ser de 9 pessoas.")
  }
  if(c1 >= 1){
@@ -271,8 +290,11 @@ function mais1() {
 
    d1 = 0
    c2 = 0
-   document.getElementById('adultos').innerHTML = 0;
+   document.getElementById('c1').innerHTML = " ";
+   document.getElementById('a1').innerHTML = 1 + " Adulto(s)";
+   document.getElementById('adultos').innerHTML = 1;
    document.getElementById('criancas').innerHTML = 0;
+   document.getElementById('e1').style.display = 'none'
    alert('O número máximo de passageiros deve ser de 9 pessoas.')
 }
 }
