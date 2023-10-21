@@ -181,6 +181,7 @@ document.querySelector('.pass').onclick = function (){
 var c1 = 0;
 var d1 = 1;
 var adulto = document.getElementById('adultos')
+var a2 = document.getElementById('a1')
 function mais() {
   document.getElementById('adultos').innerHTML = ++d1;
   document.getElementById('a1').innerHTML = d1 + " Adulto(s)";
@@ -208,9 +209,11 @@ function menos() {
   var atual = document.getElementById("adultos").value;
   if(d1 < 1) { //evita números negativos
     d1 = 1
-    document.getElementById('adultos').innerHTML = 0;
+    document.getElementById('adultos').innerHTML = 1;
   }
+  
 }
+
 
 var crianca = document.getElementById('criancas')
 function mais1() {
