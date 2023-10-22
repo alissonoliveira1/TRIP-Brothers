@@ -2190,7 +2190,7 @@ display: flex;
     .saindo{
       cursor: pointer;
       border: 1px solid rgb(105, 105, 105);
-      width: 70vw;
+      width: 80vw;
       display: flex;
       flex-direction: column;
       height: 8vh;
@@ -2217,7 +2217,7 @@ display: flex;
           background-color: #ffffff;
           text-align: center;
           margin-top: 5px;
-          width: 70vw;
+          width:80vw;
           height: 65px;
         }
         #korra{
@@ -2247,7 +2247,7 @@ display: flex;
           background-color: #ffffff;
           text-align: center;
           margin-top: 5px;
-          width: 70vw;
+          width: 80vw;
           height: 65px;
         }
         #check-pass{
@@ -2265,7 +2265,7 @@ display: flex;
           position: absolute;
           left: 15%;
           top: 53%;
-          width: 69vw;
+          width: 70vw;
           background-color: #ffffff;
           border: 1px solid black;
          }
@@ -2331,13 +2331,13 @@ display: flex;
         .carlos{
           border: 1px solid black;
           top: 36vh;
-          left: 14.8vw;
+          left: 10vw;
            position: absolute;
           display: none;
       
           flex-direction: column;
           background-color: #ffffff;
-          width: 70vw;
+          width: 80vw;
         }
      
   }
