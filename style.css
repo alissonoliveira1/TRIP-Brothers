@@ -909,6 +909,10 @@ gap: 4px 1px;
 html{
   height: 570vh;
 }
+.icon-nav {
+  font-size: 40px;
+  margin-left: 20px;
+}
 .principal{
   padding-top: 20px;
 }
@@ -917,7 +921,7 @@ html{
   }
 
   .video-familia{
-    height: initial;
+    height: 30vh;
     }
 
     .bnt-span {

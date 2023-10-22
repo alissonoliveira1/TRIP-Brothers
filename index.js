@@ -26,35 +26,35 @@ function b7(){
   document.getElementById('pop').style.display = 'none'
 }
 
-let slideIndex = 1;
-showSlides(slideIndex);
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
 
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("meusslides");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
+var kirin = document.querySelector('#korra')
+document.querySelector('.tipos').onclick = function (){
+ if (kirin.checked){
+   document.querySelector('.tipos').style.backgroundColor = '#bab490'
+   document.querySelector('.paii').style.display = 'block'
+ }else{
+   document.querySelector('.tipos').style.backgroundColor = 'white'
+   document.querySelector('.paii').style.display = 'none'
+ }
+ 
 }
 
 
 
+
+var kiri = document.querySelector('#check-pass')
+document.querySelector('.pass').onclick = function (){
+if (kiri.checked){
+  document.querySelector('.pass').style.backgroundColor = '#bab490'
+  document.querySelector('.odin').style.display = 'block'
+ 
+}else{
+  document.querySelector('.pass').style.backgroundColor = 'white'
+  document.querySelector('.odin').style.display = 'none'
+}
+}
 
 
 
@@ -231,32 +231,6 @@ document.getElementById('volta').onclick = function(){
 
 
 
- var kirin = document.querySelector('#korra')
- document.querySelector('.tipos').onclick = function (){
-  if (kirin.checked){
-    document.querySelector('.tipos').style.backgroundColor = '#bab490'
-    document.querySelector('.paii').style.display = 'block'
-  }else{
-    document.querySelector('.tipos').style.backgroundColor = 'white'
-    document.querySelector('.paii').style.display = 'none'
-  }
-  
- }
-
- 
-
-
-var kiri = document.querySelector('#check-pass')
-document.querySelector('.pass').onclick = function (){
- if (kiri.checked){
-   document.querySelector('.pass').style.backgroundColor = '#bab490'
-   document.querySelector('.odin').style.display = 'block'
-  
- }else{
-   document.querySelector('.pass').style.backgroundColor = 'white'
-   document.querySelector('.odin').style.display = 'none'
- }
-}
 
 
 
@@ -350,6 +324,52 @@ document.querySelector('input[type="date"]').style.backgroundColor = 'white'
 
 
 
+
+
+
+
+
+ 
+document.getElementById('meuinput').onclick = function(){
+    inputi.style.backgroundColor = '#bab490';
+}
+
+const novoinpute = document.getElementById('meuinpu');
+document.addEventListener('click', function (event){
+    if(event.target !== novoinpute){
+        novoinpute.style.backgroundColor = 'white';
+    }
+});
+document.getElementById('meuinpu').onclick = function(){
+    novoinpute.style.backgroundColor = '#bab490';
+}
+
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("meusslides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
 kirin.addEventListener("change", function() {
   // Verifica se o Checkbox 1 está marcado
   if (kirin.checked) {
@@ -368,9 +388,6 @@ kiri.addEventListener("change", function() {
    document.querySelector('.paii').style.display = 'none'
   }
 });
-
-
-
 const inputi = document.getElementById('meuinput');
 
 // Adiciona um evento de clique ao documento
@@ -381,18 +398,3 @@ document.addEventListener('click', function (event) {
     inputi.style.backgroundColor = 'white'; // Você pode escolher qualquer cor desejada
   }
 });
- 
-document.getElementById('meuinput').onclick = function(){
-    inputi.style.backgroundColor = '#bab490';
-}
-
-const novoinpute = document.getElementById('meuinpu');
-document.addEventListener('click', function (event){
-    if(event.target !== novoinpute){
-        novoinpute.style.backgroundColor = 'white';
-    }
-});
-document.getElementById('meuinpu').onclick = function(){
-    novoinpute.style.backgroundColor = '#bab490';
-}
-
