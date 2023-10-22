@@ -1894,7 +1894,7 @@ display: flex;
            margin-left: -5px;
              border: 1px solid rgb(105, 105, 105);
              width: 35vw;
-             height: 7vh;
+             height: 75px;
            
            }
            input[type=date]{
@@ -2092,7 +2092,7 @@ display: flex;
            margin-left: -5px;
              border: 1px solid rgb(105, 105, 105);
              width: 35vw;
-             height: 7vh;
+             height: 70px;
            
            }
            input[type=date]{
@@ -2291,7 +2291,7 @@ display: flex;
         margin-left: -5px;
           border: 1px solid rgb(105, 105, 105);
           width: 35vw;
-          height: 7vh;
+          height: 60px;
         
         }
         input[type=date]{
