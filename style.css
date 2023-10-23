@@ -906,9 +906,7 @@ gap: 4px 1px;
 
 
 @media(max-width:480px) {
-html{
-  height: 570vh;
-}
+
 .icon-nav {
   font-size: 40px;
   margin-left: 20px;
