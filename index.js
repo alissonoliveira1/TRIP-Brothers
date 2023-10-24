@@ -27,37 +27,6 @@ function b7(){
 }
 
 
-
-
-var kirin = document.querySelector('#korra')
-document.querySelector('.tipos').onclick = function (){
- if (kirin.checked){
-   document.querySelector('.tipos').style.backgroundColor = '#bab490'
-   document.querySelector('.paii').style.display = 'block'
- }else{
-   document.querySelector('.tipos').style.backgroundColor = 'white'
-   document.querySelector('.paii').style.display = 'none'
- }
- 
-}
-
-
-
-
-var kiri = document.querySelector('#check-pass')
-document.querySelector('.pass').onclick = function (){
-if (kiri.checked){
-  document.querySelector('.pass').style.backgroundColor = '#bab490'
-  document.querySelector('.odin').style.display = 'block'
- 
-}else{
-  document.querySelector('.pass').style.backgroundColor = 'white'
-  document.querySelector('.odin').style.display = 'none'
-}
-}
-
-
-
 let hora = 24
 let segundos = 59
 let minutos = 59
@@ -90,6 +59,58 @@ segundos = '0' + segundos;
  }
 }
 setInterval(horas,1000,1); 
+
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("meusslides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+} 
+
+
+var kirin = document.querySelector('#korra')
+document.querySelector('.tipos').onclick = function (){
+ if (kirin.checked){
+   document.querySelector('.tipos').style.backgroundColor = '#bab490'
+   document.querySelector('.paii').style.display = 'block'
+ }else{
+   document.querySelector('.tipos').style.backgroundColor = 'white'
+   document.querySelector('.paii').style.display = 'none'
+ }
+ 
+}
+
+var kiri = document.querySelector('#check-pass')
+document.querySelector('.pass').onclick = function (){
+if (kiri.checked){
+  document.querySelector('.pass').style.backgroundColor = '#bab490'
+  document.querySelector('.odin').style.display = 'block'
+ 
+}else{
+  document.querySelector('.pass').style.backgroundColor = 'white'
+  document.querySelector('.odin').style.display = 'none'
+}
+}
 
 
 const bntt = document.querySelector('.chh')
@@ -344,32 +365,7 @@ document.getElementById('meuinpu').onclick = function(){
     novoinpute.style.backgroundColor = '#bab490';
 }
 
-let slideIndex = 1;
-showSlides(slideIndex);
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("meusslides");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-}
 kirin.addEventListener("change", function() {
   // Verifica se o Checkbox 1 está marcado
   if (kirin.checked) {

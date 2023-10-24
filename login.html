@@ -85,13 +85,74 @@
     </div>
   </div>
 
-    <div class="fundo">
-        <img src="imagens/login/aviao-fundo.jpg" alt="aviao">
-    </div>
-    <div class="login">
+  <main id="container2">
+    <form id="login_form">
+        <!-- FORM HEADER -->
+        <div id="Temalogin">
+            <h1>Login:</h1>
+        </div>
 
+        <!-- SOCIAL MEDIA LINKS -->
+        <div id="social_media">
 
-    </div>
+            <!-- GOOGLE -->
+            <a href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fwww.google.com%2Fsearch%3Fq%3DGMAIL%2BEMAIL%26rlz%3D1C1FCXM_pt-PTBR1059BR1059%26oq%3DGMAIL%2BEMAIL%26gs_lcrp%3DEgZjaHJvbWUyBggAEEUYOdIBCDI4MTRqMGoxqAIAsAIA%26sourceid%3Dchrome%26ie%3DUTF-8&ec=GAZAAQ&hl=pt-PT&ifkv=AVQVeyzBkXHvZfgivi6lysNO66Zypk60m4aAWQMcJKqq1jfII8adsTCooz7S967-6qU1CkQWQeF41Q&passive=true&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S-1358789722%3A1698101255929437&theme=glif" target="_blank">
+              <img src="imagens/login/icons8-google-logo-100.png" alt="Google logo">
+            </a>
+
+            <!-- INSTAGRAM -->
+            <a href="https://www.instagram.com/accounts/login/" target="_blank">
+                <img src="imagens/login/icons8-instagram-100.png" alt="INSTAGRAM logo">
+            </a>
+            
+            <!-- APPLE -->
+            <a href="https://www.icloud.com/?ref=scotthelme.co.uk" target="_blank">
+                <img src="imagens/login/icons8-maçã-mordida-100.png" alt=" appe logo">
+            </a>
+        </div>
+
+        <!-- INPUTS -->
+        <div id="inputs">
+            
+            <!-- EMAIL -->
+            <div class="input-box">
+                <label for="email">
+                    E-mail:
+                    <div class="input-field">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="email" id="email" name="email">
+                    </div>
+                </label>
+            </div>
+            
+            <!-- Senha de Acesso -->
+            <div class="input-box">
+                <label for="password">
+                    Senha:
+                    <div class="input-field">
+                        <i class="fa-solid fa-key"></i>
+                        <input type="password" id="password" name="password">
+                    </div>
+                </label>
+                
+                <!-- Esqueceu a Senha -->
+                <div id="forgot_password">
+                    <a href="#">
+                        Esqueceu sua senha?
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- BOTÕES -->
+        <button type="submit" id="login_button">
+            Acesse a sua conta
+        </button>
+
+        <a href="registro.html" target="_blank"><div class="sa"><button type="submit" id="Cadastra-se_button">
+          Ainda não tenho conta
+      </button></div></a>
+    </form>
     
 </body>
 </html>

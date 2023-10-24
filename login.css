@@ -498,3 +498,345 @@ background-color: #f2a71b;
    font-size: 35px;
    color: rgb(102, 102, 102);
 }
+
+/* login */
+
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#container2 {
+  margin-top: 2rem;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#login_form {
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  background-color: white;
+  padding: 30px 40px;
+  border-radius: 8px;
+  gap: 30px;
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.336);
+  animation: dark-to-light-background 0.3s ease-in-out;
+}
+
+/* Form Header */
+#form_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#Temalogin h1 {
+  font-size: 40px;
+  position: relative;
+  color: #f2a71b;
+  text-decoration: underline; 
+
+}
+
+#form_header h1::before {
+  position: absolute;
+  content: '';
+  width: 40%;
+  height: 3px;
+  background-color: var(--color-purple-50);
+  bottom: 10px;
+  border-radius: 5px;
+}
+
+
+
+/* Social Media */
+#social_media {
+  display: flex;
+  justify-content: space-around;
+}
+
+#social_media img {
+  width: 65px;
+}
+
+#social_media img:hover {
+  transform: scale(1.2);
+}
+
+/* Inputs */
+#inputs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.input-box>label {
+  font-size: 18px;
+  color: var(--color-dark-50);
+}
+
+.input-field {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 3px;
+  border-bottom: 1px solid var(--color-purple-50);
+  cursor: text;
+}
+
+.input-field i {
+  font-size: 18px;
+  cursor: text;
+  color: var(--color-dark-900);
+} 
+
+.input-field input {
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 270px;
+  height: 40px;
+  background-color: transparent;
+  font-size: 15px;
+  padding: 0px 20px;
+}
+
+.input-field input:focus {
+  outline: none;
+}
+
+/* Forgot password */
+#forgot_password a {
+  text-decoration: none;
+  color: var(--color-dark-50);
+  font-size: 18px;
+}
+
+#forgot_password a:hover {
+  color: var(--color-purple-50);
+}
+
+/* Login Button */
+#login_button {
+  border: none;
+  background: #7a7a6c;
+  padding: 16px;
+  border-radius: 12px;
+  color:#ffffff;
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#login_button:hover {
+  transform: scale(1.05);
+}
+
+#Cadastra-se_button{
+  border: none;
+  padding: 16px;
+  width: 350px;
+  border-radius: 12px;
+  color:rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#Cadastra-se_button:hover {
+  transform: scale(1.05);
+}
+#login_button:hover {
+  transform: scale(1.05);
+}
+
+/* Dark Mode */
+.dark#login_form {
+  color: var(--color-light-50);
+  background-color: var(--color-dark-100);
+  animation: light-to-dark-background 0.3s ease-in-out;
+}
+
+.dark#login_form .input-field input,
+.dark#login_form .input-field i {
+  color: var(--color-light-50);
+}
+
+@keyframes dark-to-light-background {
+  0% {
+      background-color:var(--color-dark-100);
+  }
+  100.0% {
+      background-color:var(--color-light-50);
+  }
+}
+
+@keyframes light-to-dark-background {
+  0% {
+      background-color:var(--color-light-50);
+  }
+  100.0% {
+      background-color:var(--color-dark-100); 
+  }
+}
+
+
+@media(max-width:480px) {
+  
+  #container2 {
+    display: flex;
+    margin-top: 8rem;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #login_form {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    background-color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    gap: 30px;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.336);
+    animation: dark-to-light-background 0.3s ease-in-out;
+  }
+
+  #form_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  #Temalogin h1 {
+    font-size: 30px;
+    position: relative;
+    color: #f2a71b;
+    text-decoration: underline; 
+  
+  }
+  
+  #form_header h1::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: var(--color-purple-50);
+    bottom: 5px;
+    border-radius: 2px;
+  }
+  
+  
+  
+  /* Social Media */
+  #social_media {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  #social_media img {
+    width: 65px;
+  }
+  
+  #social_media img:hover {
+    transform: scale(1.2);
+  }
+  
+  /* Inputs */
+  #inputs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .input-box>label {
+    font-size: 15px;
+  }
+  
+  .input-field {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 3px;
+    border-bottom: 1px solid var(--color-purple-50);
+    cursor: text;
+  }
+  
+  .input-field i {
+    font-size: 18px;
+    cursor: text;
+    color: var(--color-dark-900);
+  } 
+  
+  .input-field input {
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 270px;
+    height: 40px;
+    background-color: transparent;
+    font-size: 15px;
+    padding: 0px 20px;
+  }
+  
+  .input-field input:focus {
+    outline: none;
+  }
+  
+  /* Forgot password */
+  #forgot_password a {
+    text-decoration: none;
+    color: var(--color-dark-50);
+    font-size: 16px;
+    text-decoration: underline;
+  }
+  
+  #forgot_password a:hover {
+    color: var(--color-purple-50);
+  }
+  
+  /* Login Button */
+  #login_button {
+    border: none;
+    background: #7a7a6c;
+    padding: 16px;
+    border-radius: 12px;
+    color:#ffffff;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  #login_button:hover {
+    transform: scale(1.05);
+  }
+  
+  #Cadastra-se_button{
+    border: none;
+    padding: 16px;
+    width: 350px;
+    border-radius: 12px;
+    color:rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  #Cadastra-se_button:hover {
+    transform: scale(1.05);
+  }
+  #login_button:hover {
+    transform: scale(1.05);
+  }
+
+}
