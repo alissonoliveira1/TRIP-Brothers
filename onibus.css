@@ -172,4 +172,130 @@ html {
       
       
     }
+    .inp{
+      outline: none;
+     
+      border: none;
+      width: 45vw;
+      padding-left: 10px;
+      height: 7vh;
+      font-size: 15px;
+  
+    }
   }
+@media (min-width:481px) and (max-width:767px) {
+  .titulobus{
+    font-size: 10px;
+    }
+    .span-img {
+      box-sizing: border-box;
+      display: block;
+      overflow: hidden;
+      width: initial;
+      height: initial;
+      background: none;
+      background-image: none;
+      opacity: 1;
+      border: 0;
+      margin: 0;
+    }
+    .container-bus{
+      margin-top: 5rem;
+      border-radius: 8px;
+      background-color: #ffff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 80vw;
+      height: 85vh;
+      box-shadow: rgba(166, 171, 189, 0.25) 0px 0px 2.4333rem 0px;
+    }
+    .container-filho{
+      display: grid;
+      grid-column: auto auto auto auto;
+      grid-template-columns: auto ;
+      gap: 10px;
+      padding-top: 20px;
+    }
+    .bntbuscar{
+      color: white;
+      border: 1px solid rgb(236, 237, 241);
+      border-radius: 8px;
+      background-color: #025e73;
+      width: 50vw;
+      height: 7vh;
+      font-size: 16px;
+      cursor: pointer;
+      
+      
+    }
+    .inp{
+      outline: none;
+     
+      border: none;
+      width: 45vw;
+      padding-left: 10px;
+      height: 7vh;
+      font-size: 15px;
+  
+    }
+}
+@media (min-width:768px) and (max-width:991px){
+  .titulobus{
+    font-size: 10px;
+    }
+    .span-img {
+      box-sizing: border-box;
+      display: block;
+      overflow: hidden;
+      width: initial;
+      height: initial;
+      background: none;
+      background-image: none;
+      opacity: 1;
+      border: 0;
+      margin: 0;
+    }
+    .container-bus{
+      margin-top: 5rem;
+      border-radius: 8px;
+      background-color: #ffff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 80vw;
+      height: 85vh;
+      box-shadow: rgba(166, 171, 189, 0.25) 0px 0px 2.4333rem 0px;
+    }
+    .container-filho{
+      display: grid;
+      grid-column: auto auto auto auto;
+      grid-template-columns: auto ;
+      gap: 10px;
+      padding-top: 20px;
+    }
+    .bntbuscar{
+      color: white;
+      border: 1px solid rgb(236, 237, 241);
+      border-radius: 8px;
+      background-color: #025e73;
+      width: 50vw;
+      height: 7vh;
+      font-size: 16px;
+      cursor: pointer;
+      
+      
+    }
+    .inp{
+      outline: none;
+     
+      border: none;
+      width: 45vw;
+      padding-left: 10px;
+      height: 7vh;
+      font-size: 15px;
+  
+    }
+}
