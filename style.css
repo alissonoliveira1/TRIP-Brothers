@@ -906,7 +906,13 @@ gap: 4px 1px;
 
 
 @media(max-width:480px) {
-
+  .nav-list-2 li i {
+    font-size: 20px;
+    padding-bottom: 0.5rem;
+    white-space: normal;
+    text-align: center;
+    display: block;
+  }
 .icon-nav {
   font-size: 40px;
   margin-left: 20px;
