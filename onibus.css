@@ -182,7 +182,15 @@ html {
       font-size: 15px;
   
     }
+    .sombra {
+      width: 100%;
+      height: 20%;
+      display: flex;
+      position: relative;
+      top: 0rem; 
+      background: linear-gradient(0deg, #ffffff 9.91%, rgba(217, 217, 217, 0.00) 90.67%);
   }
+}
 @media (min-width:481px) and (max-width:767px) {
   .titulobus{
     font-size: 10px;
@@ -240,7 +248,14 @@ html {
       font-size: 15px;
   
     }
-}
+    .sombra {
+      width: 100%;
+      height: 20%;
+      display: flex;
+      position: relative;
+       top: 0rem; 
+      background: linear-gradient(0deg, #ffffff 9.91%, rgba(217, 217, 217, 0.00) 90.67%);
+}}
 @media (min-width:768px) and (max-width:991px){
   .titulobus{
     font-size: 10px;
@@ -298,4 +313,12 @@ html {
       font-size: 15px;
   
     }
+    .sombra {
+      width: 100%;
+      height: 20%;
+      display: flex;
+      position: relative;
+      top: 0rem; 
+      background: linear-gradient(0deg, #ffffff 9.91%, rgba(217, 217, 217, 0.00) 90.67%);
+  }
 }
