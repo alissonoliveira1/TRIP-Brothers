@@ -3,9 +3,11 @@
     margin: 0;
     padding: 0;
 }
-
+html{
+height: 60rem;
+}
 .principal{
-    padding: 20px;
+    padding:  10px 0 10px;
     display: flex;
     
   justify-content: space-around;
@@ -70,6 +72,7 @@
     background-repeat: no-repeat;
 }
 .textbanner{
+    width: 50%;
 font-size: 50px;
 position: relative;
 top: 5rem;
@@ -79,6 +82,7 @@ font-family: 'Montserrat', sans-serif;
 font-weight: 600;
 }
 .subbam{
+    width: 50%;
     font-family: 'Montserrat', sans-serif;
     color: white;
     position: relative;
@@ -86,10 +90,74 @@ font-weight: 600;
     left: 4rem;
 }
 .textinho{
+    width: 50%;
     font-size: 12px;
     font-family: 'Montserrat', sans-serif;
     color: white;
     position: relative;
     top: 7rem;
     left: 4rem;
+}
+.inputs{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 20px;
+    justify-content: center;
+    position: relative;
+    top: 10rem;
+    
+    align-items: center;
+}
+.opcoes{
+    display: flex;
+   
+    background-color: white;
+width: 25rem;
+height: 2.8rem;
+align-items: center;
+}
+.inpnumber input{
+    width: 15rem;
+    height: 2.9rem;
+    outline: none;
+    padding-left: 20px;
+}
+.opcoes span{
+    font-weight: 600;
+    padding-left: 20px;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(133, 132, 132);
+    font-size: 15px;
+}
+.bnt button{
+    width: 12rem;
+    height: 2.9rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    background-color: #f2a71b;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 500;
+}
+.bnt button:hover{
+    transition: 0.3s;
+    filter: brightness(0.9);
+}
+.inpemail input{
+    width: 20rem;
+    height: 2.9rem;
+    outline: none;
+    padding-left: 20px;
+}
+#email::placeholder{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+  
+}
+#numeros::placeholder{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    
 }
