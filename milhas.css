@@ -4,7 +4,7 @@
     padding: 0;
 }
 html{
-height: 60rem;
+height: 100rem;
 }
 .principal{
     padding:  10px 0 10px;
@@ -164,4 +164,72 @@ align-items: center;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     
+}
+.texto-inter{
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+.texto-inter span{
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+}
+.opinter{
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    padding:  50px 0 100px;
+}
+.opinter span{
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    font-weight: 600;
+    color: rgb(104, 103, 103);
+}
+.precos-pai{
+    display: flex;
+    justify-content: space-around;
+}
+.preco{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.titulo{
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: bolder;
+    font-size: 27px;
+}
+.marca{
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 17px;
+}
+.textopreco{
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(104, 103, 103);
+    font-size: 17px;
+    text-align: center;
+}
+.simbolo{
+    display: flex;
+    font-weight: bolder;
+align-items: center;
+padding: 5px;
+font-family: 'Montserrat', sans-serif;
+}
+.precos{
+font-size: 35px;
+font-weight: 800;
+}
+.bntpreco{
+    padding-top: 25px;
+}
+.bntpreco button{
+    font-size: 15px;
+width: 9rem;
+height: 3rem;
+}
+#nal{
+    color: crimson;
 }
