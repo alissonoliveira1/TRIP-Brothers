@@ -111,13 +111,15 @@ font-weight: 600;
 }
 .opcoes{
     display: flex;
-   
+   border-radius: 4px;
     background-color: white;
 width: 25rem;
 height: 2.8rem;
 align-items: center;
 }
 .inpnumber input{
+    border-radius: 4px;
+    border: none;
     width: 15rem;
     height: 2.9rem;
     outline: none;
@@ -146,10 +148,12 @@ align-items: center;
     filter: brightness(0.9);
 }
 .inpemail input{
+    border-radius: 4px;
     width: 20rem;
     height: 2.9rem;
     outline: none;
     padding-left: 20px;
+    border: none;
 }
 #email::placeholder{
     font-family: 'Montserrat', sans-serif;
