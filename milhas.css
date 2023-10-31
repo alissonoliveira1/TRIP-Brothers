@@ -3,8 +3,13 @@
     margin: 0;
     padding: 0;
 }
+body{
+  font-family: "Nunito Sans", sans-serif;
+}
 html{
-height: 100rem;
+  margin: 0;
+  padding: 0;
+
 }
 .principal{
     padding:  10px 0 10px;
@@ -67,8 +72,7 @@ height: 100rem;
     background-image: url(imagens/slides/AON\ SET23-Home_Destaque.png);
     width: 100%;
     height: 70vh;
-    
-   background-size: auto;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 .textbanner{
@@ -89,7 +93,7 @@ font-weight: 600;
     top: 6rem;
     left: 4rem;
 }
-.textinho{
+.textinho2{
     width: 50%;
     font-size: 12px;
     font-family: 'Montserrat', sans-serif;
@@ -211,6 +215,7 @@ align-items: center;
     font-size: 17px;
     text-align: center;
 }
+
 .simbolo{
     display: flex;
     font-weight: bolder;
@@ -234,9 +239,7 @@ height: 3rem;
     color: crimson;
 }
 .principal2{
-    padding-top: 90px;
     max-width: 50%;
-  
     position: relative;
     margin: auto;
   }
@@ -248,11 +251,11 @@ height: 3rem;
   .prev, .next {
     cursor: pointer;
     position: absolute;
-    top: 55%;
+    top: 90rem;
     width: auto;
     margin-top: -22px;
     padding: 16px;
-    color: rgb(255, 255, 255);
+    color: rgb(170, 11, 11);
     font-weight: bold;
     font-size: 18px;
     transition: 0.6s ease;
@@ -260,7 +263,7 @@ height: 3rem;
     user-select: none;
   }
   .next {
-    right: 20px;
+    right: 50rem;
     border-radius: 3px 0 0 3px;
   }
   .prev:hover, .next:hover {
@@ -307,12 +310,811 @@ font-size: 26px;
   .principalslide{
 display: flex;
 align-items: center;
+justify-content: center;
+
   }
   .principalslide img{
   width: 15%;
   }
+  .textoslide{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+  }
   .tituloslide{
+   
     font-family: "Nunito Sans", sans-serif;
     font-weight: bolder;
     font-size: 50px;
+  }
+  
+
+.fim {
+  padding: 10% ;
+}
+
+.fimtexto {
+display: flex;
+justify-content: space-between;
+padding: 0px auto;
+gap: 4rem 4rem;
+
+}
+.fimtexto1 {
+width: 40%;
+}
+.fimspan {
+text-align: center;
+display: block;
+font-size: 1.3rem;
+font-family: Arial, Helvetica, sans-serif;
+font-weight: 200;
+color:#f2a71b;
+}
+
+.numlist {
+display: grid;
+grid-template-columns: 40% 350px;
+}
+
+.numlist li{
+list-style: none;
+padding: 5% 5% 5% 5%;
+}
+
+.num {
+color: blue ;
+font-weight: bolder;
+font-size: 1.1rem;
+}
+
+
+.textin{
+padding-left: 10px;
+font-family: arial;
+font-size: 15px;
+}
+.textinn{
+padding-left: 10px;
+font-family: arial;
+font-size: 15px;
+}
+
+
+.numlist p {
+font-family: arial;
+}
+
+
+.credito {
+display: flex;
+width: 10vw;
+}
+
+.rodapefinal {
+margin-top: 100px;
+
+}
+
+.rodapefin{
+width: 100%;
+height: 20%;
+background-color: black;
+}
+
+.rodapetext {
+display: flex;
+margin-left: 6.7rem;
+align-items: center;
+color: white;
+
+}
+.pik {
+color: pink;
+}
+
+.textinho {
+margin-top: 27px;
+
+}
+
+@media (min-width:1200px ) and (max-width:1919px){
+  
+.fimtexto {
+  padding-top: 60px;
+  display: flex;
+  grid-template-columns: auto 450px;
+  margin: 0;
+  gap: 2rem;
+ 
+  justify-content: space-around;
+
+}
+
+.fimtexto1 {
+  
+  width: 80%;
+}
+.textin{
+  font-size: 15px;
+  padding-left: 70px;
+  
+  max-height: 50px;
+  overflow: hidden;
+  position: relative;
+  transition: max height 0.4s ease;
+}
+.overflow{
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 30px;
+}
+.bntleia  {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bntleia button{
+  cursor: pointer;
+  font-size: 15px;
+  width: 30vw;
+  height: 4vh;
+  border: none;
+}
+.overflow [data-state='visible']{
+  display: block;
+}
+
+.pailinha{
+  display: flex;
+ padding: 20px;
+  justify-content: space-around;
+}
+.linha{
+  width: 100%;
+  text-align: center;
+}
+.linha img{
+width: 90%;
+}
+
+.numlist {
+display: grid;
+gap: 1rem;
+
+padding: 0 0 40px;
+grid-template-columns: 40% 340px;
+}
+.numlist {
+  display: grid;
+  gap: 1rem;
+  
+  padding: 0 0 40px;
+  grid-template-columns: 40% 340px;
+  }
+  
+  .numlist li{
+  width: 100%;
+  list-style: none;
+  padding: 0;
+  
+  }
+  
+  .num {
+  color: blue ;
+  font-weight: bolder;
+  font-size: 1.1rem;
+  }
+  .fimspan {
+  text-align: start;
+  padding-left: 2rem;
+  display: block;
+  font-size: 1.3rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 200;
+  color:#f2a71b;
+  }
+    
+    .principal{
+        padding:  10px 0 10px;
+        display: flex;
+        
+      justify-content: space-around;
+    }
+    .menu ul{
+        list-style: none;
+        display: flex;
+        gap: 20px;
+    }
+    .menu ul li a{
+        text-decoration: none;
+        color: rgb(121, 121, 121);
+        font-family: 'Montserrat', sans-serif;
+    }
+    .menu ul li a:hover, .texto:hover {
+        transition: 0.2s;
+        color: chocolate;
+    }
+    
+     .icons:hover{
+        border: 1px solid chocolate;
+        transition: 0.2s;
+        color: chocolate;
+    }
+    .texto{
+        cursor: pointer;
+        font-family: 'Montserrat', sans-serif;
+        color: rgb(121, 121, 121);
+    }
+    .icons{
+        cursor: pointer;
+        width:4.5rem;
+        height: 2.3rem;
+        display: flex;
+        gap: 10px;
+         align-items: center;
+         justify-content: center;
+        border: 1px solid black;
+        border-radius: 40px;
+    }
+    .icons i{
+        font-size: 23px;
+    }
+    .login{
+    
+    
+        display: flex;
+        align-items: center;
+        gap: 40px;
+    }
+    .flex{
+        align-items: center;
+        display: flex;
+    }
+    .banner{
+        filter: brightness(0.9);
+        background-image: url(imagens/slides/AON\ SET23-Home_Destaque.png);
+        width: 100%;
+        height: 70vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .textbanner{
+        width: 50%;
+    font-size: 50px;
+    position: relative;
+    top: 5rem;
+    color: white;
+    left: 4rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    }
+    .subbam{
+        width: 50%;
+        font-family: 'Montserrat', sans-serif;
+        color: white;
+        position: relative;
+        top: 6rem;
+        left: 4rem;
+    }
+    .textinho2{
+        width: 50%;
+        font-size: 12px;
+        font-family: 'Montserrat', sans-serif;
+        color: white;
+        position: relative;
+        top: 7rem;
+        left: 4rem;
+    }
+    .inputs{
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        gap: 20px;
+        justify-content: center;
+        position: relative;
+        top: 10rem;
+        
+        align-items: center;
+    }
+    .opcoes{
+        display: flex;
+       border-radius: 4px;
+        background-color: white;
+    width: 25rem;
+    height: 2.8rem;
+    align-items: center;
+    }
+    .inpnumber input{
+        border-radius: 4px;
+        border: none;
+        width: 15rem;
+        height: 2.9rem;
+        outline: none;
+        padding-left: 20px;
+    }
+    .opcoes span{
+        font-weight: 600;
+        padding-left: 20px;
+        font-family: 'Montserrat', sans-serif;
+        color: rgb(133, 132, 132);
+        font-size: 15px;
+    }
+    .bnt button{
+        width: 12rem;
+        height: 2.9rem;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 15px;
+        background-color: #f2a71b;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        font-weight: 500;
+    }
+    .bnt button:hover{
+        transition: 0.3s;
+        filter: brightness(0.9);
+    }
+    .inpemail input{
+        border-radius: 4px;
+        width: 20rem;
+        height: 2.9rem;
+        outline: none;
+        padding-left: 20px;
+        border: none;
+    }
+    #email::placeholder{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+      
+    }
+    #numeros::placeholder{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        
+    }
+    .texto-inter{
+        display: flex;
+        justify-content: center;
+        padding-top: 50px;
+    }
+    .texto-inter span{
+        font-size: 1.5rem;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bolder;
+    }
+    .opinter{
+        display: flex;
+        gap: 100px;
+        justify-content: center;
+        padding:  50px 0 100px;
+    }
+    .opinter span{
+        font-family: 'Montserrat', sans-serif;
+        cursor: pointer;
+        font-weight: 600;
+        color: rgb(104, 103, 103);
+    }
+    .precos-pai{
+        display: flex;
+        justify-content: space-around;
+    }
+    .preco{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .titulo{
+        font-family: "Nunito Sans", sans-serif;
+        font-weight: bolder;
+        font-size: 27px;
+    }
+    .marca{
+        font-family: "Nunito Sans", sans-serif;
+        font-size: 17px;
+    }
+    .textopreco{
+        font-family: 'Montserrat', sans-serif;
+        color: rgb(104, 103, 103);
+        font-size: 17px;
+        text-align: center;
+    }
+    
+    .simbolo{
+        display: flex;
+        font-weight: bolder;
+    align-items: center;
+    padding: 5px;
+    font-family: 'Montserrat', sans-serif;
+    }
+    .precos{
+    font-size: 35px;
+    font-weight: 800;
+    }
+    .bntpreco{
+        padding-top: 25px;
+    }
+    .bntpreco button{
+        font-size: 15px;
+    width: 9rem;
+    height: 3rem;
+    }
+    #nal{
+        color: crimson;
+    }
+    .principal2{
+        max-width: 100%;
+        position: relative;
+        margin: auto;
+      }
+      .meusslides{
+       
+        display: none;
+      }
+      
+      
+      .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 78rem;
+        width: auto;
+        margin-top: -22px;
+        padding: 16px;
+        color: rgb(170, 11, 11);
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+      }
+      .next {
+        right: 4rem;
+        border-radius: 3px 0 0 3px;
+      }
+      .prev:hover, .next:hover {
+        background-color: rgba(0,0,0,0.8);
+      }
+      .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+      }
+      .dot {
+
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+      }
+      .active, .dot:hover {
+        background-color: #717171;
+      }
+      .part {
+        animation-name: part;
+        animation-duration: 1.5s;
+      }
+      @keyframes part {
+        from {opacity: .4}
+        to {opacity: 1}
+      }
+      .flexslide{
+        display: flex;
+        align-items: center;
+      }
+     
+      .passo{
+        font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    font-size: 20px;
+    padding: 0px 0px 30px;
+      }
+      .principalslide{
+        background-color: aqua;
+    display: grid;
+    grid-template-columns: 20% 70% ;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    padding:100px;
+      }
+      .principalslide img{
+      width: 100%;
+      }
+      .textoslide{
+        position: relative;
+        top: 0;
+        left: 0;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 20px;
+      }
+      .tituloslide{
+      
+       
+        padding-left: 0px ;
+        font-family: "Nunito Sans", sans-serif;
+        font-weight: bolder;
+        font-size: 50px;
+       
+      }
+      .f{
+        height: 1rem;
+      }
+      .paitexto{
+      display: grid;
+      grid-column: 500px 500px;
+      gap: 50px;
+      }
+}
+
+@media (min-width:1920px) {
+  
+  .fimtexto {
+    padding-top: 60px;
+    display: flex;
+    grid-template-columns: auto 450px;
+    margin: 0;
+    gap: 2rem;
+   
+    justify-content: space-around;
+  
+  }
+  
+  .fimtexto1 {
+    
+    width: 80%;
+  }
+  .textin{
+    font-size: 15px;
+    padding-left: 70px;
+    
+    max-height: 50px;
+    overflow: hidden;
+    position: relative;
+    transition: max height 0.4s ease;
+  }
+  .overflow{
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 30px;
+  }
+  .bntleia  {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .bntleia button{
+    cursor: pointer;
+    font-size: 15px;
+    width: 30vw;
+    height: 4vh;
+    border: none;
+  }
+  .overflow [data-state='visible']{
+    display: block;
+  }
+  
+  
+  .pailinha{
+    display: flex;
+   padding: 20px;
+    justify-content: space-around;
+  }
+  .linha{
+    width: 100%;
+    text-align: center;
+  }
+  .linha img{
+  width: 90%;
+  }
+  
+  .numlist {
+  display: grid;
+  gap: 1rem;
+  
+  padding: 0 0 40px;
+  grid-template-columns: 40% 340px;
+  }
+  
+  .numlist li{
+  width: 100%;
+  list-style: none;
+  padding: 0;
+  
+  }
+  
+  .num {
+  color: blue ;
+  font-weight: bolder;
+  font-size: 1.1rem;
+  }
+  .fimspan {
+  text-align: start;
+  padding-left: 2rem;
+  display: block;
+  font-size: 1.3rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 200;
+  color:#f2a71b;
+  }
+      .inpnumber input{
+          border-radius: 4px;
+          border: none;
+          width: 20rem;
+          height: 2.9rem;
+          outline: none;
+          padding-left: 20px;
+      }
+      .inpemail input{
+          border-radius: 4px;
+          width: 30rem;
+          height: 2.9rem;
+          outline: none;
+          padding-left: 20px;
+          border: none;
+      }
+      .inpnumber input{
+          border-radius: 4px;
+          border: none;
+          width: 20rem;
+          height: 2.9rem;
+          outline: none;
+          padding-left: 20px;
+      }
+      .textbanner{
+          width: 50%;
+      font-size: 80px;
+      position: relative;
+      top: 5rem;
+      color: white;
+      left: 4rem;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 600;
+      }
+      .subbam{
+          width: 50%;
+          font-family: 'Montserrat', sans-serif;
+          color: white;
+          position: relative;
+          font-size: 20px;
+          top: 6rem;
+          left: 4rem;
+      }
+      .textinho2{
+          width: 50%;
+          font-size: 16px;
+          font-family: 'Montserrat', sans-serif;
+          color: white;
+          position: relative;
+          top: 7rem;
+          left: 4rem;
+      }
+      .inputs{
+          width: 100%;
+          display: grid;
+          grid-template-columns: auto auto auto auto;
+          gap: 20px;
+          justify-content: center;
+          position: relative;
+          top: 15rem;
+          
+          align-items: center;
+      }
+      .principal2{
+          max-width: 100%;
+          position: relative;
+          margin: auto;
+        }
+        .meusslides{
+         
+          display: none;
+        }
+        
+        
+        .prev, .next {
+          cursor: pointer;
+          position: absolute;
+          top: 78rem;
+          width: auto;
+          margin-top: -22px;
+          padding: 16px;
+          color: rgb(170, 11, 11);
+          font-weight: bold;
+          font-size: 18px;
+          transition: 0.6s ease;
+          border-radius: 0 3px 3px 0;
+          user-select: none;
+        }
+        .next {
+          right: 4rem;
+          border-radius: 3px 0 0 3px;
+        }
+        .prev:hover, .next:hover {
+          background-color: rgba(0,0,0,0.8);
+        }
+        .numbertext {
+          color: #f2f2f2;
+          font-size: 12px;
+          padding: 8px 12px;
+          position: absolute;
+          top: 0;
+        }
+        
+        .dot {
+          cursor: pointer;
+          height: 15px;
+          width: 15px;
+          margin: 0 2px;
+          background-color: #bbb;
+          border-radius: 50%;
+          display: inline-block;
+          transition: background-color 0.6s ease;
+        }
+        .active, .dot:hover {
+          background-color: #717171;
+        }
+        .part {
+          animation-name: part;
+          animation-duration: 1.5s;
+        }
+        @keyframes part {
+          from {opacity: .4}
+          to {opacity: 1}
+        }
+        .flexslide{
+          display: flex;
+          align-items: center;
+        }
+       
+        .passo{
+          font-family: 'Montserrat', sans-serif;
+      font-weight: bolder;
+      font-size: 20px;
+      padding: 0px 0px 30px;
+        }
+        .principalslide{
+          background-color: aqua;
+      display: grid;
+      grid-template-columns: 20% 70% ;
+      gap: 40px;
+      align-items: center;
+      justify-content: center;
+      margin-top: 100px;
+      padding: 40px;
+        }
+        .principalslide img{
+        width: 100%;
+        }
+        .textoslide{
+          position: relative;
+          top: 0;
+          left: 0;
+          font-family: 'Montserrat', sans-serif;
+          font-size: 20px;
+        }
+        .tituloslide{
+          padding-left: 0px ;
+          font-family: "Nunito Sans", sans-serif;
+          font-weight: bolder;
+          font-size: 50px;
+         
+        }
+        .paitexto{
+        display: grid;
+        grid-template-columns: auto;
+        gap: 50px;
+        }
   }

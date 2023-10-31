@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html {
+    margin: 0;
+    padding: 0;
+    overflow-y: scroll;
+    height: 300vh;
+    
+  }
+  body {
+    font-family: "Nunito Sans", sans-serif;
+  }
+  .menu_2{
+    padding-top: 50px;
+  }
+  .container-texto{
+    padding: 50px 50px;
+   
+  }
+
+  .spantexto{
+    font-weight: bolder;
+    font-size: 30px;
+  }
+  .spantexto2{
+    display: flex;
+    font-weight: bolder;
+    font-size: 30px;
+    margin-top: 60px;
+  }
+  .menu3{
+    padding-top: 30px;
+    display: flex;
+    font-weight: 600;
+    gap: 50px;
+  }
+  .selecao{
+    font-weight: bolder;
+  }
+  .inputs-menu{
+    display: flex;
+    padding-top: 60px;
+    justify-content: center;
+  }
+  .inputdate{
+    display: flex;
+    align-items: center;
+    
+  }
+  .inputtext{
+    display: flex;
+    border-radius: 8px 0px 0px 8px;
+    align-items: center;
+    background-color: aqua;
+    width: 18rem;
+    height: 4rem;
+  }
+  .textoflex{
+    display: flex;
+    flex-direction: column;
+  }
+  .inputtext i{
+    padding: 10px;
+    font-size: 26px
+  }
+  .textoflex span{
+    font-size: 15px;
+  }
+ .date{
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    width: 10rem;
+    height: 4rem;
+ }
+ input[type='date']{
+    font-size: 17px;
+ }
+ .date span{
+    font-size: 15px;
+ }
+ .inputop{
+    background-color: aqua;
+    width: 18rem;
+    height: 4rem;
+ }
+  .bntn button{
+    width: 8rem;
+    height: 4rem;
+    border-radius: 0px 8px 8px 0px;
+  }
+  .menu-hoteis{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding-top: 70px;
+  }
+  .heteis-img img{
+    width: 100%;border-radius: 15px 15px 0 0;
+  }
+ .opcoes-hoteis:hover {
+filter: brightness(0.9);
+  }
+  .opcoes-hoteis{
+    
+    display: flex;
+    width: 30%;
+    flex-direction: column;
+    box-shadow: 0px 0px 10px 0px;
+    border-radius: 15px;
+  }
+  .heteis-texto{
+  
+    width: 95%;
+     padding: 10px 10px;
+  }
+  .hotel-titulo{
+    font-size: 20px;
+    font-weight: bolder;
+  }
+  .hotel-class{
+    display: flex;
+    gap: 50px;
+    padding: 6px 0 20px 0;
+  }
+  .hotel-acess{
+    display: flex;
+    justify-content:space-around ;
+    font-weight: bolder;
+  }
+  .hotel-acess i{
+    padding-right: 8px;
+    color: rgb(7, 109, 122);
+  }
+  .hotel-class i{
+    padding-right: 8px;
+  }
+  .esp{
+    display: flex;
+    padding-top: 70px;
+  }
+  .center{
+display: flex;
+flex-direction: column;
+width: 15rem;
+align-items: center;
+  }
+  .opimg-pai{
+    padding-top: 40px;
+display: flex;
+gap: 50px;
+  }
+  .opimg1{
+    background-image: url(imagens/hoteis/fg.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+  }
+  .opimg2{
+    background-image: url(imagens/hoteis/gr.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+  }
+  .opimg3{
+    background-image: url(imagens/hoteis/rj.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+  }
+  .opimg4{
+
+    background-size: cover;
+    background-image: url(imagens/hoteis/sp.webp);
+    background-repeat: no-repeat;
+    flex-direction: column;
+    border-radius: 10px;
+  }
+  .imght{
+    width: 29vw;
+    height: 50vh;
+  }
+  .precos2{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .p1{
+    font-weight: bolder;
+    font-size: 20px;
+    text-align: center;
+    padding: 5px;
+    width: 7rem;
+background-color: white;
+border-radius: 10px;
+  }
+  .p1-2{
+    width: 9rem;
+  }
+  .p3{
+    
+    color: rgb(39, 163, 122);
+  }
+
+  .p4{
+    font-size: 20px;
+    padding: 5px;
+    width: 7rem;
+    font-weight: bolder;
+    border-radius: 10px;
+    background-color: white;
+  }
+  .p4-2{
+    width: 8rem;
+  }
+  .p5{
+    font-size: 20px;
+    padding: 5px;
+    width: 8rem;
+    font-weight: bolder;
+    border-radius: 10px;
+    background-color: white;
+  }
+  .hr:hover{
+    filter: brightness(0.9);
+  }
+  hr{
+   margin-left: -10;
+    width: 20vw;
+  }

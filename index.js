@@ -25,156 +25,6 @@ function b7(){
   document.getElementById('volta').value = "Porto Alegre - POA"
   document.getElementById('pop').style.display = 'none'
 }
-
-
-let hora = 24
-let segundos = 59
-let minutos = 59
-
-function horas(){
- segundos = segundos
-
- if((minutos > 0) || (segundos > 0) || (hora > 0)){
-   if(segundos == 0){
-     segundos = 59
-     minutos = minutos - 1
-   }else{
-     segundos = segundos - 1
-   }
-    if (minutos == 0){
-     minutos = 59
-     hora = hora - 1
-   }
-
-   if(segundos < 10){
-segundos = '0' + segundos;
-
-} 
-
-
- let minutosfm = minutos.toString().padStart(2, '0');
- document.querySelector('.segundos').innerHTML = segundos
- document.querySelector('.minutos').innerHTML = minutosfm
- document.querySelector('.horas').innerHTML = hora
- }
-}
-setInterval(horas,1000,1); 
-
-let slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("meusslides");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-} 
-
-
-var kirin = document.querySelector('#korra')
-document.querySelector('.tipos').onclick = function (){
- if (kirin.checked){
-   document.querySelector('.tipos').style.backgroundColor = '#bab490'
-   document.querySelector('.paii').style.display = 'block'
- }else{
-   document.querySelector('.tipos').style.backgroundColor = 'white'
-   document.querySelector('.paii').style.display = 'none'
- }
- 
-}
-
-var kiri = document.querySelector('#check-pass')
-document.querySelector('.pass').onclick = function (){
-if (kiri.checked){
-  document.querySelector('.pass').style.backgroundColor = '#bab490'
-  document.querySelector('.odin').style.display = 'block'
- 
-}else{
-  document.querySelector('.pass').style.backgroundColor = 'white'
-  document.querySelector('.odin').style.display = 'none'
-}
-}
-
-
-const bntt = document.querySelector('.chh')
-
-const useTheme = () => {
-  const temas = {
-    dark:"dark",
-    ligth:"ligth"
-  }
-
-  const data = localStorage.getItem("tema") || null
-
-  const trocarTema = () => {
-    localStorage.setItem("tema", data === temas.ligth  ? temas.dark : temas.ligth)
-  }
-
-  return {
-    data,
-    trocarTema,
-  }
-
-}
-
-const links = [
-  '#a0',
-  '#a1',
-  '#a2',
-  '#a3',
-  '#a4',
-  '#a5',
-  '#a6'
-]
-const fundo = document.querySelector('.chh')
-     fundo.onclick = function (){
-
-  const {trocarTema} = useTheme()
-
-  trocarTema()
-  
-  if (bntt.checked) {
-      links.forEach(id => {
-        document.querySelector(id).style.color =  "rgb(221, 221, 221)"
-      })
-      document.querySelector('.menu ul').style.backgroundColor = 'black'
-      document.querySelector('.menu ul').style.border = '2px solid white'
-        document.querySelector('.icon-night').style.color = 'yellow'
-        document.querySelector('.container').style.backgroundColor = 'black'
-        document.body.style.backgroundColor = '#000A1F'
-    } else {
-      document.body.style.backgroundColor = 'white'
-      document.querySelector('.menu ul').style.backgroundColor = 'white'
-      document.querySelector('.menu ul').style.border = '2px solid black'
-      document.querySelector('.container').style.backgroundColor = 'white'
-      document.querySelector('.link').style.color = 'black'
-      document.querySelector('#a1').style.color = 'black'
-        document.querySelector('#a2').style.color = 'black'
-        document.querySelector('#a3').style.color = 'black'
-        document.querySelector('#a4').style.color = 'black'
-        document.querySelector('#a5').style.color = 'black'
-        document.querySelector('#a6').style.color = 'black'
-        document.querySelector('.icon-night').style.color = 'rgb(102, 102, 102)'
-    }
-}
-
 function click(){
   var pontos = document.getElementById("pontos")
   var mais = document.getElementById("mais")
@@ -212,6 +62,132 @@ function click(){
       e.target.dataset.state === "more" ? "visible" : "hidden"
     );
   }
+
+
+
+let hora = 24
+let segundos = 59
+let minutos = 59
+
+function horas(){
+ segundos = segundos
+
+ if((minutos > 0) || (segundos > 0) || (hora > 0)){
+   if(segundos == 0){
+     segundos = 59
+     minutos = minutos - 1
+   }else{
+     segundos = segundos - 1
+   }
+    if (minutos == 0){
+     minutos = 59
+     hora = hora - 1
+   }
+
+   if(segundos < 10){
+segundos = '0' + segundos;
+
+} 
+
+
+ let minutosfm = minutos.toString().padStart(2, '0');
+ document.querySelector('.segundos').innerHTML = segundos
+ document.querySelector('.minutos').innerHTML = minutosfm
+ document.querySelector('.horas').innerHTML = hora
+ }
+}
+setInterval(horas,1000,1); 
+
+
+
+const bntt = document.querySelector('.chh')
+
+const useTheme = () => {
+  const temas = {
+    dark: "dark",
+    light: "light" // Corrigi a ortografia de "ligth" para "light"
+  }
+
+  // Movendo a obtenção do valor "data" para fora da função trocarTema
+  
+
+  const trocarTema = () => {
+    localStorage.setItem("tema", data === temas.light ? temas.dark : temas.light);
+  }
+
+  return {
+    data,
+    trocarTema,
+  }
+}
+
+// Restante do seu código...
+const data = localStorage.getItem("tema");
+
+const links = [
+  '#a0',
+  '#a1',
+  '#a2',
+  '#a3',
+  '#a4',
+  '#a5',
+  '#a6'
+]
+const tema = document.querySelector('.chh')
+     tema.onclick = function (){
+
+  const {trocarTema} = useTheme()
+
+  trocarTema()
+  
+  if (bntt.checked) {
+      links.forEach(id => {
+        document.querySelector(id).style.color =  "rgb(221, 221, 221)"
+      })
+      document.querySelector('.menu ul').style.backgroundColor = 'black'
+      document.querySelector('.menu ul').style.border = '2px solid white'
+        document.querySelector('.icon-night').style.color = 'yellow'
+        document.querySelector('.container').style.backgroundColor = 'black'
+        document.body.style.backgroundColor = '#000A1F'
+    } else {
+      document.body.style.backgroundColor = 'white'
+      document.querySelector('.menu ul').style.backgroundColor = 'white'
+      document.querySelector('.menu ul').style.border = '2px solid black'
+      document.querySelector('.container').style.backgroundColor = 'white'
+      document.querySelector('.link').style.color = 'black'
+      document.querySelector('#a1').style.color = 'black'
+        document.querySelector('#a2').style.color = 'black'
+        document.querySelector('#a3').style.color = 'black'
+        document.querySelector('#a4').style.color = 'black'
+        document.querySelector('#a5').style.color = 'black'
+        document.querySelector('#a6').style.color = 'black'
+        document.querySelector('.icon-night').style.color = 'rgb(102, 102, 102)'
+    }
+}
+
+var kirin = document.querySelector('#korra')
+document.querySelector('.tipos').onclick = function (){
+ if (kirin.checked){
+   document.querySelector('.tipos').style.backgroundColor = '#bab490'
+   document.querySelector('.paii').style.display = 'block'
+ }else{
+   document.querySelector('.tipos').style.backgroundColor = 'white'
+   document.querySelector('.paii').style.display = 'none'
+ }
+ 
+}
+
+var kiri = document.querySelector('#check-pass')
+document.querySelector('.pass').onclick = function (){
+if (kiri.checked){
+  document.querySelector('.pass').style.backgroundColor = '#bab490'
+  document.querySelector('.odin').style.display = 'block'
+ 
+}else{
+  document.querySelector('.pass').style.backgroundColor = 'white'
+  document.querySelector('.odin').style.display = 'none'
+}
+}
 
 
 
