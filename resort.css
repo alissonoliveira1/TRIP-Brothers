@@ -32,7 +32,7 @@
     margin-top: 60px;
   }
   .menu3{
-    padding-top: 30px;
+    padding: 30px 0 30px 0 ;
     display: flex;
     font-weight: 600;
     gap: 50px;
@@ -42,27 +42,58 @@
   }
   .inputs-menu{
     display: flex;
-    padding-top: 60px;
+    border-radius: 9px;
     justify-content: center;
+    width:78vw;
+    box-shadow: 0px 5px 20px 7px rgb(177, 175, 175);
   }
   .inputdate{
     display: flex;
     align-items: center;
+   
     
+  }
+  .center2{
+    display: flex;
+    justify-content: center;
+  }
+  .d1{
+    display: flex;
   }
   .inputtext{
     display: flex;
     border-radius: 8px 0px 0px 8px;
     align-items: center;
-    background-color: aqua;
+    background-color: rgb(255, 255, 255);
     width: 18rem;
     height: 4rem;
+  }
+  .textoflex input{
+    outline: none;
+    border: none;
+    font-weight: 600;
+    font-size: 16px;
   }
   .textoflex{
     display: flex;
     flex-direction: column;
   }
   .inputtext i{
+    padding: 10px;
+    font-size: 26px
+  }
+  .inputdate i{
+    padding: 10px;
+    font-size: 26px
+  }
+  .hotel-acess i{
+    padding-right: 8px;
+    color: rgb(7, 109, 122);
+  }
+  .hotel-class i{
+    padding-right: 8px;
+  }
+  .inputop i{
     padding: 10px;
     font-size: 26px
   }
@@ -74,21 +105,51 @@
     text-align: left;
     flex-direction: column;
     width: 10rem;
-    height: 4rem;
+
  }
  input[type='date']{
     font-size: 17px;
+    border: none;
+    outline: none;
+ }
+ #d2::-webkit-calendar-picker-indicator{
+  cursor: pointer;
+  padding: 20px;
+  top: 23rem;
+  left: 28rem;
+  width:9vw ;
+  background-color: blue;
+ opacity: 0;
+ position: absolute;
+ }
+ #d3::-webkit-calendar-picker-indicator{
+  position: absolute;
+  cursor: pointer;
+  padding: 20px;
+  top: 23rem;
+  opacity: 0;
+  left: 40rem;
+  width:7vw ;
+  background-color: blue;
  }
  .date span{
     font-size: 15px;
  }
  .inputop{
-    background-color: aqua;
+  display: flex;
+  align-items: center;
+    background-color: rgb(255, 255, 255);
     width: 18rem;
     height: 4rem;
  }
   .bntn button{
     width: 8rem;
+    background-color: rgb(3, 92, 87);
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    font-family: "Nunito Sans", sans-serif;
+    border: none;
     height: 4rem;
     border-radius: 0px 8px 8px 0px;
   }
@@ -131,13 +192,7 @@ filter: brightness(0.9);
     justify-content:space-around ;
     font-weight: bolder;
   }
-  .hotel-acess i{
-    padding-right: 8px;
-    color: rgb(7, 109, 122);
-  }
-  .hotel-class i{
-    padding-right: 8px;
-  }
+
   .esp{
     display: flex;
     padding-top: 70px;
@@ -265,3 +320,99 @@ border-radius: 10px;
   .b4{
     overflow: hidden;
   }
+  .odin2{
+    display: none;
+    position: absolute;
+    left:59%;
+    top: 65%;
+    width: 20vw;
+    height: 9rem;
+    background-color: #ffffff;
+    border: 1px solid black;
+   }
+   .cheks{
+    display: flex;
+    opacity: 0;
+    top: 21rem;
+    left: 51rem;
+    position: absolute;
+   }
+   .cheks input{
+    cursor: pointer;
+    width: 18vw;
+    height: 10vh;
+  padding: 9rem;
+  
+   }
+   .display-flex{
+    display: flex;
+   }
+   .nomes1{
+    margin-top: 15px;
+    padding-left: 10px;
+     }
+     .nomes{
+      padding-left: 10px;
+     }
+     .lula{
+      margin-left: 10px;
+     }
+     .bnt{
+      
+      margin-top: 5px;
+      padding-left:70px ;
+    }
+    .bnt span{
+      color: #0a5f74;
+      font-weight: 1000;
+    }
+    .cris{
+      margin-top: 27px;
+      padding-left: 70px;
+     }
+     .cris span{
+      
+      font-weight: bold;
+      color: #0a5f74;
+     }
+     .quartos{
+       
+      margin-top: 20px;
+      padding-left: 70px;
+     }
+     .quartos2{
+      margin-top: 10px;
+      margin-left: 10px;
+     }
+     .labs, .allputs, #allbnt {
+      font-size: inherit;
+      -moz-box-sizing: content-box;
+      -webkit-box-sizing: content-box;
+      box-sizing: content-box;
+  }
+  #allputs[type="number"]{
+    outline:none;
+    border: 0px;
+    width: 13px;
+    
+    
+    }
+
+  #allbnt{
+      border: 1px solid #000000;
+      width: 25px;
+      height: 25px;
+   
+      cursor: pointer;
+      border-radius: 50%;
+  }
+  .b{
+    background-color: transparent;
+    font-weight: bold;
+    margin-left: 10px;
+  }
+  .a{
+    background-color: transparent;
+    font-weight: bold;
+  }
+    

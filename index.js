@@ -1,3 +1,15 @@
+
+
+const check2 = document.getElementById('check2')
+function t5(){
+  if(check2.checked){
+    document.querySelector('.odin2').style.display = 'block'
+  }else{
+    document.querySelector('.odin2').style.display = 'none'
+  }
+}
+
+
 function b1(){
   document.getElementById('volta').value = "Salvador - SSA"
   document.getElementById('pop').style.display = 'none'
