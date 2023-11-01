@@ -2460,7 +2460,7 @@ padding: 0;
 }
 
 
-@media (max-width:1920px){
+@media (min-width:1920px){
   .nav_2 i {
     font-size: 1.5rem;
   }

@@ -581,7 +581,8 @@ background-color: #f2a71b;
 
 .input-box>label {
   font-size: 18px;
-  color: var(--color-dark-50);
+  color: #007a96;
+
 }
 
 .input-field {
@@ -600,7 +601,7 @@ background-color: #f2a71b;
 } 
 
 .input-field input {
-  border: 1px solid black;
+  border: 1px solid #007a96;
   border-radius: 10px;
   width: 270px;
   height: 40px;
@@ -613,26 +614,28 @@ background-color: #f2a71b;
   outline: none;
 }
 
-/* Forgot password */
+/* Senha */
 #forgot_password a {
   text-decoration: none;
-  color: var(--color-dark-50);
+  color: #007a96;
   font-size: 18px;
 }
 
 #forgot_password a:hover {
-  color: var(--color-purple-50);
+  color: #007a96;
 }
 
 /* Login Button */
 #login_button {
+  font-family: 'open sans';
   border: none;
-  background: #7a7a6c;
+  background: #007a96;
   padding: 16px;
+  width: 350px;
   border-radius: 12px;
   color:#ffffff;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 18px;
   cursor: pointer;
 }
 
@@ -641,21 +644,31 @@ background-color: #f2a71b;
 }
 
 #Cadastra-se_button{
+  font-family: 'open sans';
   border: none;
   padding: 16px;
   width: 350px;
   border-radius: 12px;
-  color:rgb(0, 0, 0);
-  font-weight: bold;
-  font-size: 20px;
+  background: #007a96;
+  color: white;
+  font-weight: bold ;
+  font-size: 16px;
   cursor: pointer;
 }
 
 #Cadastra-se_button:hover {
   transform: scale(1.05);
+  border: 1px solid #007a96;
+  background: #ffffff;
+  font-weight: bold ;
+  color: #007a96;
 }
 #login_button:hover {
   transform: scale(1.05);
+  border: 1px solid #007a96;
+  background: #ffffff;
+  font-weight: bold ;
+  color: #007a96;
 }
 
 /* Dark Mode */
@@ -780,7 +793,7 @@ background-color: #f2a71b;
   } 
   
   .input-field input {
-    border: 1px solid black;
+    border: 1px solid #007a96;
     border-radius: 10px;
     width: 270px;
     height: 40px;
@@ -808,9 +821,9 @@ background-color: #f2a71b;
   /* Login Button */
   #login_button {
     border: none;
-    background: #7a7a6c;
     padding: 16px;
     border-radius: 12px;
+    background: #007a96;
     color:#ffffff;
     font-weight: bold;
     font-size: 16px;
@@ -818,7 +831,7 @@ background-color: #f2a71b;
   }
   
   #login_button:hover {
-    transform: scale(1.05);
+    transform: scale(1.08);
   }
   
   #Cadastra-se_button{
@@ -826,17 +839,27 @@ background-color: #f2a71b;
     padding: 16px;
     width: 350px;
     border-radius: 12px;
-    color:rgb(0, 0, 0);
+    font-family: 'open sans';
+    background: #007a96;
+    color: white;
     font-weight: bold;
     font-size: 16px;
     cursor: pointer;
   }
   
   #Cadastra-se_button:hover {
-    transform: scale(1.05);
+    transform: scale(1.08);
+    border: 1px solid #007a96;
+    background: #ffffff;
+    font-weight: bold ;
+    color: #007a96;
   }
   #login_button:hover {
     transform: scale(1.05);
+    border: 1px solid #007a96;
+    background: #ffffff;
+    font-weight: bold ;
+    color: #007a96;
   }
 
 }

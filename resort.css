@@ -229,6 +229,39 @@ border-radius: 10px;
     filter: brightness(0.9);
   }
   hr{
-   margin-left: -10;
+    position: relative;
+    left: -10;
+  
     width: 20vw;
+  }
+  .titulo-texto{
+    font-size: 26px;
+    font-weight: bolder;
+  }
+  .subtitulo{
+    font-weight: 600;
+    font-size: 18px;
+    display: flex;
+    width: 16rem;
+  }
+  .slide3{
+    display: grid;
+    padding-top: 150px;
+    width: 100vw;
+    grid-template-columns: 300px auto;
+  }
+  .anima2{
+    overflow: auto;
+  }
+  .slidetexto{
+   display: grid;
+   gap: 100px;
+   grid-template-columns: auto auto auto auto;
+  }
+  .tituloslide{
+    font-weight: bolder;
+    font-size: 20px;
+  }
+  .b4{
+    overflow: hidden;
   }
