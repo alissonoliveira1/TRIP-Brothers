@@ -107,10 +107,6 @@ label{
 
 
 
-
-
-
-
 @media (max-width:480px) {
   .flex{
     display: grid;
@@ -491,7 +487,7 @@ input[type=date]{
     align-items: center;
   }
 }
-@media (max-width:1920px) {
+@media (min-width:1920px) {
   .textflex{
     display: flex;
     gap: 10px;
