@@ -1,3 +1,22 @@
+const barra1 = document.querySelector(".z1")
+const barra2 = document.querySelector(".z2")
+const barra3 = document.querySelector(".z3")
+const op1 = document.querySelector(".selecao")
+function b9(){
+  barra1.style.opacity='1'
+  barra2.style.opacity='0'
+  barra3.style.opacity='0'
+}
+function c9(){
+  barra2.style.opacity='1' 
+  barra1.style.opacity='0'
+  barra3.style.opacity='0'
+}
+function d9(){
+  barra3.style.opacity='1' 
+  barra1.style.opacity='0'
+  barra2.style.opacity='0'
+}
 
 
 const check2 = document.getElementById('check2')

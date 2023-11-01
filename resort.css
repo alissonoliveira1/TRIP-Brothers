@@ -32,14 +32,58 @@
     margin-top: 60px;
   }
   .menu3{
+    padding: 30px 0 70px 0 ;
+    display: flex;
+    font-weight: 600;
+    gap: 50px;
+  }
+  .menu4{
     padding: 30px 0 30px 0 ;
     display: flex;
     font-weight: 600;
     gap: 50px;
   }
+  .z1{
+    display: none;
+    position: absolute;
+    top: 20rem;
+    left: 2.9rem;
+    width: 8rem;
+    background-color: #0a5f74;
+    height: 3px;
+ display: flex;
+  }
+  .z2{
+    opacity: 0;
+    position: absolute;
+    top: 20rem;
+    left:11rem;
+    width: 8rem;
+    background-color: #0a5f74;
+    height: 3px;
+ display: flex;
+  }
+  .z3{
+    opacity: 0;
+    position: absolute;
+    top: 20rem;
+    left:19.5rem;
+    width: 8rem;
+    background-color: #0a5f74;
+    height: 3px;
+ display: flex;
+  }
+
   .selecao{
+    cursor: pointer;
     font-weight: bolder;
   }
+  .ht{
+    cursor: pointer; 
+   }
+   .casa{
+    cursor: pointer;
+   }
   .inputs-menu{
     display: flex;
     border-radius: 9px;
@@ -62,6 +106,7 @@
   }
   .inputtext{
     display: flex;
+    border-right: 1px solid rgb(224, 224, 224);
     border-radius: 8px 0px 0px 8px;
     align-items: center;
     background-color: rgb(255, 255, 255);
@@ -107,6 +152,9 @@
     width: 10rem;
 
  }
+ .b5{
+  border-right: 1px solid rgb(199, 199, 199);
+ }
  input[type='date']{
     font-size: 17px;
     border: none;
@@ -115,7 +163,7 @@
  #d2::-webkit-calendar-picker-indicator{
   cursor: pointer;
   padding: 20px;
-  top: 23rem;
+  top: 21rem;
   left: 28rem;
   width:9vw ;
   background-color: blue;
@@ -126,7 +174,7 @@
   position: absolute;
   cursor: pointer;
   padding: 20px;
-  top: 23rem;
+  top: 21rem;
   opacity: 0;
   left: 40rem;
   width:7vw ;
@@ -135,8 +183,12 @@
  .date span{
     font-size: 15px;
  }
+ .b6{
+  padding-left: 10px;
+ }
  .inputop{
   display: flex;
+  border-left: 1px solid rgb(199, 199, 199);
   align-items: center;
     background-color: rgb(255, 255, 255);
     width: 18rem;
@@ -204,7 +256,7 @@ width: 15rem;
 align-items: center;
   }
   .opimg-pai{
-    padding-top: 40px;
+    padding: 40px 0px 90px;
 display: flex;
 gap: 50px;
   }
@@ -283,12 +335,7 @@ border-radius: 10px;
   .hr:hover{
     filter: brightness(0.9);
   }
-  hr{
-    position: relative;
-    left: -10;
-  
-    width: 20vw;
-  }
+
   .titulo-texto{
     font-size: 26px;
     font-weight: bolder;
@@ -415,4 +462,17 @@ border-radius: 10px;
     background-color: transparent;
     font-weight: bold;
   }
-    
+    .paitextos{
+      display: grid;
+       justify-content: center;
+       gap: 40px;
+      grid-template-columns: 500px 500px ;
+    }
+    .titulotexto{
+      font-weight: bolder;
+      font-size: 20px;
+     padding:0 0 20px;
+    }
+    .subtextos{
+      font-size: 14px;
+    }
