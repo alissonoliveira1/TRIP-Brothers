@@ -7,8 +7,8 @@
     margin: 0;
     padding: 0;
     overflow-y: scroll;
-    height: 300vh;
-    
+
+
   }
   body {
     font-family: "Nunito Sans", sans-serif;
@@ -38,7 +38,7 @@
     gap: 50px;
   }
   .menu4{
-    padding: 30px 0 30px 0 ;
+    padding: 30px 0 0px 0 ;
     display: flex;
     font-weight: 600;
     gap: 50px;
@@ -74,9 +74,40 @@
  display: flex;
   }
 
-  .selecao{
+ .b1{
+  color: #0a5f74;
+ }
+  .br1{
+    background-color: #0a5f74;
+    position: absolute;
+    top: 38rem;
+    left: 2rem;
+    display: flex;
+    width: 5rem;
+    height: 3px;
+  }
+  .br2{
+    background-color: #0a5f74;
+    position: absolute;
+    top: 38rem;
+    left: 8.2rem;
+    display: flex;
+    opacity: 0;
+    width: 5rem;
+    height: 3px;
+  }
+  .br3{
+    background-color: #0a5f74;
+    position: absolute;
+    top: 38rem;
+    left: 14.5rem;
+    display: flex;
+    width: 5rem;
+    height: 3px;
+    opacity: 0;
+  }
+  .menu4 span{
     cursor: pointer;
-    font-weight: bolder;
   }
   .ht{
     cursor: pointer; 
@@ -92,12 +123,14 @@
     box-shadow: 0px 5px 20px 7px rgb(177, 175, 175);
   }
   .inputdate{
+
     display: flex;
     align-items: center;
    
     
   }
   .center2{
+    
     display: flex;
     justify-content: center;
   }
@@ -105,6 +138,7 @@
     display: flex;
   }
   .inputtext{
+  
     display: flex;
     border-right: 1px solid rgb(224, 224, 224);
     border-radius: 8px 0px 0px 8px;
@@ -245,10 +279,7 @@ filter: brightness(0.9);
     font-weight: bolder;
   }
 
-  .esp{
-    display: flex;
-    padding-top: 70px;
-  }
+
   .center{
 display: flex;
 flex-direction: column;
@@ -256,7 +287,7 @@ width: 15rem;
 align-items: center;
   }
   .opimg-pai{
-    padding: 40px 0px 90px;
+    padding: 0px 0px 90px;
 display: flex;
 gap: 50px;
   }
@@ -352,9 +383,7 @@ border-radius: 10px;
     width: 100vw;
     grid-template-columns: 300px auto;
   }
-  .anima2{
-    overflow: auto;
-  }
+  
   .slidetexto{
    display: grid;
    gap: 100px;
@@ -476,12 +505,57 @@ border-radius: 10px;
     .subtextos{
       font-size: 14px;
     }
+    .mais{
+  
+       padding: 50px 20px;
+       display: flex;
+       justify-content: end;
+     }
+     .mais span{
+       cursor: pointer;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       border-radius: 8px;
+       border: 1px solid rgb(184, 183, 183);
+        width: 6rem;
+     }
+     .mais a{
+       font-weight: bolder;
+       text-decoration: none;
+       color: rgb(0, 54, 99);
+     }
+     .mais2{
+  
+      padding-right: 20px;
+       display: flex;
+       justify-content: end;
+     }
+     .mais2 span{
+       cursor: pointer;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       border-radius: 8px;
+       border: 1px solid rgb(184, 183, 183);
+        width: 6rem;
+     }
+     .mais2 a{
+       font-weight: bolder;
+       text-decoration: none;
+       color: rgb(0, 54, 99);
+     }
   @media (max-width:480px) {
+    .center2{
+     
+      display: flex;
+      justify-content: center;
+    }
   .container-texto{
     padding: 10px 10px;
   }
   .spantexto{
-    font-size: 21px;
+    font-size: 4.5vw;
   }
   .menu3{
     padding: 30px 0 70px 0 ;
@@ -493,7 +567,7 @@ border-radius: 10px;
   .z1{
     display: none;
     position: absolute;
-    top: 18rem;
+    top: 55vh;
     left: 2.6rem;
     width: 8rem;
     background-color: #0a5f74;
@@ -526,7 +600,7 @@ border-radius: 10px;
     flex-direction: column;
     border-radius: 9px;
     justify-content: center;
-    width:78vw;
+    width:90%;
     box-shadow: 0px 5px 20px 7px rgb(177, 175, 175);
   }
   .bntn button{
@@ -551,7 +625,7 @@ border-radius: 10px;
     height: 4rem;
   }
   .inputdate{
-    display: flex;
+    display: none;
     align-items: center;
    border-bottom: 1px solid rgb(219, 219, 219);
     
@@ -612,4 +686,94 @@ border-radius: 10px;
   padding: 9rem;
   
    }
+   .opcoes-hoteis{
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    box-shadow: 0px 0px 10px 0px;
+    border-radius: 15px;
+  }
+  .menu-hoteis{
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+padding-left: 630px;
+padding-right: 550px;
+      gap: 10px;
+      
+    padding-top: 70px;
+  }
+  .animation{
+    height: 95vw;
+    overflow: auto;
+  }
+  .animation2{
+  height: 56vh;
+    overflow: auto;
+  }
+ 
+  .animation::-webkit-scrollbar{
+    display: none;
+  }
+  .animation2::-webkit-scrollbar{
+    display: none;
+  }
+  .paitextos{
+    display: flex;
+     justify-content: center;
+     gap: 40px;
+     flex-direction: column;
+  }
+  .opimg-pai{
+    display: grid;
+    grid-template-columns: 260px 260px 260px 260px;
+    padding: 0px 0px 0px;
+   
+    gap: 20px;
+
+  }
+.imght{
+    width: 50vw;
+    height: 50vh;
+  }
+
+.mais{
+  
+ padding-right: 20px;
+  display: flex;
+  justify-content: end;
+}
+.mais span{
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  border: 1px solid rgb(184, 183, 183);
+   width: 6rem;
+}
+.mais a{
+  font-weight: bolder;
+  text-decoration: none;
+  color: rgb(0, 54, 99);
+}
+.mais2{
+  padding: 0 0 70px;
+  padding-right: 20px;
+   display: flex;
+   justify-content: end;
+ }
+ .mais2 span{
+   cursor: pointer;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 8px;
+   border: 1px solid rgb(184, 183, 183);
+    width: 6rem;
+ }
+ .mais2 a{
+   font-weight: bolder;
+   text-decoration: none;
+   color: rgb(0, 54, 99);
+ }
   }

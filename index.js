@@ -1,7 +1,10 @@
 const barra1 = document.querySelector(".z1")
 const barra2 = document.querySelector(".z2")
 const barra3 = document.querySelector(".z3")
-const op1 = document.querySelector(".selecao")
+const barra4 = document.querySelector(".br1")
+const barra5 = document.querySelector(".br2")
+const barra6 = document.querySelector(".br3")
+
 function b9(){
   barra1.style.opacity='1'
   barra2.style.opacity='0'
@@ -16,6 +19,30 @@ function d9(){
   barra3.style.opacity='1' 
   barra1.style.opacity='0'
   barra2.style.opacity='0'
+}
+function s1(){
+  document.querySelector(".b1").style.color = '#0a5f74'
+  document.querySelector(".i1").style.color = 'black'
+  document.querySelector(".e1").style.color = 'black'
+  barra4.style.opacity='1'
+  barra5.style.opacity='0'
+  barra6.style.opacity='0'
+}
+function s2(){
+  document.querySelector(".e1").style.color = '#0a5f74'
+  document.querySelector(".i1").style.color = 'black'
+  document.querySelector(".b1").style.color = 'black'
+  barra5.style.opacity='1'
+  barra4.style.opacity='0'
+  barra6.style.opacity='0'
+}
+function s3(){
+  document.querySelector(".i1").style.color = '#0a5f74'
+  document.querySelector(".e1").style.color = 'black'
+  document.querySelector(".b1").style.color = 'black'
+  barra6.style.opacity='1'
+  barra4.style.opacity='0'
+  barra5.style.opacity='0'
 }
 
 
