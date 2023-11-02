@@ -4,7 +4,8 @@ const barra3 = document.querySelector(".z3")
 const barra4 = document.querySelector(".br1")
 const barra5 = document.querySelector(".br2")
 const barra6 = document.querySelector(".br3")
-
+const barra7 = document.querySelector(".ba1")
+const barra8 = document.querySelector(".ba2")
 function b9(){
   barra1.style.opacity='1'
   barra2.style.opacity='0'
@@ -43,6 +44,20 @@ function s3(){
   barra6.style.opacity='1'
   barra4.style.opacity='0'
   barra5.style.opacity='0'
+}
+function cid1(){
+  document.querySelector(".ci1").style.color = '#0a5f74'
+  document.querySelector(".de1").style.color = 'black'
+
+  barra7.style.opacity='1'
+  barra8.style.opacity='0'
+  
+}
+function des1(){
+  document.querySelector(".de1").style.color = '#0a5f74'
+  document.querySelector(".ci1").style.color = 'black'
+  barra8.style.opacity='1'
+  barra7.style.opacity='0'
 }
 
 

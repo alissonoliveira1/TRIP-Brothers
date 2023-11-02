@@ -106,6 +106,13 @@
     height: 3px;
     opacity: 0;
   }
+  .menu4{
+    padding: 30px 0 0px 0 ;
+    display: flex;
+    
+    font-weight: 600;
+    gap: 50px;
+  }
   .menu4 span{
     cursor: pointer;
   }
@@ -545,6 +552,32 @@ border-radius: 10px;
        text-decoration: none;
        color: rgb(0, 54, 99);
      }
+     .ba1{
+      background-color: #0a5f74;
+      position: absolute;
+      top: 79rem;
+      left: 5rem;
+      display: flex;
+      width: 5rem;
+      height: 3px;
+      opacity: 1;
+     }
+     .ci1{
+      cursor: pointer;
+     }
+     .de1{
+      cursor: pointer;
+     }
+     .ba2{
+      background-color: #0a5f74;
+      position: absolute;
+      top: 79rem;
+      left: 11.5rem;
+      display: flex;
+      width: 5rem;
+      height: 3px;
+      opacity: 0;
+     }
   @media (max-width:480px) {
     .center2{
      
@@ -594,7 +627,42 @@ border-radius: 10px;
     height: 3px;
  display: flex;
   }
-  
+  .br1{
+    background-color: #0a5f74;
+    position: absolute;
+    top: 47rem;
+    left: 5rem;
+    display: flex;
+    width: 5rem;
+    height: 3px;
+  }
+  .br2{
+    background-color: #0a5f74;
+    position: absolute;
+    top: 47rem;
+    left: 12.6rem;
+    display: flex;
+    opacity: 0;
+    width: 5rem;
+    height: 3px;
+  }
+  .br3{
+    background-color: #0a5f74;
+    position: absolute;
+    top: 47rem;
+    left: 20rem;
+    display: flex;
+    width: 5rem;
+    height: 3px;
+    opacity: 0;
+  }
+  .menu4{
+    padding: 30px 0 0px 0 ;
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    gap: 70px;
+  }
   .inputs-menu{
     display: flex;
     flex-direction: column;
@@ -775,5 +843,28 @@ padding-right: 550px;
    font-weight: bolder;
    text-decoration: none;
    color: rgb(0, 54, 99);
+ }
+ .esp{
+  font-size: 6vw;
+ }
+ .ba1{
+  background-color: #0a5f74;
+  position: absolute;
+  top: 89rem;
+  left: 2.6rem;
+  display: flex;
+  width: 5rem;
+  height: 3px;
+  opacity: 1;
+ }
+ .ba2{
+  background-color: #0a5f74;
+  position: absolute;
+  top: 89rem;
+  left: 9rem;
+  display: flex;
+  width: 5rem;
+  height: 3px;
+  opacity: 0;
  }
   }
