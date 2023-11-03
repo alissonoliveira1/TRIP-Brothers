@@ -567,6 +567,12 @@ border-radius: 10px;
       opacity: 0;
      }
   @media (max-width:480px) {
+    .spantexto2{
+      display: flex;
+      font-weight: bolder;
+      font-size: 23px;
+      margin-top: 60px;
+    }
     .center2{
      
       display: flex;
@@ -580,7 +586,7 @@ border-radius: 10px;
   }
   .menu3{
     font-size: 14px;
-    padding: 30px 0 70px 0 ;
+    padding: 10px 0 40px 0 ;
     display: flex;
     justify-content: center;
     font-weight: 600;
@@ -782,7 +788,7 @@ border-radius: 10px;
 
   }
 .imght{
-    width: 50vw;
+    width: 100%;
     height: 15rem;
   }
 
@@ -827,7 +833,7 @@ border-radius: 10px;
    color: rgb(0, 54, 99);
  }
  .esp{
-  font-size: 6vw;
+  font-size: 7vw;
  }
  .ba1{
   background-color: #0a5f74;
