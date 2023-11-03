@@ -579,11 +579,12 @@ border-radius: 10px;
     font-size: 4.5vw;
   }
   .menu3{
+    font-size: 14px;
     padding: 30px 0 70px 0 ;
     display: flex;
     justify-content: center;
     font-weight: 600;
-    gap: 20px;
+    gap: 5px;
   }
   .barras{
     flex-direction: column;
@@ -593,21 +594,21 @@ border-radius: 10px;
   }
   .z1{
     display: none;
-    width: 8rem;
+    width: 5rem;
     background-color: #0a5f74;
     height: 3px;
  display: flex;
   }
   .z2{
     opacity: 0;
-    width: 8rem;
+    width: 5rem;
     background-color: #0a5f74;
     height: 3px;
  display: flex;
   }
   .z3{
     opacity: 0;
-    width: 8rem;
+    width: 6rem;
     background-color: #0a5f74;
     height: 3px;
  display: flex;
@@ -639,7 +640,7 @@ border-radius: 10px;
     display: flex;
     justify-content: center;
     font-weight: 600;
-    gap: 70px;
+    gap: 40px;
   }
   .inputs-menu{
     display: flex;
@@ -740,12 +741,12 @@ border-radius: 10px;
     border-radius: 15px;
   }
   .animation{
-   height: 27rem;
+   height: 25rem;
  
     overflow: auto;
   }
   .animation2{
-  height: 56vh;
+    height: 16rem;
     overflow: auto;
   }
  
@@ -782,7 +783,7 @@ border-radius: 10px;
   }
 .imght{
     width: 50vw;
-    height: 50vh;
+    height: 15rem;
   }
 
 .mais{
@@ -843,9 +844,16 @@ border-radius: 10px;
   width: 5rem;
   height: 3px;
   opacity: 0;
- }
+ }  
+ .hotel-class{
+      display: flex;
+      font-size: 15px;
+      gap: 30px;
+      padding: 6px 0 20px 0;
+    }
   }
   @media (min-width:481px) and (max-width:767px){
+  
     .center2{
      
       display: flex;
@@ -1036,7 +1044,7 @@ padding-right: 550px;
     
   }
   .animation{
-    height: 57vw;
+    height: 27rem;
     overflow: auto;
   }
   .animation2{
@@ -1058,10 +1066,10 @@ padding-right: 550px;
   }
   .opimg-pai{
     display: grid;
-    grid-template-columns: 260px 260px 260px 260px;
+    grid-template-columns: 200px 200px 200px 200px;
     padding: 0px 0px 0px;
    
-    gap: 20px;
+    gap: 250px;
 
   }
 .imght{
