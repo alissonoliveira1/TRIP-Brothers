@@ -250,7 +250,6 @@
 filter: brightness(0.9);
   }
   .opcoes-hoteis{
-    
     display: flex;
     width: 30%;
     flex-direction: column;
@@ -845,7 +844,6 @@ border-radius: 10px;
  }
  .ba2{
   background-color: #0a5f74;
-
   display: flex;
   width: 5rem;
   height: 3px;
@@ -886,9 +884,7 @@ border-radius: 10px;
   }
   .z1{
     display: none;
-    position: absolute;
-    top: 53vh;
-    left: 11.3rem;
+  
     width: 8rem;
     background-color: #0a5f74;
     height: 3px;
@@ -896,9 +892,7 @@ border-radius: 10px;
   }
   .z2{
     opacity: 0;
-    position: absolute;
-    top: 53vh;
-    left:19.3rem;
+   
     width: 8rem;
     background-color: #0a5f74;
     height: 3px;
@@ -906,9 +900,7 @@ border-radius: 10px;
   }
   .z3{
     opacity: 0;
-    position: absolute;
-    top: 53vh;;
-    left:27.9rem;
+  
     width: 8rem;
     background-color: #0a5f74;
     height: 3px;
@@ -1135,9 +1127,316 @@ padding-right: 550px;
  }
  .ba2{
   background-color: #0a5f74;
-  position: absolute;
-  top: 86rem;
-  left: 9rem;
+
+  display: flex;
+  width: 5rem;
+  height: 3px;
+  opacity: 0;
+ }
+  }
+  @media(min-width:768px) and (max-width:991px){
+  
+    .spantexto2{
+      display: flex;
+      font-weight: bolder;
+      font-size: 40px;
+      margin-top: 60px;
+    }
+    .n2{
+      font-weight: bolder;
+    }
+    input[type='date']{
+      font-size: 20px;
+      font-weight: bolder;
+      border: none;
+      outline: none;
+   }
+    .date span{
+      font-size: 18px;
+   }
+    .textoflex span{
+      font-size: 18px;
+    }
+    .textoflex input{
+      outline: none;
+      border: none;
+      font-weight: 600;
+      font-size: 20px;
+    }
+    .center2{
+     
+      display: flex;
+      justify-content: center;
+    }
+  .container-texto{
+    padding: 10px 10px;
+  }
+  .spantexto{
+    font-size: 4.5vw;
+  }
+  .menu3{
+    font-size: 25px;
+    padding: 30px 0 70px 0 ;
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    gap: 50px;
+  }
+  .barras{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .z1{
+    width: 10rem;
+    background-color: #0a5f74;
+    height: 3px;
+    display: flex;
+  }
+  .z2{
+    opacity: 0;
+    width: 12rem;
+    background-color: #0a5f74;
+    height: 3px;
+    display: flex;
+  }
+  .z3{
+    opacity: 0;
+    width: 12rem;
+    background-color: #0a5f74;
+    height: 3px;
+    display: flex;
+  }
+  .br1{
+    background-color: #0a5f74;
+    display: flex;
+    width: 8rem;
+    height: 3px;
+  }
+  .br2{
+    background-color: #0a5f74;
+    display: flex;
+    opacity: 0;
+    width: 8rem;
+    height: 3px;
+  }
+  .br3{
+    background-color: #0a5f74;
+
+    display: flex;
+    width: 8rem;
+    height: 3px;
+    opacity: 0;
+  }
+  .menu4{
+    font-size: 25px;
+    padding: 30px 0 0px 0 ;
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    gap: 70px;
+  }
+  .inputs-menu{
+    display: flex;
+    flex-direction: column;
+    border-radius: 9px;
+    font-size: 20px;
+    justify-content: center;
+    width:80%;
+    box-shadow: 0px 5px 20px 7px rgb(177, 175, 175);
+  }
+  .bntn button{
+    width: 100%;
+    background-color: rgb(3, 92, 87);
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    font-family: "Nunito Sans", sans-serif;
+    border: none;
+    height: 5rem;
+    border-radius: 0px 0px 8px 8px;
+  }
+  .inputtext{
+    display: flex;
+    border: none;
+    border-bottom: 1px solid rgb(219, 219, 219);
+    border-radius: 8px 8px 0px 0px;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 4rem;
+  }
+  .inputdate{
+    display: flex;
+    align-items: center;
+   border-bottom: 1px solid rgb(219, 219, 219);
+    
+  }
+  .inputop{
+    display: flex;
+    border-left: 1px solid rgb(199, 199, 199);
+    align-items: center;
+      background-color: rgb(255, 255, 255);
+      width: 100%;
+      height: 4rem;
+   }
+   .odin2{
+    display: none;
+    position: absolute;
+    left:10%;
+    top:33rem;
+    width: 79vw;
+    height: 9rem;
+    background-color: #ffffff;
+    border: 1px solid black;
+   }
+   .bnt{
+      
+    margin-top: 5px;
+    padding-left:150px ;
+  }
+  .bnt span{
+    color: #0a5f74;
+    font-weight: 1000;
+  }
+  .cris{
+    margin-top: 27px;
+    padding-left: 150px;
+   }
+   .cris span{
+    
+    font-weight: bold;
+    color: #0a5f74;
+   }
+   .quartos{
+     
+    margin-top: 20px;
+    padding-left: 150px;
+   }
+   .cheks{
+    display: flex;
+    opacity: 0;
+    background-color: #000000;
+    top: 29rem;
+    left:3.5rem;
+    position: absolute;
+   }
+   .cheks input{
+    cursor: pointer;
+    width: 75.9vw;
+    height: 11vh;
+  padding: 9rem;
+  
+   }
+   .opcoes-hoteis{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    box-shadow: 0px 0px 10px 0px;
+    border-radius: 15px;
+    
+  }
+  .menu-hoteis{
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+     justify-content: flex-start;
+     padding-left: 20px ;
+      gap: 40px;
+      
+    
+  }
+  .animation{
+    height: 27rem;
+    overflow: auto;
+  }
+  .animation2{
+  height: 56vh;
+    overflow: auto;
+  }
+ 
+  .animation::-webkit-scrollbar{
+    display: none;
+  }
+  .animation2::-webkit-scrollbar{
+    display: none;
+  }
+  .paitextos{
+    display: flex;
+     justify-content: center;
+     gap: 40px;
+     flex-direction: column;
+  }
+  .opimg-pai{
+    display: grid;
+    grid-template-columns: 350px 350px 350px 350px;
+    padding: 0px 0px 0px;
+   
+    gap: 40px;
+
+  }
+.imght{
+    width: 100%;
+    height: 50vh;
+  }
+
+.mais{
+  
+ padding-right: 20px;
+  display: flex;
+  justify-content: end;
+}
+.mais span{
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  border: 1px solid rgb(184, 183, 183);
+   width: 10rem;
+}
+.mais a{
+  font-size: 20px;
+  font-weight: bolder;
+  text-decoration: none;
+  color: rgb(0, 54, 99);
+}
+.mais2{
+  padding: 0 0 70px;
+  padding-right: 20px;
+   display: flex;
+   justify-content: end;
+ }
+ .mais2 span{
+   cursor: pointer;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 8px;
+   border: 1px solid rgb(184, 183, 183);
+    width: 10rem;
+ }
+ .mais2 a{
+  font-size: 20px;
+   font-weight: bolder;
+   text-decoration: none;
+   color: rgb(0, 54, 99);
+ }
+ .esp{
+  
+  width: 100%;
+
+  font-size:40px;
+ }
+ .ba1{
+  background-color: #0a5f74;
+  display: flex;
+  width: 5rem;
+  height: 3px;
+  opacity: 1;
+ }
+ .ba2{
+  background-color: #0a5f74;
   display: flex;
   width: 5rem;
   height: 3px;
