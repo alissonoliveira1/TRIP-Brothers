@@ -35,7 +35,14 @@
     padding: 30px 0 70px 0 ;
     display: flex;
     font-weight: 600;
-    gap: 50px;
+    gap: 20px;
+  }
+  .barras{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
   }
   .menu4{
     padding: 30px 0 0px 0 ;
@@ -45,9 +52,6 @@
   }
   .z1{
     display: none;
-    position: absolute;
-    top: 20rem;
-    left: 2.9rem;
     width: 8rem;
     background-color: #0a5f74;
     height: 3px;
@@ -55,9 +59,6 @@
   }
   .z2{
     opacity: 0;
-    position: absolute;
-    top: 20rem;
-    left:11rem;
     width: 8rem;
     background-color: #0a5f74;
     height: 3px;
@@ -65,9 +66,7 @@
   }
   .z3{
     opacity: 0;
-    position: absolute;
-    top: 20rem;
-    left:19.5rem;
+
     width: 8rem;
     background-color: #0a5f74;
     height: 3px;
@@ -79,18 +78,12 @@
  }
   .br1{
     background-color: #0a5f74;
-    position: absolute;
-    top: 38rem;
-    left: 2rem;
     display: flex;
     width: 5rem;
     height: 3px;
   }
   .br2{
     background-color: #0a5f74;
-    position: absolute;
-    top: 38rem;
-    left: 8.2rem;
     display: flex;
     opacity: 0;
     width: 5rem;
@@ -98,9 +91,6 @@
   }
   .br3{
     background-color: #0a5f74;
-    position: absolute;
-    top: 38rem;
-    left: 14.5rem;
     display: flex;
     width: 5rem;
     height: 3px;
@@ -284,6 +274,9 @@ filter: brightness(0.9);
     display: flex;
     justify-content:space-around ;
     font-weight: bolder;
+  }
+  .selecao{
+    cursor: pointer;
   }
 
 
@@ -554,9 +547,6 @@ border-radius: 10px;
      }
      .ba1{
       background-color: #0a5f74;
-      position: absolute;
-      top: 79rem;
-      left: 5rem;
       display: flex;
       width: 5rem;
       height: 3px;
@@ -570,9 +560,6 @@ border-radius: 10px;
      }
      .ba2{
       background-color: #0a5f74;
-      position: absolute;
-      top: 79rem;
-      left: 11.5rem;
       display: flex;
       width: 5rem;
       height: 3px;
@@ -595,13 +582,16 @@ border-radius: 10px;
     display: flex;
     justify-content: center;
     font-weight: 600;
-    gap: 50px;
+    gap: 20px;
+  }
+  .barras{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .z1{
     display: none;
-    position: absolute;
-    top: 55vh;
-    left: 2.6rem;
     width: 8rem;
     background-color: #0a5f74;
     height: 3px;
@@ -609,9 +599,6 @@ border-radius: 10px;
   }
   .z2{
     opacity: 0;
-    position: absolute;
-    top: 18rem;
-    left:10.5rem;
     width: 8rem;
     background-color: #0a5f74;
     height: 3px;
@@ -619,9 +606,6 @@ border-radius: 10px;
   }
   .z3{
     opacity: 0;
-    position: absolute;
-    top: 18rem;
-    left:19rem;
     width: 8rem;
     background-color: #0a5f74;
     height: 3px;
@@ -629,18 +613,13 @@ border-radius: 10px;
   }
   .br1{
     background-color: #0a5f74;
-    position: absolute;
-    top: 47rem;
-    left: 5rem;
     display: flex;
     width: 5rem;
     height: 3px;
   }
   .br2{
     background-color: #0a5f74;
-    position: absolute;
-    top: 47rem;
-    left: 12.6rem;
+
     display: flex;
     opacity: 0;
     width: 5rem;
@@ -648,9 +627,7 @@ border-radius: 10px;
   }
   .br3{
     background-color: #0a5f74;
-    position: absolute;
-    top: 47rem;
-    left: 20rem;
+
     display: flex;
     width: 5rem;
     height: 3px;
@@ -848,9 +825,7 @@ padding-right: 550px;
  }
  .ba1{
   background-color: #0a5f74;
-  position: absolute;
-  top: 89rem;
-  left: 2.6rem;
+
   display: flex;
   width: 5rem;
   height: 3px;
@@ -858,9 +833,7 @@ padding-right: 550px;
  }
  .ba2{
   background-color: #0a5f74;
-  position: absolute;
-  top: 89rem;
-  left: 9rem;
+
   display: flex;
   width: 5rem;
   height: 3px;
@@ -885,6 +858,12 @@ padding-right: 550px;
     justify-content: center;
     font-weight: 600;
     gap: 50px;
+  }
+  .barras{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .z1{
     display: none;
@@ -918,18 +897,12 @@ padding-right: 550px;
   }
   .br1{
     background-color: #0a5f74;
-    position: absolute;
-    top: 46rem;
-    left: 14.2rem;
     display: flex;
     width: 5rem;
     height: 3px;
   }
   .br2{
     background-color: #0a5f74;
-    position: absolute;
-    top: 46rem;
-    left: 21.7rem;
     display: flex;
     opacity: 0;
     width: 5rem;
@@ -937,9 +910,7 @@ padding-right: 550px;
   }
   .br3{
     background-color: #0a5f74;
-    position: absolute;
-    top: 45rem;
-    left: 29rem;
+
     display: flex;
     width: 5rem;
     height: 3px;
@@ -1138,9 +1109,6 @@ padding-right: 550px;
  }
  .ba1{
   background-color: #0a5f74;
-  position: absolute;
-  top: 86rem;
-  left: 2.3rem;
   display: flex;
   width: 5rem;
   height: 3px;
