@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Milhas</title> 
     <link rel="stylesheet" href="milhas.css">
-    
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="apple-touch-icon" sizes="180x180" href="imagens/favicon_io (2)/apple-touch-icon.png" />
@@ -38,10 +38,13 @@
     </ul>
 </div></div>
 <div class="login">
+ 
 <div class="texto"><span>Voo e reservas <i class="fa-solid fa-down-long"></i></span></div>
 <div class="icons"><span><i class="fa-solid fa-bars"></i></span><span><i class="fa-regular fa-circle-user"></i></span></div>
 </div>
+
 </header>
+
 <div class="banner">
     <div class="textbanner"><span>Venda Milhas aereas <br> do seu jeito</span></div>
     <div class="subbam"><span>Escolha a forma de vender milhas que mais combina com você <br> e aproveite essa oportunidade de ganhar dinheiro extra</span></div>
@@ -56,7 +59,7 @@
 </div>
 
 <div class="texto-inter"><span>Veja quanto valem suas milhas aéreas</span></div>
-<div class="opinter"><span id="nal">Nacional</span> <span>Internacional</span></div>
+<div class="opinter"><div class="centro"><span onclick="b9()" id="nal">Nacional</span><div class="z1"></div></div> <div class="centro"><span onclick="c9()" >Internacional</span><div class="z2"></div></div></div>
 <div class="precos-pai">
     <div class="preco">
         <span class="titulo">GOL</span>
@@ -81,7 +84,7 @@
     </div>
 </div>
 <div class="principalslide">
-    <img src="imagens/Logo/logo milhas.webp" alt="">
+    <img class="imgtf" src="imagens/Logo/logo milhas.webp" alt="">
     <div class="paitexto">
         <div><span class="tituloslide">Como vender milhas</span></div>
        
@@ -113,87 +116,27 @@
    </div></div></div>
     
      <a class="next" onclick="plusSlides(1)">&#10095;</a>
-   </div></div>
+   </div>
+   <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+  </div>
+  </div>
      
-     <div style="text-align:center">
-       <span class="dot" onclick="currentSlide(1)"></span>
-       <span class="dot" onclick="currentSlide(2)"></span>
-       <span class="dot" onclick="currentSlide(3)"></span>
-       <span class="dot" onclick="currentSlide(4)"></span>
+    
+
+
+
+     <div id="footer">
+
      </div>
-
-
-
-
-      
-
-
-     <div class="fimtexto">
-        <div class="fimtexto1">
-          <span class="fimspan">Termos e condições:</span>
-          <br><br><p class="textin">COMPRAS EM REAIS: Compras realizadas através do website da Brothers e “aplicativo 
-    
-          
-            mobile (via "smartphones" e "tablets") são isentas da tarifa de emissão. A tarifa de emissão é cobrada nas
-            compras através de balcões localizados nos aeroportos, lojas físicas e callcenter da empresa. Aeroportos e Lojas
-            físicas: Nos voos domésticos, o valor da cobrança é de R$ 150,00 para compras com o valor total até R$ 1.500,00
-            ou de 10% sobre o valor da tarifa quando esta for superior a R$ 1.500,00. Nos voos internacionais, a tarifa de
-            emissão é de 7% sobre o valor da tarifa paga. Callcenter (+55 71 4002-8922): O valor da cobrança é a partir de
-            R$ 150,00 (cento e cinquenta reais) por passageiro e por trecho nos voos domésticos, e a partir de R$ 280,00
-            (duzentos e oitenta reais) por passageiro e por trecho nos voos internacionais. Tarifas com regras flexíveis
-            (reserva na Classe Y): Serão disponibilizadas para comercialização somente via Central de Atendimento. Não serão
-            cobradas taxas de alteração ou cancelamento. Reembolso de 95% (noventa e cinco por cento) do valor da tarifa.
-            Não será cobrará taxa de emissão.
-            <span class="overflow" data-state="visible" aria-hidden="true"></span>
-          </p>
-          <div class="bntleia"><button class="toggle" data-state="more">Leia mais</button></div>
-        </div>
-        
-        <div class="fimtexto1">
-          <span class="fimspan">Ainda precisa falar com a gente?</span> <br><span class="textinn"><p>Caso não tenha
-            encontrado a resposta para <br> a sua dúvida entre em contato  pelo Chat online ou <br>pelo email
-            <strong>contato.site@tripbrothers.com.br</strong>.</p>
-            <br><span class="titulo2">A Brothers também está à disposição pelos telefones abaixo: </span></span>
-          <br><br>
-          <ul class="numlist">
-            <li>
-              <span class="num">4002-8922</span>
-              <p>Capitais e regiões metropolitanas</p>
-            </li>
-            <li>
-              <span class="num">0800-770-7900</span>
-              <p>Demais localidades</p>
-            </li>
-            <li>
-              <span id="num1" class="num">+1-800-273-8255</span>
-              <p>EUA (ligação gratuita)</p>
-            </li>
-          </ul></span>
-        </div>
-        <div class="fimtexto1">
-          <span class="fimspan">Formas de pagamento:</span>
-          <span class="pailinha">
-          <br><br><span class="linha"><strong>Crédito:</strong> <img class="credito" src="imagens/Banner/cartoes.png" alt="cartoes"></span>
-          <br> <span  class="linha"><strong>Outros:</strong> <img class="credito" src="imagens/Banner/pix-106.png" alt="pix"></span>
-        </div></span>
-      </div>
-    
-    
-      <div class="rodapefin">
-        <div class="rodapetext">
-          <img src="imagens/Logo/logo.png" alt="logo-rodape">
-    
-          <span class="textinho"> Av. Prof. Pinto de Aguiar, 2589 - Pituaçu, Salvador - BA, 41740-090
-            <h5 class="pik">RESPEITO E CONSIDERAÇÕES A ALISSON E DENILSON - BES 2023.1</h5>
-            <h5>AJUDAS E CRITICAS @DAVI RIBEIRO</h5>
-            <H5>Obrigado por chegar até aqui</H5>
-            <h5>© 2023 - TRIP-Brothers - TODOS OS DIREITOS RESERVADOS</h5>
-            
-            <br>
-          </span>
-    
-    
-        </div></div>
+     
+     
+      <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+     
+     <script src="footer.js"></script>
     <script src="index.js"></script>
     <script src="slide.js"></script>
     

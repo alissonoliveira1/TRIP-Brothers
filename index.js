@@ -1,3 +1,38 @@
+
+let hora = 24
+let segundos = 59
+let minutos = 59
+
+function horas(){
+ segundos = segundos
+
+ if((minutos > 0) || (segundos > 0) || (hora > 0)){
+   if(segundos == 0){
+     segundos = 59
+     minutos = minutos - 1
+   }else{
+     segundos = segundos - 1
+   }
+    if (minutos == 0){
+     minutos = 59
+     hora = hora - 1
+   }
+
+   if(segundos < 10){
+segundos = '0' + segundos;
+
+} 
+
+
+ let minutosfm = minutos.toString().padStart(2, '0');
+ document.querySelector('.segundos').innerHTML = segundos
+ document.querySelector('.minutos').innerHTML = minutosfm
+ document.querySelector('.horas').innerHTML = hora
+ }
+}
+setInterval(horas,1000,1); 
+
+
 const barra1 = document.querySelector(".z1")
 const barra2 = document.querySelector(".z2")
 const barra3 = document.querySelector(".z3")
@@ -136,40 +171,6 @@ function click(){
     );
   }
 
-
-
-let hora = 24
-let segundos = 59
-let minutos = 59
-
-function horas(){
- segundos = segundos
-
- if((minutos > 0) || (segundos > 0) || (hora > 0)){
-   if(segundos == 0){
-     segundos = 59
-     minutos = minutos - 1
-   }else{
-     segundos = segundos - 1
-   }
-    if (minutos == 0){
-     minutos = 59
-     hora = hora - 1
-   }
-
-   if(segundos < 10){
-segundos = '0' + segundos;
-
-} 
-
-
- let minutosfm = minutos.toString().padStart(2, '0');
- document.querySelector('.segundos').innerHTML = segundos
- document.querySelector('.minutos').innerHTML = minutosfm
- document.querySelector('.horas').innerHTML = hora
- }
-}
-setInterval(horas,1000,1); 
 
 
 
