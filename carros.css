@@ -277,18 +277,54 @@ font-family: sans-serif;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    display: flex;
+  display: flex;
+   align-items: center;
     height: 90vh;
     overflow: hidden;
     justify-content: center;
 }
+.bannerinput{
+  border-radius: 4px;
+  display: flex;
+  
+  padding: 50px;
+}
+.tudoinput{
+  background-color: rgb(1, 30, 70);
+}
+.bannerpai{
+  width: 90vw;
+}
+.bannercenter{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.bannerlabel{
+  display: flex;
+  color: white;
+  flex-direction: column;
+}
 .textobanner{
-    padding-top: 100px;
     display: flex;
     color: white;
-    font-size: 50px;
-    font-weight: 800;
+    font-size: 65px;
+    font-weight:bolder;
 
+}
+#inputtexto {
+  display: flex;
+  width: 40vw;
+  height: 7vh;
+  padding-left: 10px;
+}
+input[type = date]{
+  width: 13vw;
+  height: 7vh;
+}
+#bannerselect{
+  width: 8vw;
+  height: 7vh;
 }
 .textopr{
     display: flex;
