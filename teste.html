@@ -4,220 +4,68 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="teste.css">
 </head>
 <body>
-  <style>
-.tempo{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.minutos, .segundos, .horas, .pontos{
-  font-size: 10rem;
-}h1,h2,h3,h4,h5,h6{
-    font-weight: 900;
-    color: #000;
-  }
-  
-  .wrapper{
-    width: 100%;
-    margin: 0 auto;
-  }
-  
-  main{
-    display: block;
-    background-color: #FFF;
-  }
-  
-  .container{
-    width: 100%;
-    max-width: 760px;
-    margin: 0 auto;
-    padding: 0 20px;
-  }
-  
-  section.module p{
-    margin-bottom: 40px;
-  }
-  
-  section.module:last-child{
-    margin-bottom: 0;
-  }
-  
-  section.module h2{
-    margin-bottom: 40px;
-    font-size: 30px;
-  }
-  
-  section.module.content{
-   padding: 40px 0;
-   background: #ece7d5; 
-  }
-  
-  section.module.parallax{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100vh !important;
-    width: 100%;
-    position: relative;
-    overflow: hidden;
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-  }
-  
-  section.module.parallax:after{
-    content: "";
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    z-index: 8;
-    background: -moz-linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 40%, #000 100% );
-    background: -webkit-linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 40%, #000 100% );
-    background: linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 40%, #000 100% );
-  }
-  
-  
-  section.module.parallax-1{
-    background-image: url("https://images.unsplash.com/photo-1464823063530-08f10ed1a2dd?dpr=1&auto=format&fit=crop&w=1199&h=799&q=80&cs=tinysrgb&crop=");
-  }
-  
-  section.module.parallax-2{
-    background-image: url("https://images.unsplash.com/photo-1473181488821-2d23949a045a?dpr=1&auto=compress,format&fit=crop&w=1199&h=799&q=80&cs=tinysrgb&crop=");
-  }
-  
-  section.module.parallax-3{
-    background-image: url("https://images.unsplash.com/photo-1472162314594-eca3c3d90df1?dpr=1&auto=format&fit=crop&w=1500&h=1001&q=80&cs=tinysrgb&crop=");
-  }
-  
-  section.module.parallax h1{
-    color: #FFF;
-    text-align: center;
-    font-size: 78px;
-    z-index: 50;
-    text-transform: uppercase;
-  }
-  
-  @media all and (max-width: 820px) {
-    section.module h2 {
-      font-size: 32px;
-    }
-    .module h2, p{
-      padding: 0 8px;
-    }
-  
-    .container{
-      margin:0;
-      padding:0;
-    }
-  
-    section.module.parallax h1 {
-      font-size: 36px;
-    }
-  }
-  </style>
- <div class="wrapper">
-  <main>
-    <section class="module parallax parallax-1">
-      <h1>Sujeito Programador</h1>
-    </section>
-
-    <section class="module content">
-      <div class="container">
-        <h2>Qualquer texto aqui..</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quisquam reiciendis unde voluptatem dignissimos! Adipisci alias rerum commodi ad excepturi. Quod aut maxime non architecto numquam vel et, magnam eius!
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quisquam reiciendis unde voluptatem dignissimos! Adipisci alias rerum commodi ad excepturi. Quod aut maxime non architecto numquam vel et, magnam eius!
-        </p>          
+  <div class="container" >
+     <div class="titulo">
+      <span>Cadastro</span>
+     </div>
+     <div class="inputs">
+      <label for="">Nome de usuario <input type="text"></label>
+       <label for="">Seu Email<input id="email" type="email"></label>
+       <label for="">Confirme o Email<input id="email2" type="email"></label>
+       <label for="">Crie uma senha <input type="password"></label>
+       <label for="">Confirme a senha <input type="password"></label>
+     </div>
+       <div class="bnt-next">
+        <button id="butao">Proximo</button>
+       </div>
+  </div>
+  <div class="container2" id="d3">
+    <div class="titulo">
+     <span>Cadastro</span>
+    </div>
+    <div class="inputs">
+     <label for="">Nome do titular do cartão <input type="text"></label>
+      <label for="">numeros do cartão<input id="email" type="number"></label>
+      <label for="">data de validade<input id="email2" type="number"></label>
+      <label for="">cvc<input type="number"></label>
+      <label for="">Endereço do cartão<input type="text"></label>
+    </div>
+      <div class="bnt-next">
+       <button id="butao">Proximo</button>
       </div>
-    </section>
+ </div>
 
-    <section class="module parallax parallax-2">
-      <h1>Algum texto aqui</h1>
-      
-    </section>
 
-    <section class="module content">
-      <div class="container">
-        <h2>Qualquer texto aqui..</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quisquam reiciendis unde voluptatem dignissimos! Adipisci alias rerum commodi ad excepturi. Quod aut maxime non architecto numquam vel et, magnam eius!
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quisquam reiciendis unde voluptatem dignissimos! Adipisci alias rerum commodi ad excepturi. Quod aut maxime non architecto numquam vel et, magnam eius!
-        </p>          
-      </div>
-    </section>
 
-    <section class="module parallax parallax-3">
-      
-      <div class="tempo">
-        <div class="horas"></div>
-        <div class="pontos">:</div>
-        <div class="minutos"></div>
-        <div class="pontos">:</div>
-        <div class="segundos"></div>
-      </div>
-    </section>
 
-    <section class="module content">
-      <div class="container">
-        <h2>Qualquer texto aqui..</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quisquam reiciendis unde voluptatem dignissimos! Adipisci alias rerum commodi ad excepturi. Quod aut maxime non architecto numquam vel et, magnam eius!
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quisquam reiciendis unde voluptatem dignissimos! Adipisci alias rerum commodi ad excepturi. Quod aut maxime non architecto numquam vel et, magnam eius!
-        </p>          
-      </div>
-    </section>
-
-  </main>
-</div>
-<h1>contagem regressiva</h1>
-
-      
   <script>
-    let hora = 24
-   let segundos = 10
-   let minutos = 5
-   
-   function horas(tempo){
-    segundos = segundos
-   
-    if((minutos > 0) || (segundos > 0) || (hora > 0)){
-      if(segundos == 0){
-        segundos = 59
-        minutos = minutos - 1
-      }else{
-        segundos = segundos - 1
-      }
-       if (minutos == 0){
-        minutos = 59
-        hora = hora - 1
-      }
-   
-      if(segundos < 10){
- segundos = '0' + segundos;
+     const email = document.getElementById('email').value
+     const email2 = document.getElementById('email2').value
+     const butao = document.getElementById('butao')
+     const container = document.getElementById('d3')
+
+ butao.addEventListener('click', (event) =>{
+
+
+  container.classList.toggle("d")
  
-}  
 
-    let minutosfm = minutos.toString().padStart(2, '0');
-    document.querySelector('.segundos').innerHTML = segundos
-    document.querySelector('.minutos').innerHTML = minutosfm
-    document.querySelector('.horas').innerHTML = hora
-    }
-   }
 
-   setInterval(horas,1000,1);
-   
+ if(email === email2  ){
+  
+}
+  
+else{
+  window.alert("parabens")
+}
+
+ })
+
+
+    
   </script>
 </body>
 </html>
